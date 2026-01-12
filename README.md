@@ -54,16 +54,6 @@ An intelligent point cloud processing software based on CloudCompare, supporting
 
 ---
 
-## 📊 GitHub Statistics / GitHub 统计
-
-<div align="center">
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=yuqingsh&theme=tokyonight&hide_border=true&locale=zh_Hans)
-
-</div>
-
----
-
 ## 📈 Contribution Graph / 贡献图表
 
 <!-- Credit to https://github.com/Platane/snk -->
