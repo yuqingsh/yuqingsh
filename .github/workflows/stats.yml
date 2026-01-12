@@ -1,0 +1,44 @@
+name: generate stats
+
+on:
+  # run automatically every 24 hours
+  schedule:
+    - cron: "0 */24 * * *"
+
+  # allows to manually run the job at any time
+  workflow_dispatch:
+
+  # run on every push on the master branch
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        run: |
+          mkdir -p dist
+          # Try multiple services for reliability
+          curl -f -o dist/github-stats.svg "https://github-readme-stats.vercel.app/api?username=yuqingsh&show_icons=true&theme=tokyonight&hide_border=true&locale=cn&include_all_commits=true&count_private=true" || \
+          curl -f -o dist/github-stats.svg "https://github-readme-stats-git-master.anuraghazra1.vercel.app/api?username=yuqingsh&show_icons=true&theme=tokyonight&hide_border=true&locale=cn&include_all_commits=true&count_private=true" || \
+          curl -f -o dist/github-stats.svg "https://github-readme-stats.vercel.app/api?username=yuqingsh&show_icons=true&theme=tokyonight&hide_border=true&locale=cn&include_all_commits=true&count_private=true"
+
+          curl -f -o dist/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=yuqingsh&layout=compact&theme=tokyonight&hide_border=true&locale=cn" || \
+          curl -f -o dist/top-langs.svg "https://github-readme-stats-git-master.anuraghazra1.vercel.app/api/top-langs/?username=yuqingsh&layout=compact&theme=tokyonight&hide_border=true&locale=cn" || \
+          curl -f -o dist/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=yuqingsh&layout=compact&theme=tokyonight&hide_border=true&locale=cn"
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
