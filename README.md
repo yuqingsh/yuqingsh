@@ -58,11 +58,12 @@ An intelligent point cloud processing software based on CloudCompare, supporting
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yuqingsh&show_icons=true&theme=tokyonight&hide_border=true&locale=cn)
+<a href="https://github.com/yuqingsh">
+  <img height="180em" src="https://raw.githubusercontent.com/yuqingsh/yuqingsh/output/github-stats.svg" alt="GitHub Stats" />
+  <img height="180em" src="https://raw.githubusercontent.com/yuqingsh/yuqingsh/output/top-langs.svg" alt="Top Languages" />
+</a>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yuqingsh&layout=compact&theme=tokyonight&hide_border=true&locale=cn)
-
-![GitHub Streak](https://github-readme-streak-stats.demolab.com/?user=yuqingsh&theme=tokyonight&hide_border=true&locale=zh_Hans)
+![GitHub Streak](https://streak-stats.demolab.com/?user=yuqingsh&theme=tokyonight&hide_border=true&locale=zh_Hans)
 
 </div>
 
