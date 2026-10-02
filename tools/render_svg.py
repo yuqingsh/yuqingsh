@@ -70,8 +70,14 @@ def model_totals(days: dict, since: date) -> tuple:
         if date.fromisoformat(day) < since:
             continue
         for src_name, src in sources.items():
-            label_src = {"codex": "Codex", "cursor": "Cursor",
-                         "dsh-kimi": "DSH · Kimi"}.get(src_name, src_name)
+            if src_name == "codex":
+                label_src = "Codex"
+            elif src_name.startswith("codex-"):
+                label_src = f"Codex · {src_name[len('codex-'):]}"
+            else:
+                label_src = {"cursor": "Cursor", "dsh-kimi": "DSH · Kimi"}.get(
+                    src_name, src_name
+                )
             for model, u in (src.get("models") or {}).items():
                 label = f"{label_src} · {model}"
                 totals[label] = (

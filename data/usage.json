@@ -1,5 +1,148 @@
 {
  "days": {
+  "2026-05-14": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 768737,
+      "output": 67853,
+      "cache_read": 6964224
+     }
+    }
+   }
+  },
+  "2026-05-15": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 717650,
+      "output": 107408,
+      "cache_read": 6417408
+     }
+    }
+   }
+  },
+  "2026-05-21": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 21880,
+      "output": 10550,
+      "cache_read": 41216
+     }
+    }
+   }
+  },
+  "2026-06-01": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 50231,
+      "output": 6232,
+      "cache_read": 64896
+     }
+    }
+   }
+  },
+  "2026-06-03": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 668731,
+      "output": 38899,
+      "cache_read": 3703168
+     }
+    }
+   }
+  },
+  "2026-06-05": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1099660,
+      "output": 67312,
+      "cache_read": 5171584
+     }
+    }
+   }
+  },
+  "2026-06-08": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 694266,
+      "output": 51758,
+      "cache_read": 1644928
+     }
+    }
+   }
+  },
+  "2026-06-22": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1788906,
+      "output": 66887,
+      "cache_read": 20205952
+     }
+    }
+   }
+  },
+  "2026-06-23": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3262679,
+      "output": 124447,
+      "cache_read": 34817152
+     }
+    }
+   }
+  },
+  "2026-06-24": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1649917,
+      "output": 78269,
+      "cache_read": 11653632
+     }
+    }
+   }
+  },
+  "2026-06-25": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1347570,
+      "output": 63556,
+      "cache_read": 8305536
+     }
+    }
+   }
+  },
+  "2026-06-29": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1698793,
+      "output": 115648,
+      "cache_read": 20597632
+     }
+    }
+   }
+  },
+  "2026-06-30": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 373925,
+      "output": 28983,
+      "cache_read": 9664000
+     }
+    }
+   }
+  },
   "2026-07-07": {
    "codex": {
     "models": {
@@ -55,6 +198,28 @@
     }
    }
   },
+  "2026-07-13": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1389651,
+      "output": 118467,
+      "cache_read": 32752256
+     }
+    }
+   }
+  },
+  "2026-07-14": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1100292,
+      "output": 84945,
+      "cache_read": 12711936
+     }
+    }
+   }
+  },
   "2026-07-15": {
    "codex": {
     "models": {
@@ -62,6 +227,158 @@
       "input": 230002,
       "output": 18920,
       "cache_read": 2339840
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4749494,
+      "output": 467192,
+      "cache_read": 149776896
+     }
+    }
+   }
+  },
+  "2026-07-16": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3088049,
+      "output": 330942,
+      "cache_read": 56949376
+     }
+    }
+   }
+  },
+  "2026-07-17": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2371365,
+      "output": 133092,
+      "cache_read": 64770048
+     }
+    }
+   }
+  },
+  "2026-07-19": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 180734,
+      "output": 1452,
+      "cache_read": 353920
+     }
+    }
+   }
+  },
+  "2026-07-20": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4195196,
+      "output": 158166,
+      "cache_read": 64916992
+     }
+    }
+   }
+  },
+  "2026-07-21": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 736498,
+      "output": 18834,
+      "cache_read": 2174976
+     }
+    }
+   }
+  },
+  "2026-07-22": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2751040,
+      "output": 238144,
+      "cache_read": 42369152
+     }
+    }
+   }
+  },
+  "2026-07-23": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2890412,
+      "output": 258760,
+      "cache_read": 59739648
+     }
+    }
+   }
+  },
+  "2026-07-24": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3010557,
+      "output": 239834,
+      "cache_read": 39759616
+     }
+    }
+   }
+  },
+  "2026-07-27": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4824982,
+      "output": 448796,
+      "cache_read": 84494208
+     }
+    }
+   }
+  },
+  "2026-07-28": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2661916,
+      "output": 201283,
+      "cache_read": 46579072
+     }
+    }
+   }
+  },
+  "2026-07-29": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4547200,
+      "output": 309631,
+      "cache_read": 113634944
+     }
+    }
+   }
+  },
+  "2026-07-30": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4640192,
+      "output": 567703,
+      "cache_read": 145730816
+     }
+    }
+   }
+  },
+  "2026-07-31": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3420018,
+      "output": 267961,
+      "cache_read": 64567680
      }
     }
    }
@@ -86,6 +403,15 @@
       "cache_read": 12180224
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3807163,
+      "output": 370819,
+      "cache_read": 116568320
+     }
+    }
    }
   },
   "2026-08-04": {
@@ -97,15 +423,33 @@
       "cache_read": 51050240
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 970080,
+      "output": 75146,
+      "cache_read": 11799296
+     }
+    }
    }
   },
   "2026-08-05": {
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 7687865,
-      "output": 511628,
+      "input": 7503924,
+      "output": 510216,
       "cache_read": 78953216
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2645922,
+      "output": 256461,
+      "cache_read": 37421824
      }
     }
    }
@@ -119,15 +463,33 @@
       "cache_read": 25089664
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 857536,
+      "output": 8196,
+      "cache_read": 989184
+     }
+    }
    }
   },
   "2026-08-07": {
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 16563937,
-      "output": 677137,
-      "cache_read": 231626368
+      "input": 12574389,
+      "output": 662619,
+      "cache_read": 205438080
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 82252,
+      "output": 6894,
+      "cache_read": 2015488
      }
     }
    }
@@ -141,6 +503,26 @@
       "cache_read": 83388928
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 425070,
+      "output": 17117,
+      "cache_read": 3042304
+     }
+    }
+   }
+  },
+  "2026-08-09": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 472139,
+      "output": 38824,
+      "cache_read": 4871424
+     }
+    }
    }
   },
   "2026-08-10": {
@@ -150,6 +532,15 @@
       "input": 199965,
       "output": 47970,
       "cache_read": 3045120
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 678426,
+      "output": 88542,
+      "cache_read": 21293824
      }
     }
    }
@@ -163,6 +554,37 @@
       "cache_read": 4945152
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3415442,
+      "output": 437241,
+      "cache_read": 100982272
+     }
+    }
+   }
+  },
+  "2026-08-12": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1125815,
+      "output": 64993,
+      "cache_read": 10930176
+     }
+    }
+   }
+  },
+  "2026-08-13": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1174895,
+      "output": 101955,
+      "cache_read": 17916288
+     }
+    }
    }
   },
   "2026-08-14": {
@@ -172,6 +594,72 @@
       "input": 1737743,
       "output": 141250,
       "cache_read": 32160000
+     }
+    }
+   }
+  },
+  "2026-08-15": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 682265,
+      "output": 74388,
+      "cache_read": 25224704
+     }
+    }
+   }
+  },
+  "2026-08-16": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2820793,
+      "output": 323303,
+      "cache_read": 79264384
+     }
+    }
+   }
+  },
+  "2026-08-17": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 17563382,
+      "output": 1070561,
+      "cache_read": 309887872
+     }
+    }
+   }
+  },
+  "2026-08-18": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 21893366,
+      "output": 1728508,
+      "cache_read": 390116480
+     }
+    }
+   }
+  },
+  "2026-08-19": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 58061665,
+      "output": 8038267,
+      "cache_read": 1775279104
+     }
+    }
+   }
+  },
+  "2026-08-20": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 17297079,
+      "output": 2098528,
+      "cache_read": 463401088
      }
     }
    }
@@ -205,6 +693,26 @@
       "cache_read": 24554
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 47235939,
+      "output": 6192836,
+      "cache_read": 1827821824
+     }
+    }
+   }
+  },
+  "2026-08-22": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 11107846,
+      "output": 1316030,
+      "cache_read": 318775296
+     }
+    }
    }
   },
   "2026-08-23": {
@@ -214,6 +722,15 @@
       "input": 6,
       "output": 908,
       "cache_read": 171565
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 26259758,
+      "output": 3438983,
+      "cache_read": 876042880
      }
     }
    }
@@ -246,6 +763,15 @@
       "cache_read": 1008512
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 6456950,
+      "output": 750528,
+      "cache_read": 176968832
+     }
+    }
    }
   },
   "2026-08-25": {
@@ -255,6 +781,37 @@
       "input": 158863,
       "output": 6413,
       "cache_read": 1070080
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 5543685,
+      "output": 556237,
+      "cache_read": 136348160
+     }
+    }
+   }
+  },
+  "2026-08-26": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 7796432,
+      "output": 889117,
+      "cache_read": 162419840
+     }
+    }
+   }
+  },
+  "2026-08-27": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 5400526,
+      "output": 659338,
+      "cache_read": 83241088
      }
     }
    }
@@ -268,6 +825,26 @@
       "cache_read": 11742848
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 14014627,
+      "output": 1984006,
+      "cache_read": 440970240
+     }
+    }
+   }
+  },
+  "2026-08-29": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 10690562,
+      "output": 1478799,
+      "cache_read": 310298624
+     }
+    }
    }
   },
   "2026-08-30": {
@@ -277,6 +854,26 @@
       "input": 96967,
       "output": 3286,
       "cache_read": 311808
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 28511807,
+      "output": 3594495,
+      "cache_read": 968954496
+     }
+    }
+   }
+  },
+  "2026-08-31": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 19431547,
+      "output": 2338540,
+      "cache_read": 571516544
      }
     }
    }
@@ -290,6 +887,70 @@
       "cache_read": 0
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3617325,
+      "output": 311942,
+      "cache_read": 73981696
+     }
+    }
+   }
+  },
+  "2026-09-02": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 9186232,
+      "output": 961957,
+      "cache_read": 220626944
+     }
+    }
+   }
+  },
+  "2026-09-03": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 8395878,
+      "output": 1205454,
+      "cache_read": 254134400
+     }
+    }
+   }
+  },
+  "2026-09-04": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1649653,
+      "output": 196197,
+      "cache_read": 132846464
+     }
+    }
+   }
+  },
+  "2026-09-06": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1823447,
+      "output": 245865,
+      "cache_read": 49255552
+     }
+    }
+   }
+  },
+  "2026-09-07": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 12086821,
+      "output": 1481392,
+      "cache_read": 470007808
+     }
+    }
    }
   },
   "2026-09-08": {
@@ -301,6 +962,15 @@
       "cache_read": 3001728
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4886505,
+      "output": 894444,
+      "cache_read": 181012096
+     }
+    }
    }
   },
   "2026-09-09": {
@@ -310,6 +980,136 @@
       "input": 220561,
       "output": 37218,
       "cache_read": 12505600
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 655237,
+      "output": 68890,
+      "cache_read": 16766464
+     }
+    }
+   }
+  },
+  "2026-09-11": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 521035,
+      "output": 43463,
+      "cache_read": 11073664
+     }
+    }
+   }
+  },
+  "2026-09-12": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2245486,
+      "output": 275449,
+      "cache_read": 58338560
+     }
+    }
+   }
+  },
+  "2026-09-13": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 679780,
+      "output": 23794,
+      "cache_read": 4773504
+     }
+    }
+   }
+  },
+  "2026-09-14": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1801080,
+      "output": 136418,
+      "cache_read": 18096512
+     }
+    }
+   }
+  },
+  "2026-09-15": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 758719,
+      "output": 104107,
+      "cache_read": 16535552
+     }
+    }
+   }
+  },
+  "2026-09-16": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4087370,
+      "output": 595312,
+      "cache_read": 144391168
+     }
+    }
+   }
+  },
+  "2026-09-17": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2225421,
+      "output": 333527,
+      "cache_read": 75202560
+     }
+    }
+   }
+  },
+  "2026-09-18": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 327474,
+      "output": 20937,
+      "cache_read": 2345344
+     }
+    }
+   }
+  },
+  "2026-09-19": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 954945,
+      "output": 62592,
+      "cache_read": 14583296
+     }
+    }
+   }
+  },
+  "2026-09-20": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3015736,
+      "output": 364919,
+      "cache_read": 86039808
+     }
+    }
+   }
+  },
+  "2026-09-21": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2347154,
+      "output": 279390,
+      "cache_read": 61106816
      }
     }
    }
@@ -337,6 +1137,15 @@
       "cache_read": 87982612
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1107193,
+      "output": 116975,
+      "cache_read": 18016896
+     }
+    }
    }
   },
   "2026-09-23": {
@@ -357,6 +1166,15 @@
       "cache_read": 1962752
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1185583,
+      "output": 77350,
+      "cache_read": 8624000
+     }
+    }
    }
   },
   "2026-09-24": {
@@ -368,6 +1186,15 @@
       "cache_read": 5691008
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2154335,
+      "output": 208122,
+      "cache_read": 32527488
+     }
+    }
    }
   },
   "2026-09-25": {
@@ -377,6 +1204,15 @@
       "input": 931368,
       "output": 126263,
       "cache_read": 35023360
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2298448,
+      "output": 171552,
+      "cache_read": 27231872
      }
     }
    }
@@ -395,6 +1231,15 @@
       "cache_read": 139365888
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2895196,
+      "output": 225711,
+      "cache_read": 53438976
+     }
+    }
    }
   },
   "2026-09-27": {
@@ -404,6 +1249,15 @@
       "input": 4174946,
       "output": 313804,
       "cache_read": 108321664
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2671204,
+      "output": 229629,
+      "cache_read": 43721344
      }
     }
    }
@@ -417,6 +1271,15 @@
       "cache_read": 21340800
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2146283,
+      "output": 340493,
+      "cache_read": 55729664
+     }
+    }
    }
   },
   "2026-09-29": {
@@ -426,6 +1289,15 @@
       "input": 259617,
       "output": 5089,
       "cache_read": 2615808
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2578080,
+      "output": 385412,
+      "cache_read": 52867456
      }
     }
    }
@@ -446,6 +1318,15 @@
       "input": 139392,
       "output": 24203,
       "cache_read": 3550976
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2582605,
+      "output": 156235,
+      "cache_read": 28366720
      }
     }
    }
@@ -487,24 +1368,33 @@
       "cache_read": 0
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1306312,
+      "output": 84860,
+      "cache_read": 12616576
+     }
+    }
    }
   },
   "2026-10-02": {
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 350784,
-      "output": 68821,
-      "cache_read": 6572504
+      "input": 479998,
+      "output": 83065,
+      "cache_read": 8185816
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 126739,
-      "output": 55990,
-      "cache_read": 3921408
+      "input": 288009,
+      "output": 64106,
+      "cache_read": 4915456
      },
      "grok-4.7-high": {
       "input": 0,
@@ -515,6 +1405,15 @@
       "input": 922258,
       "output": 48347,
       "cache_read": 3833856
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3741055,
+      "output": 523662,
+      "cache_read": 71903488
      }
     }
    }
@@ -538,6 +1437,11 @@
     "cache_read": 180992
    },
    "session-31c55fd7-a185-4e14-9a16-2742547abbb8": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-381d62f1-b638-4f0c-a85e-61c1c9b03a11": {
     "input": 0,
     "output": 0,
     "cache_read": 0
@@ -568,9 +1472,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 350784,
-    "output": 68821,
-    "cache_read": 6572504
+    "input": 479998,
+    "output": 83065,
+    "cache_read": 8185816
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -584,5 +1488,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T20:27:38+08:00"
+ "updated_at": "2026-10-02T21:29:12+08:00"
 }
