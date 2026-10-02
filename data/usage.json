@@ -4,7 +4,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 184733,
+      "input": 35741,
       "output": 878,
       "cache_read": 148992
      }
@@ -15,7 +15,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4425038,
+      "input": 977230,
       "output": 6820,
       "cache_read": 3447808
      }
@@ -26,7 +26,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1005695,
+      "input": 310143,
       "output": 3763,
       "cache_read": 695552
      }
@@ -37,7 +37,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 5711816,
+      "input": 593352,
       "output": 6752,
       "cache_read": 5118464
      }
@@ -48,7 +48,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 94494,
+      "input": 37662,
       "output": 610,
       "cache_read": 56832
      }
@@ -59,7 +59,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 38893,
+      "input": 17901,
       "output": 230,
       "cache_read": 20992
      }
@@ -70,7 +70,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 514246,
+      "input": 78534,
       "output": 1773,
       "cache_read": 435712
      }
@@ -81,7 +81,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 7435640,
+      "input": 422520,
       "output": 10527,
       "cache_read": 7013120
      }
@@ -92,7 +92,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1972974,
+      "input": 308974,
       "output": 5143,
       "cache_read": 1664000
      }
@@ -103,7 +103,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 120846,
+      "input": 44558,
       "output": 739,
       "cache_read": 76288
      }
@@ -114,7 +114,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 11096895,
+      "input": 1616191,
       "output": 8031,
       "cache_read": 9480704
      }
@@ -125,7 +125,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 13904492,
+      "input": 1239660,
       "output": 10015,
       "cache_read": 12664832
      }
@@ -136,7 +136,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 427970,
+      "input": 66498,
       "output": 1954,
       "cache_read": 361472
      }
@@ -147,7 +147,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 234881,
+      "input": 56705,
       "output": 1037,
       "cache_read": 178176
      }
@@ -158,7 +158,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2321516,
+      "input": 568684,
       "output": 3397,
       "cache_read": 1752832
      }
@@ -211,7 +211,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 920840,
+      "input": 673032,
       "output": 1780,
       "cache_read": 247808
      }
@@ -241,7 +241,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 416712,
+      "input": 95688,
       "output": 2153,
       "cache_read": 321024
      }
@@ -252,7 +252,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 330266,
+      "input": 53018,
       "output": 1636,
       "cache_read": 277248
      }
@@ -263,7 +263,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 57473034,
+      "input": 2648714,
       "output": 287287,
       "cache_read": 54824320
      }
@@ -288,7 +288,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4288623,
+      "input": 439535,
       "output": 31999,
       "cache_read": 3849088
      }
@@ -308,7 +308,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 5929189,
+      "input": 238181,
       "output": 13141,
       "cache_read": 5691008
      }
@@ -399,7 +399,7 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 5073960,
+      "input": 230952,
       "output": 37334,
       "cache_read": 4843008
      }
@@ -438,9 +438,9 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 166805,
-      "output": 48365,
-      "cache_read": 3497823
+      "input": 241807,
+      "output": 56454,
+      "cache_read": 4342931
      }
     }
    },
@@ -503,9 +503,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 166805,
-    "output": 48365,
-    "cache_read": 3497823
+    "input": 241807,
+    "output": 56454,
+    "cache_read": 4342931
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -519,5 +519,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T16:14:49+08:00"
+ "updated_at": "2026-10-02T18:54:25+08:00"
 }

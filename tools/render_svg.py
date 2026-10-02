@@ -46,20 +46,25 @@ def fmt(n: float) -> str:
 
 
 def day_totals(days: dict) -> dict:
-    """{day: (input+output, cache_read)} summed over sources/models."""
+    """{day: (processed, fresh)} summed over sources/models.
+
+    processed = input + output + cache_read (total tokens processed);
+    fresh     = input + output only.
+    """
     out = {}
     for day, sources in days.items():
-        io = cr = 0
+        proc = fresh = 0
         for src in sources.values():
             for u in (src.get("models") or {}).values():
-                io += u.get("input", 0) + u.get("output", 0)
-                cr += u.get("cache_read", 0)
-        out[day] = (io, cr)
+                fo = u.get("input", 0) + u.get("output", 0)
+                fresh += fo
+                proc += fo + u.get("cache_read", 0)
+        out[day] = (proc, fresh)
     return out
 
 
-def model_totals(days: dict, since: date) -> tuple[dict, int]:
-    """{label: input+output} and total cache_read for days >= since."""
+def model_totals(days: dict, since: date) -> tuple:
+    """({label: processed tokens}, cache_read) for days >= since."""
     totals, cache_read = {}, 0
     for day, sources in days.items():
         if date.fromisoformat(day) < since:
@@ -69,7 +74,12 @@ def model_totals(days: dict, since: date) -> tuple[dict, int]:
                          "dsh-kimi": "DSH · Kimi"}.get(src_name, src_name)
             for model, u in (src.get("models") or {}).items():
                 label = f"{label_src} · {model}"
-                totals[label] = totals.get(label, 0) + u.get("input", 0) + u.get("output", 0)
+                totals[label] = (
+                    totals.get(label, 0)
+                    + u.get("input", 0)
+                    + u.get("output", 0)
+                    + u.get("cache_read", 0)
+                )
                 cache_read += u.get("cache_read", 0)
     return totals, cache_read
 
@@ -106,12 +116,13 @@ def render(data: dict) -> str:
             if day > today:
                 continue
             key = day.isoformat()
-            t, cr = totals.get(key, (0, 0))
+            t, fresh = totals.get(key, (0, 0))
             lv = level(t, max_t)
             y = PAD + 40 + d * STEP
-            tip = f"{key}: {fmt(t)} tokens (in+out)" if t else f"{key}: no usage"
-            if cr:
-                tip += f" · cache read {fmt(cr)}"
+            if t:
+                tip = f"{key}: {fmt(t)} tokens processed (fresh in+out {fmt(fresh)})"
+            else:
+                tip = f"{key}: no usage"
             cells.append(
                 f'<rect x="{col_x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" class="lv{lv}">'
                 f"<title>{escape(tip)}</title></rect>"
@@ -158,10 +169,11 @@ def render(data: dict) -> str:
             f' transform="rotate(-90 {cx} {cy})"><title>{escape(label)}: {fmt(v)} ({frac * 100:.1f}%)</title></circle>'
         )
         offset += frac * circ
+        pct = f"{frac * 100:.1f}%" if frac >= 0.001 else "<0.1%"
         legend.append(
             f'<rect x="{PAD + 170}" y="{ly - 9}" width="10" height="10" rx="2" fill="{color}"/>'
             f'<text x="{PAD + 186}" y="{ly}" class="text small">{escape(label)}'
-            f' · {frac * 100:.1f}%</text>'
+            f' · {pct}</text>'
         )
         ly += 18
     donut.append(
@@ -187,7 +199,7 @@ def render(data: dict) -> str:
     )
     stats += (
         f'<text x="{sx}" y="{heat_bottom + 30 + 5 * 22}" class="muted small">'
-        f"input + output tokens · cache read shown separately</text>"
+        f"total tokens processed · cache reads included</text>"
     )
 
     width = max(PAD * 2 + LEFT_LABELS + grid_w, sx + 200)
