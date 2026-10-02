@@ -1,0 +1,514 @@
+{
+ "days": {
+  "2026-07-07": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 184733,
+      "output": 878,
+      "cache_read": 148992
+     }
+    }
+   }
+  },
+  "2026-07-08": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4425038,
+      "output": 6820,
+      "cache_read": 3447808
+     }
+    }
+   }
+  },
+  "2026-07-09": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1005695,
+      "output": 3763,
+      "cache_read": 695552
+     }
+    }
+   }
+  },
+  "2026-07-10": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 5711816,
+      "output": 6752,
+      "cache_read": 5118464
+     }
+    }
+   }
+  },
+  "2026-07-15": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 94494,
+      "output": 610,
+      "cache_read": 56832
+     }
+    }
+   }
+  },
+  "2026-08-02": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 38893,
+      "output": 230,
+      "cache_read": 20992
+     }
+    }
+   }
+  },
+  "2026-08-03": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 514246,
+      "output": 1773,
+      "cache_read": 435712
+     }
+    }
+   }
+  },
+  "2026-08-04": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 7435640,
+      "output": 10527,
+      "cache_read": 7013120
+     }
+    }
+   }
+  },
+  "2026-08-05": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1972974,
+      "output": 5143,
+      "cache_read": 1664000
+     }
+    }
+   }
+  },
+  "2026-08-06": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 120846,
+      "output": 739,
+      "cache_read": 76288
+     }
+    }
+   }
+  },
+  "2026-08-07": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 11096895,
+      "output": 8031,
+      "cache_read": 9480704
+     }
+    }
+   }
+  },
+  "2026-08-08": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 13904492,
+      "output": 10015,
+      "cache_read": 12664832
+     }
+    }
+   }
+  },
+  "2026-08-10": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 427970,
+      "output": 1954,
+      "cache_read": 361472
+     }
+    }
+   }
+  },
+  "2026-08-11": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 234881,
+      "output": 1037,
+      "cache_read": 178176
+     }
+    }
+   }
+  },
+  "2026-08-14": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2321516,
+      "output": 3397,
+      "cache_read": 1752832
+     }
+    }
+   }
+  },
+  "2026-08-21": {
+   "cursor": {
+    "models": {
+     "claude-fable-5-thinking-high": {
+      "input": 314,
+      "output": 124061,
+      "cache_read": 24268133
+     },
+     "claude-fable-5-thinking-xhigh": {
+      "input": 2,
+      "output": 1059,
+      "cache_read": 0
+     },
+     "claude-fable-5-thinking-medium": {
+      "input": 10,
+      "output": 2923,
+      "cache_read": 269342
+     },
+     "claude-fable-5-thinking-max": {
+      "input": 2,
+      "output": 4,
+      "cache_read": 30422
+     },
+     "claude-fable-5-high": {
+      "input": 2,
+      "output": 4,
+      "cache_read": 24554
+     }
+    }
+   }
+  },
+  "2026-08-23": {
+   "cursor": {
+    "models": {
+     "claude-fable-5-thinking-high": {
+      "input": 6,
+      "output": 908,
+      "cache_read": 171565
+     }
+    }
+   }
+  },
+  "2026-08-24": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 920840,
+      "output": 1780,
+      "cache_read": 247808
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "cursor-grok-4.6-high": {
+      "input": 2981100,
+      "output": 216411,
+      "cache_read": 8303616
+     },
+     "cursor-grok-4.6-medium": {
+      "input": 293492,
+      "output": 15273,
+      "cache_read": 1514112
+     },
+     "kimi-k3-low": {
+      "input": 49744,
+      "output": 13952,
+      "cache_read": 1008512
+     }
+    }
+   }
+  },
+  "2026-08-28": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 416712,
+      "output": 2153,
+      "cache_read": 321024
+     }
+    }
+   }
+  },
+  "2026-09-08": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 330266,
+      "output": 1636,
+      "cache_read": 277248
+     }
+    }
+   }
+  },
+  "2026-09-22": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 57473034,
+      "output": 287287,
+      "cache_read": 54824320
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 2334165,
+      "output": 138137,
+      "cache_read": 36470272
+     },
+     "claude-fable-5-1-thinking-high": {
+      "input": 618,
+      "output": 411153,
+      "cache_read": 87982612
+     }
+    }
+   }
+  },
+  "2026-09-23": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 4288623,
+      "output": 31999,
+      "cache_read": 3849088
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 322957,
+      "output": 1300,
+      "cache_read": 1962752
+     }
+    }
+   }
+  },
+  "2026-09-24": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 5929189,
+      "output": 13141,
+      "cache_read": 5691008
+     }
+    }
+   }
+  },
+  "2026-09-25": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 931368,
+      "output": 126263,
+      "cache_read": 35023360
+     }
+    }
+   }
+  },
+  "2026-09-26": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 1497757,
+      "output": 156956,
+      "cache_read": 31541376
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 4281807,
+      "output": 526212,
+      "cache_read": 139365888
+     }
+    }
+   }
+  },
+  "2026-09-27": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 4174946,
+      "output": 313804,
+      "cache_read": 108321664
+     }
+    }
+   }
+  },
+  "2026-09-28": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 1353395,
+      "output": 107279,
+      "cache_read": 21340800
+     }
+    }
+   }
+  },
+  "2026-09-29": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 259617,
+      "output": 5089,
+      "cache_read": 2615808
+     }
+    }
+   }
+  },
+  "2026-09-30": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 6958899,
+      "output": 487547,
+      "cache_read": 154841216
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 139392,
+      "output": 24203,
+      "cache_read": 3550976
+     }
+    }
+   }
+  },
+  "2026-10-01": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 5073960,
+      "output": 37334,
+      "cache_read": 4843008
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 1626250,
+      "output": 102883,
+      "cache_read": 21923584
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "input": 19190,
+      "output": 718,
+      "cache_read": 0
+     },
+     "nvidia/nemotron-3.5-lightning:free": {
+      "input": 30229,
+      "output": 3670,
+      "cache_read": 43520
+     },
+     "openrouter/free": {
+      "input": 42020,
+      "output": 4350,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2026-10-02": {
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 70098,
+      "output": 30962,
+      "cache_read": 1081856
+     }
+    }
+   }
+  }
+ },
+ "state": {
+  "dsh_sessions": {
+   "session-0ea5268d-ec99-484e-92a2-e380d514a04b": {
+    "input": 121277,
+    "output": 18173,
+    "cache_read": 3369984
+   },
+   "session-2e668929-2032-4d39-a922-2d935b928946": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-30aef444-5bd2-46e5-9289-7b7319c42b5d": {
+    "input": 11685,
+    "output": 5991,
+    "cache_read": 180992
+   },
+   "session-31c55fd7-a185-4e14-9a16-2742547abbb8": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-407121c7-0676-4c3e-a95f-d737a698c43a": {
+    "input": 9598,
+    "output": 704,
+    "cache_read": 0
+   },
+   "session-40f17df7-c8a1-4018-8b2d-2d0722ff9097": {
+    "input": 9592,
+    "output": 14,
+    "cache_read": 0
+   },
+   "session-6f0c9aef-18c8-4e3c-a3b4-adf89bced01f": {
+    "input": 30229,
+    "output": 3670,
+    "cache_read": 43520
+   },
+   "session-7e26446e-cdd8-4e61-86f0-2477b385ff80": {
+    "input": 42020,
+    "output": 4350,
+    "cache_read": 0
+   },
+   "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
+    "input": 6430,
+    "output": 39,
+    "cache_read": 0
+   },
+   "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
+    "input": 70098,
+    "output": 30962,
+    "cache_read": 1081856
+   },
+   "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   }
+  }
+ },
+ "updated_at": "2026-10-02T09:57:32+08:00"
+}
