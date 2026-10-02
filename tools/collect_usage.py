@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Collect daily token usage from local AI clients into data/usage.json.
+"""Collect daily token usage from AI clients into data/usage.json.
 
-Sources (all data stays on this machine except the aggregated JSON):
-  - Codex (ChatGPT): ~/.codex/sessions/**/*.jsonl  token_count events
+Sources (all raw data stays on its host; only aggregated JSON is pushed):
+  - Codex (ChatGPT), local:  ~/.codex/{sessions,archived_sessions}
+  - Codex (ChatGPT), remote: same paths on hosts in CODEX_REMOTE_HOSTS,
+                             scanned by streaming tools/codex_usage_scan.py
+                             over ssh (nothing installed remotely)
   - Cursor:          local accessToken -> api2.cursor.sh GetFilteredUsageEvents
   - DeepSeek Harness: ~/.dsh session JSONs (cumulative per session, diffed per run)
 
@@ -16,7 +19,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import sqlite3
 import subprocess
 import sys
@@ -24,14 +26,15 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from codex_usage_scan import scan_codex  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = REPO_ROOT / "data" / "usage.json"
+SCANNER_FILE = REPO_ROOT / "tools" / "codex_usage_scan.py"
 
-CODEX_SESSIONS_DIRS = [
-    Path.home() / ".codex" / "sessions",
-    Path.home() / ".codex" / "archived_sessions",
-]
-CODEX_CONFIG = Path.home() / ".codex" / "config.toml"
+CODEX_BASE_DIR = Path.home() / ".codex"
+CODEX_REMOTE_HOSTS = ["wuyou-dev"]
 DSH_SESSIONS_DIR = Path.home() / ".dsh" / "storages" / "session_projcache" / "sessions"
 CURSOR_DB = (
     Path.home()
@@ -73,95 +76,41 @@ def today_local() -> str:
 
 # ---------------------------------------------------------------- Codex
 
-def codex_model_name() -> str:
-    try:
-        text = CODEX_CONFIG.read_text(encoding="utf-8")
-        m = re.search(r'^\s*model\s*=\s*"([^"]+)"', text, re.M)
-        if m:
-            return m.group(1)
-    except OSError:
-        pass
-    return "codex"
+def collect_codex_local() -> dict:
+    """Scan this machine's ~/.codex (authoritative full re-scan)."""
+    result = scan_codex(CODEX_BASE_DIR)
+    log(f"codex(local): {result['events']} token events across {result['files']} session files")
+    return result["days"]
 
 
-def collect_codex() -> dict:
-    """Return {day: {model: {input, output, cache_read}}} from all Codex sessions.
+def collect_codex_remote(host: str) -> dict | None:
+    """Stream the scanner over ssh and return its per-day dict, or None on failure.
 
-    Scans both ~/.codex/sessions and ~/.codex/archived_sessions (archived
-    threads hold the majority of tokens). Per-day attribution sums
-    last_token_usage deltas; afterwards each session is reconciled against its
-    final total_token_usage (authoritative — matches the Codex threads DB) and
-    any unaccounted remainder is attributed to the session's last active day.
+    Nothing is installed on the remote host; only compact JSON comes back.
     """
-    days = {}
-    files = []
-    for d in CODEX_SESSIONS_DIRS:
-        if d.is_dir():
-            files.extend(d.rglob("*.jsonl"))
-    if not files:
-        log("codex: no session files found, skipped")
-        return days
-    model = codex_model_name()
-    n_events = 0
-
-    def bucket(day):
-        return days.setdefault(day, {}).setdefault(
-            model, {"input": 0, "output": 0, "cache_read": 0}
+    try:
+        proc = subprocess.run(
+            [
+                "ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=10",
+                host, "python3", "-",
+            ],
+            input=SCANNER_FILE.read_text(encoding="utf-8"),
+            capture_output=True,
+            text=True,
+            timeout=900,
         )
-
-    for path in sorted(files):
-        inc = {"input": 0, "output": 0, "cache_read": 0}
-        last_total = None
-        last_day = None
-        try:
-            with open(path, "r", encoding="utf-8", errors="replace") as fh:
-                for line in fh:
-                    if '"token_count"' not in line:
-                        continue
-                    try:
-                        d = json.loads(line)
-                        payload = d.get("payload") or {}
-                        if payload.get("type") != "token_count":
-                            continue
-                        info = payload.get("info") or {}
-                        usage = info.get("last_token_usage") or {}
-                    except (ValueError, AttributeError):
-                        continue
-                    day = local_day_from_iso(d["timestamp"])
-                    last_day = day
-                    # OpenAI semantics: input_tokens INCLUDES cached_input_tokens
-                    cached = usage.get("cached_input_tokens", 0)
-                    fresh = max(0, usage.get("input_tokens", 0) - cached)
-                    out = usage.get("output_tokens", 0)
-                    inc["input"] += fresh
-                    inc["output"] += out
-                    inc["cache_read"] += cached
-                    b = bucket(day)
-                    b["input"] += fresh
-                    b["output"] += out
-                    b["cache_read"] += cached
-                    if info.get("total_token_usage"):
-                        last_total = info["total_token_usage"]
-                    n_events += 1
-        except OSError as e:
-            vlog(f"codex: cannot read {path}: {e}")
-            continue
-        # reconcile against the session's authoritative final totals
-        if last_total and last_day:
-            tot_cached = last_total.get("cached_input_tokens", 0)
-            tot_fresh = max(0, last_total.get("input_tokens", 0) - tot_cached)
-            diff = {
-                "input": tot_fresh - inc["input"],
-                "output": last_total.get("output_tokens", 0) - inc["output"],
-                "cache_read": tot_cached - inc["cache_read"],
-            }
-            if any(v > 0 for v in diff.values()):
-                b = bucket(last_day)
-                for k, v in diff.items():
-                    if v > 0:
-                        b[k] += v
-    log(f"codex: {n_events} token events across {len(files)} session files")
-    return days
+        if proc.returncode != 0:
+            log(f"codex({host}): ssh scan failed: {proc.stderr.strip()[:200]}")
+            return None
+        result = json.loads(proc.stdout)
+        log(
+            f"codex({host}): {result['events']} token events "
+            f"across {result['files']} session files"
+        )
+        return result["days"]
+    except (subprocess.TimeoutExpired, ValueError, OSError) as e:
+        log(f"codex({host}): scan error ({e}), keeping previous data")
+        return None
 
 
 # ---------------------------------------------------------------- Cursor
@@ -315,9 +264,16 @@ def main():
     days = data.setdefault("days", {})
     state = data.setdefault("state", {})
 
-    # Codex: full re-scan is authoritative, overwrite all codex entries.
-    for day, models in collect_codex().items():
-        days.setdefault(day, {})["codex"] = {"models": models}
+    # Codex: full re-scans are authoritative; overwrite each source's entries.
+    # On remote failure the previous entries for that source are preserved.
+    codex_sources = {"codex": collect_codex_local()}
+    for host in CODEX_REMOTE_HOSTS:
+        remote = collect_codex_remote(host)
+        if remote is not None:
+            codex_sources[f"codex-{host}"] = remote
+    for source, source_days in codex_sources.items():
+        for day, models in source_days.items():
+            days.setdefault(day, {})[source] = {"models": models}
 
     # Cursor: overwrite only days inside the API window; older days persist.
     for day, models in collect_cursor().items():
