@@ -1392,9 +1392,9 @@
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 298573,
-      "output": 65265,
-      "cache_read": 5401088
+      "input": 623717,
+      "output": 87208,
+      "cache_read": 14734464
      },
      "grok-4.7-high": {
       "input": 0,
@@ -1411,9 +1411,61 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 3743986,
-      "output": 525390,
-      "cache_read": 72286592
+      "input": 6856569,
+      "output": 832703,
+      "cache_read": 164108032
+     }
+    }
+   },
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1306746,
+      "output": 125044,
+      "cache_read": 30547200
+     }
+    }
+   }
+  },
+  "2026-10-03": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 267225,
+      "output": 79266,
+      "cache_read": 8587008
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 7463250,
+      "output": 780245,
+      "cache_read": 201997824
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 424847,
+      "output": 182369,
+      "cache_read": 48501632
+     },
+     "grok-4.7-high-fast": {
+      "input": 5356,
+      "output": 799,
+      "cache_read": 6400
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 26922,
+      "output": 5441,
+      "cache_read": 1889081
      }
     }
    }
@@ -1472,9 +1524,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 484262,
-    "output": 85869,
-    "cache_read": 8830343
+    "input": 511184,
+    "output": 91310,
+    "cache_read": 10719424
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -1488,5 +1540,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T21:32:30+08:00"
+ "updated_at": "2026-10-03T03:33:07+08:00"
 }
