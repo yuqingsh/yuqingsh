@@ -315,7 +315,7 @@ def main():
         return 0
     subprocess.run(["git", "add", "data/usage.json"], cwd=REPO_ROOT, check=True)
     subprocess.run(
-        ["git", "commit", "-m", "chore: update token usage data [skip ci]"],
+        ["git", "commit", "-m", "chore: update token usage data"],
         cwd=REPO_ROOT,
         check=True,
     )
