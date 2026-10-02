@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Install (run once):
+    cp tools/com.github.yuqingsh.tokenusage.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
+
+  Uninstall:
+    launchctl unload ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
+    rm ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
+
+  Runs tools/collect_usage.py every 6 hours (StartInterval seconds),
+  plus once at login (RunAtLoad). Logs go to tools/collect.log.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.github.yuqingsh.tokenusage</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env</string>
+        <string>python3</string>
+        <string>tools/collect_usage.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/kane/Documents/DeepSeek/yuqingsh</string>
+    <key>StartInterval</key>
+    <integer>21600</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/kane/Documents/DeepSeek/yuqingsh/tools/collect.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kane/Documents/DeepSeek/yuqingsh/tools/collect.log</string>
+</dict>
+</plist>
