@@ -173,7 +173,7 @@ def render(data: dict) -> str:
         legend.append(
             f'<rect x="{PAD + 170}" y="{ly - 9}" width="10" height="10" rx="2" fill="{color}"/>'
             f'<text x="{PAD + 186}" y="{ly}" class="text small">{escape(label)}'
-            f' · {pct}</text>'
+            f' · {escape(pct)}</text>'
         )
         ly += 18
     donut.append(
@@ -239,7 +239,12 @@ def render(data: dict) -> str:
 def main():
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUT_FILE.write_text(render(data), encoding="utf-8")
+    svg = render(data)
+    # fail loudly rather than publishing a broken image
+    import xml.etree.ElementTree as ET
+
+    ET.fromstring(svg)
+    OUT_FILE.write_text(svg, encoding="utf-8")
     print(f"[render] wrote {OUT_FILE.relative_to(REPO_ROOT)}")
 
 
