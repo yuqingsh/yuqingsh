@@ -1383,18 +1383,18 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 479998,
-      "output": 83065,
-      "cache_read": 8185816
+      "input": 484262,
+      "output": 85869,
+      "cache_read": 8830343
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 288009,
-      "output": 64106,
-      "cache_read": 4915456
+      "input": 298573,
+      "output": 65265,
+      "cache_read": 5401088
      },
      "grok-4.7-high": {
       "input": 0,
@@ -1411,9 +1411,9 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 3741055,
-      "output": 523662,
-      "cache_read": 71903488
+      "input": 3743986,
+      "output": 525390,
+      "cache_read": 72286592
      }
     }
    }
@@ -1472,9 +1472,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 479998,
-    "output": 83065,
-    "cache_read": 8185816
+    "input": 484262,
+    "output": 85869,
+    "cache_read": 8830343
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -1488,5 +1488,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T21:29:12+08:00"
+ "updated_at": "2026-10-02T21:32:30+08:00"
 }
