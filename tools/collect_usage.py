@@ -110,9 +110,11 @@ def collect_codex() -> dict:
                     b = days.setdefault(day, {}).setdefault(
                         model, {"input": 0, "output": 0, "cache_read": 0}
                     )
-                    b["input"] += usage.get("input_tokens", 0)
+                    # OpenAI semantics: input_tokens INCLUDES cached_input_tokens
+                    cached = usage.get("cached_input_tokens", 0)
+                    b["input"] += max(0, usage.get("input_tokens", 0) - cached)
                     b["output"] += usage.get("output_tokens", 0)
-                    b["cache_read"] += usage.get("cached_input_tokens", 0)
+                    b["cache_read"] += cached
                     n_events += 1
         except OSError as e:
             vlog(f"codex: cannot read {path}: {e}")
