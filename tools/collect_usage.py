@@ -263,6 +263,10 @@ def load_data() -> dict:
 
 
 def main():
+    if "--no-git" not in sys.argv:
+        # keep the (shadow) clone in sync with bot-rendered commits
+        subprocess.run(["git", "pull", "--rebase"], cwd=REPO_ROOT, check=True)
+
     data = load_data()
     days = data.setdefault("days", {})
     state = data.setdefault("state", {})
