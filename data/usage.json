@@ -438,9 +438,18 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 93549,
-      "output": 45198,
-      "cache_read": 2749023
+      "input": 166805,
+      "output": 48365,
+      "cache_read": 3497823
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 922258,
+      "output": 48347,
+      "cache_read": 3833856
      }
     }
    }
@@ -494,9 +503,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 93549,
-    "output": 45198,
-    "cache_read": 2749023
+    "input": 166805,
+    "output": 48365,
+    "cache_read": 3497823
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -510,5 +519,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T10:14:37+08:00"
+ "updated_at": "2026-10-02T16:14:49+08:00"
 }
