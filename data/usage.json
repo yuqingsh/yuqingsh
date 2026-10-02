@@ -438,9 +438,9 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 70098,
-      "output": 30962,
-      "cache_read": 1081856
+      "input": 91316,
+      "output": 44206,
+      "cache_read": 2489183
      }
     }
    }
@@ -494,9 +494,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 70098,
-    "output": 30962,
-    "cache_read": 1081856
+    "input": 91316,
+    "output": 44206,
+    "cache_read": 2489183
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -510,5 +510,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T09:57:32+08:00"
+ "updated_at": "2026-10-02T10:12:52+08:00"
 }
