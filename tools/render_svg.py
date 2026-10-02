@@ -64,24 +64,19 @@ def day_totals(days: dict) -> dict:
 
 
 def model_totals(days: dict, since: date) -> tuple:
-    """({label: processed tokens}, cache_read) for days >= since."""
+    """({model: processed tokens}, cache_read) for days >= since.
+
+    Grouped by model name only — the same model used via different
+    clients/hosts merges into one slice.
+    """
     totals, cache_read = {}, 0
     for day, sources in days.items():
         if date.fromisoformat(day) < since:
             continue
-        for src_name, src in sources.items():
-            if src_name == "codex":
-                label_src = "Codex"
-            elif src_name.startswith("codex-"):
-                label_src = f"Codex · {src_name[len('codex-'):]}"
-            else:
-                label_src = {"cursor": "Cursor", "dsh-kimi": "DSH · Kimi"}.get(
-                    src_name, src_name
-                )
+        for src in sources.values():
             for model, u in (src.get("models") or {}).items():
-                label = f"{label_src} · {model}"
-                totals[label] = (
-                    totals.get(label, 0)
+                totals[model] = (
+                    totals.get(model, 0)
                     + u.get("input", 0)
                     + u.get("output", 0)
                     + u.get("cache_read", 0)
@@ -90,11 +85,31 @@ def model_totals(days: dict, since: date) -> tuple:
     return totals, cache_read
 
 
-def level(t: int, max_t: int) -> int:
-    if t <= 0 or max_t <= 0:
+def level_thresholds(totals: dict) -> list:
+    """Quartile cut points over non-zero daily totals (GitHub-style).
+
+    Returns [q1, q2, q3, q4]; level(t) = number of cut points <= t.
+    """
+    vals = sorted(t for t, _ in totals.values() if t > 0)
+    if not vals:
+        return [1, 2, 3, 4]
+    n = len(vals)
+
+    def q(frac):
+        return vals[min(n - 1, int(frac * n))]
+
+    cuts = [q(0.25), q(0.5), q(0.75), vals[-1]]
+    # ensure strictly non-decreasing distinct-ish cuts
+    for i in range(1, 4):
+        if cuts[i] < cuts[i - 1]:
+            cuts[i] = cuts[i - 1]
+    return cuts
+
+
+def level(t: int, cuts: list) -> int:
+    if t <= 0:
         return 0
-    ratio = math.log10(t + 1) / math.log10(max_t + 1)
-    return 1 + min(3, int(ratio * 4))
+    return 1 + sum(1 for c in cuts if t > c)
 
 
 def render(data: dict) -> str:
@@ -105,7 +120,7 @@ def render(data: dict) -> str:
     start = today - timedelta(days=(WEEKS * 7 - 1))
     start -= timedelta(days=(start.weekday() + 1) % 7)  # back to Sunday
 
-    max_t = max((t for t, _ in totals.values()), default=0)
+    cuts = level_thresholds(totals)
 
     cells, month_labels = [], []
     prev_month = None
@@ -123,7 +138,7 @@ def render(data: dict) -> str:
                 continue
             key = day.isoformat()
             t, fresh = totals.get(key, (0, 0))
-            lv = level(t, max_t)
+            lv = level(t, cuts)
             y = PAD + 40 + d * STEP
             if t:
                 tip = f"{key}: {fmt(t)} tokens processed (fresh in+out {fmt(fresh)})"
