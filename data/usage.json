@@ -4,9 +4,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 35741,
-      "output": 878,
-      "cache_read": 148992
+      "input": 430307,
+      "output": 64974,
+      "cache_read": 6200960
      }
     }
    }
@@ -15,9 +15,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 977230,
-      "output": 6820,
-      "cache_read": 3447808
+      "input": 4795296,
+      "output": 259795,
+      "cache_read": 41230848
      }
     }
    }
@@ -26,9 +26,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 310143,
-      "output": 3763,
-      "cache_read": 695552
+      "input": 2037465,
+      "output": 145271,
+      "cache_read": 19631616
      }
     }
    }
@@ -37,9 +37,20 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 593352,
-      "output": 6752,
-      "cache_read": 5118464
+      "input": 3421774,
+      "output": 256220,
+      "cache_read": 56626432
+     }
+    }
+   }
+  },
+  "2026-07-12": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 34381,
+      "output": 1401,
+      "cache_read": 63616
      }
     }
    }
@@ -48,9 +59,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 37662,
-      "output": 610,
-      "cache_read": 56832
+      "input": 230002,
+      "output": 18920,
+      "cache_read": 2339840
      }
     }
    }
@@ -59,9 +70,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 17901,
-      "output": 230,
-      "cache_read": 20992
+      "input": 453926,
+      "output": 156505,
+      "cache_read": 18854912
      }
     }
    }
@@ -70,9 +81,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 78534,
-      "output": 1773,
-      "cache_read": 435712
+      "input": 1093660,
+      "output": 128173,
+      "cache_read": 12180224
      }
     }
    }
@@ -81,9 +92,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 422520,
-      "output": 10527,
-      "cache_read": 7013120
+      "input": 4391112,
+      "output": 253619,
+      "cache_read": 51050240
      }
     }
    }
@@ -92,9 +103,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 308974,
-      "output": 5143,
-      "cache_read": 1664000
+      "input": 7687865,
+      "output": 511628,
+      "cache_read": 78953216
      }
     }
    }
@@ -103,9 +114,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 44558,
-      "output": 739,
-      "cache_read": 76288
+      "input": 2418552,
+      "output": 187549,
+      "cache_read": 25089664
      }
     }
    }
@@ -114,9 +125,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1616191,
-      "output": 8031,
-      "cache_read": 9480704
+      "input": 16563937,
+      "output": 677137,
+      "cache_read": 231626368
      }
     }
    }
@@ -125,9 +136,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1239660,
-      "output": 10015,
-      "cache_read": 12664832
+      "input": 5024049,
+      "output": 210506,
+      "cache_read": 83388928
      }
     }
    }
@@ -136,9 +147,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 66498,
-      "output": 1954,
-      "cache_read": 361472
+      "input": 199965,
+      "output": 47970,
+      "cache_read": 3045120
      }
     }
    }
@@ -147,9 +158,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 56705,
-      "output": 1037,
-      "cache_read": 178176
+      "input": 520335,
+      "output": 47362,
+      "cache_read": 4945152
      }
     }
    }
@@ -158,9 +169,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 568684,
-      "output": 3397,
-      "cache_read": 1752832
+      "input": 1737743,
+      "output": 141250,
+      "cache_read": 32160000
      }
     }
    }
@@ -211,9 +222,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 673032,
-      "output": 1780,
-      "cache_read": 247808
+      "input": 2180787,
+      "output": 170548,
+      "cache_read": 34688384
      }
     }
    },
@@ -237,13 +248,46 @@
     }
    }
   },
+  "2026-08-25": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 158863,
+      "output": 6413,
+      "cache_read": 1070080
+     }
+    }
+   }
+  },
   "2026-08-28": {
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 95688,
-      "output": 2153,
-      "cache_read": 321024
+      "input": 810799,
+      "output": 114169,
+      "cache_read": 11742848
+     }
+    }
+   }
+  },
+  "2026-08-30": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 96967,
+      "output": 3286,
+      "cache_read": 311808
+     }
+    }
+   }
+  },
+  "2026-09-01": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 27412,
+      "output": 8,
+      "cache_read": 0
      }
     }
    }
@@ -252,9 +296,20 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 53018,
-      "output": 1636,
-      "cache_read": 277248
+      "input": 292178,
+      "output": 13816,
+      "cache_read": 3001728
+     }
+    }
+   }
+  },
+  "2026-09-09": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 220561,
+      "output": 37218,
+      "cache_read": 12505600
      }
     }
    }
@@ -438,14 +493,24 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 241807,
-      "output": 56454,
-      "cache_read": 4342931
+      "input": 350784,
+      "output": 68821,
+      "cache_read": 6572504
      }
     }
    },
    "cursor": {
     "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 126739,
+      "output": 55990,
+      "cache_read": 3921408
+     },
+     "grok-4.7-high": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     },
      "grok-4.7-xhigh": {
       "input": 922258,
       "output": 48347,
@@ -503,9 +568,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 241807,
-    "output": 56454,
-    "cache_read": 4342931
+    "input": 350784,
+    "output": 68821,
+    "cache_read": 6572504
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -519,5 +584,5 @@
    }
   }
  },
- "updated_at": "2026-10-02T18:54:25+08:00"
+ "updated_at": "2026-10-02T20:27:38+08:00"
 }

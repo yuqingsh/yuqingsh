@@ -27,7 +27,10 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = REPO_ROOT / "data" / "usage.json"
 
-CODEX_SESSIONS_DIR = Path.home() / ".codex" / "sessions"
+CODEX_SESSIONS_DIRS = [
+    Path.home() / ".codex" / "sessions",
+    Path.home() / ".codex" / "archived_sessions",
+]
 CODEX_CONFIG = Path.home() / ".codex" / "config.toml"
 DSH_SESSIONS_DIR = Path.home() / ".dsh" / "storages" / "session_projcache" / "sessions"
 CURSOR_DB = (
@@ -82,15 +85,34 @@ def codex_model_name() -> str:
 
 
 def collect_codex() -> dict:
-    """Return {day: {model: {input, output, cache_read}}} from all Codex sessions."""
+    """Return {day: {model: {input, output, cache_read}}} from all Codex sessions.
+
+    Scans both ~/.codex/sessions and ~/.codex/archived_sessions (archived
+    threads hold the majority of tokens). Per-day attribution sums
+    last_token_usage deltas; afterwards each session is reconciled against its
+    final total_token_usage (authoritative — matches the Codex threads DB) and
+    any unaccounted remainder is attributed to the session's last active day.
+    """
     days = {}
-    if not CODEX_SESSIONS_DIR.is_dir():
-        log("codex: sessions dir not found, skipped")
+    files = []
+    for d in CODEX_SESSIONS_DIRS:
+        if d.is_dir():
+            files.extend(d.rglob("*.jsonl"))
+    if not files:
+        log("codex: no session files found, skipped")
         return days
     model = codex_model_name()
-    files = sorted(CODEX_SESSIONS_DIR.rglob("*.jsonl"))
     n_events = 0
-    for path in files:
+
+    def bucket(day):
+        return days.setdefault(day, {}).setdefault(
+            model, {"input": 0, "output": 0, "cache_read": 0}
+        )
+
+    for path in sorted(files):
+        inc = {"input": 0, "output": 0, "cache_read": 0}
+        last_total = None
+        last_day = None
         try:
             with open(path, "r", encoding="utf-8", errors="replace") as fh:
                 for line in fh:
@@ -101,23 +123,43 @@ def collect_codex() -> dict:
                         payload = d.get("payload") or {}
                         if payload.get("type") != "token_count":
                             continue
-                        usage = (payload.get("info") or {}).get("last_token_usage") or {}
+                        info = payload.get("info") or {}
+                        usage = info.get("last_token_usage") or {}
                     except (ValueError, AttributeError):
                         continue
-                    if not usage:
-                        continue
                     day = local_day_from_iso(d["timestamp"])
-                    b = days.setdefault(day, {}).setdefault(
-                        model, {"input": 0, "output": 0, "cache_read": 0}
-                    )
+                    last_day = day
                     # OpenAI semantics: input_tokens INCLUDES cached_input_tokens
                     cached = usage.get("cached_input_tokens", 0)
-                    b["input"] += max(0, usage.get("input_tokens", 0) - cached)
-                    b["output"] += usage.get("output_tokens", 0)
+                    fresh = max(0, usage.get("input_tokens", 0) - cached)
+                    out = usage.get("output_tokens", 0)
+                    inc["input"] += fresh
+                    inc["output"] += out
+                    inc["cache_read"] += cached
+                    b = bucket(day)
+                    b["input"] += fresh
+                    b["output"] += out
                     b["cache_read"] += cached
+                    if info.get("total_token_usage"):
+                        last_total = info["total_token_usage"]
                     n_events += 1
         except OSError as e:
             vlog(f"codex: cannot read {path}: {e}")
+            continue
+        # reconcile against the session's authoritative final totals
+        if last_total and last_day:
+            tot_cached = last_total.get("cached_input_tokens", 0)
+            tot_fresh = max(0, last_total.get("input_tokens", 0) - tot_cached)
+            diff = {
+                "input": tot_fresh - inc["input"],
+                "output": last_total.get("output_tokens", 0) - inc["output"],
+                "cache_read": tot_cached - inc["cache_read"],
+            }
+            if any(v > 0 for v in diff.values()):
+                b = bucket(last_day)
+                for k, v in diff.items():
+                    if v > 0:
+                        b[k] += v
     log(f"codex: {n_events} token events across {len(files)} session files")
     return days
 
