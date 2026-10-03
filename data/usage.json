@@ -1440,18 +1440,18 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 7463250,
-      "output": 780245,
-      "cache_read": 201997824
+      "input": 7635508,
+      "output": 789570,
+      "cache_read": 203188224
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 478745,
-      "output": 222652,
-      "cache_read": 64406784
+      "input": 1773797,
+      "output": 551900,
+      "cache_read": 128888704
      },
      "grok-4.7-high-fast": {
       "input": 5356,
@@ -1540,5 +1540,5 @@
    }
   }
  },
- "updated_at": "2026-10-03T09:33:29+08:00"
+ "updated_at": "2026-10-03T15:34:11+08:00"
 }
