@@ -1502,6 +1502,26 @@
       "cache_read": 161536
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2147437,
+      "output": 188326,
+      "cache_read": 31544576
+     }
+    }
+   }
+  },
+  "2026-10-05": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 158926,
+      "output": 22951,
+      "cache_read": 1697024
+     }
+    }
    }
   }
  },
@@ -1574,5 +1594,5 @@
    }
   }
  },
- "updated_at": "2026-10-04T21:09:39+08:00"
+ "updated_at": "2026-10-05T03:10:21+08:00"
 }
