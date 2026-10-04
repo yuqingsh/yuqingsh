@@ -1473,10 +1473,33 @@
   "2026-10-04": {
    "cursor": {
     "models": {
+     "grok-4.7-xhigh": {
+      "input": 2167297,
+      "output": 203179,
+      "cache_read": 31064960
+     },
      "grok-4.7-xhigh-fast": {
       "input": 353409,
       "output": 44773,
       "cache_read": 18408960
+     }
+    }
+   },
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 55285,
+      "output": 2189,
+      "cache_read": 407936
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 151152,
+      "output": 243,
+      "cache_read": 161536
      }
     }
    }
@@ -1535,9 +1558,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 511184,
-    "output": 91310,
-    "cache_read": 10719424
+    "input": 662336,
+    "output": 91553,
+    "cache_read": 10880960
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -1551,5 +1574,5 @@
    }
   }
  },
- "updated_at": "2026-10-04T03:35:34+08:00"
+ "updated_at": "2026-10-04T21:09:39+08:00"
 }
