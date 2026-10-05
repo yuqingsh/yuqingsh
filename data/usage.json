@@ -1522,6 +1522,15 @@
       "cache_read": 1697024
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 23569,
+      "output": 4892,
+      "cache_read": 37120
+     }
+    }
    }
   }
  },
@@ -1567,6 +1576,11 @@
     "output": 3670,
     "cache_read": 43520
    },
+   "session-7d2517dd-2f24-4db6-a894-15d8cfe85d93": {
+    "input": 23569,
+    "output": 4892,
+    "cache_read": 37120
+   },
    "session-7e26446e-cdd8-4e61-86f0-2477b385ff80": {
     "input": 42020,
     "output": 4350,
@@ -1594,5 +1608,5 @@
    }
   }
  },
- "updated_at": "2026-10-05T03:10:21+08:00"
+ "updated_at": "2026-10-05T15:11:19+08:00"
 }
