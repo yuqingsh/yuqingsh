@@ -1550,15 +1550,15 @@
   "2026-10-06": {
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 491943,
-      "output": 174319,
-      "cache_read": 28263808
-     },
      "grok-4.7-xhigh": {
-      "input": 147120,
-      "output": 3616,
-      "cache_read": 1492224
+      "input": 422536,
+      "output": 53903,
+      "cache_read": 5844992
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 515969,
+      "output": 178318,
+      "cache_read": 28370432
      }
     }
    },
@@ -1568,6 +1568,15 @@
       "input": 223136,
       "output": 25681,
       "cache_read": 3135686
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 227822,
+      "output": 34220,
+      "cache_read": 2121856
      }
     }
    }
@@ -1647,5 +1656,5 @@
    }
   }
  },
- "updated_at": "2026-10-06T10:43:27+08:00"
+ "updated_at": "2026-10-06T16:44:03+08:00"
 }
