@@ -3,7 +3,7 @@
 
 Pure stdlib. Card contents:
   - GitHub-contributions-style heatmap of the last ~52 weeks (input+output/day)
-  - Donut of model share over the last 30 days (input+output)
+  - Donut of all-time model share (total tokens processed)
   - Today / yesterday / 7d / 30d totals, cache-read shown separately
 """
 
@@ -162,8 +162,7 @@ def render(data: dict) -> str:
     t7 = sum(get(today - timedelta(days=i)) for i in range(7))
     t30 = sum(get(today - timedelta(days=i)) for i in range(30))
 
-    since30 = today - timedelta(days=29)
-    mt, cache30 = model_totals(days, since30)
+    mt, cache_all = model_totals(days, date.min)  # all-time cumulative
     mt = dict(sorted(mt.items(), key=lambda kv: -kv[1]))
     mt_total = sum(mt.values())
     # fold tiny slices (<1%) into "Other" to keep the legend readable
@@ -199,7 +198,7 @@ def render(data: dict) -> str:
         ly += 18
     donut.append(
         f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" class="strong mid">{fmt(mt_total)}</text>'
-        f'<text x="{cx}" y="{cy + 14}" text-anchor="middle" class="muted small">30 days</text>'
+        f'<text x="{cx}" y="{cy + 14}" text-anchor="middle" class="muted small">all time</text>'
     )
 
     # ---- right-hand stats block
@@ -213,13 +212,14 @@ def render(data: dict) -> str:
                 ("Today", f"{fmt(today_t)} tokens"),
                 ("Yesterday", f"{fmt(yday_t)} tokens"),
                 ("Last 7 days", f"{fmt(t7)} tokens"),
-                ("Last 30 days", f"{fmt(mt_total)} tokens"),
-                ("Cache read (30d)", f"{fmt(cache30)} tokens"),
+                ("Last 30 days", f"{fmt(t30)} tokens"),
+                ("All time", f"{fmt(mt_total)} tokens"),
+                ("Cache read (all)", f"{fmt(cache_all)} tokens"),
             ],
         )
     )
     stats += (
-        f'<text x="{sx}" y="{heat_bottom + 30 + 5 * 22}" class="muted small">'
+        f'<text x="{sx}" y="{heat_bottom + 30 + 6 * 22}" class="muted small">'
         f"total tokens processed · cache reads included</text>"
     )
 
