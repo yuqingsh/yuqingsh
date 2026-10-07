@@ -1594,9 +1594,18 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 88430,
-      "output": 9732,
-      "cache_read": 400640
+      "input": 248174,
+      "output": 13492,
+      "cache_read": 2669603
+     }
+    }
+   },
+   "codex": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 518461,
+      "output": 88653,
+      "cache_read": 17107072
      }
     }
    }
@@ -1660,9 +1669,9 @@
     "cache_read": 0
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 813609,
-    "output": 92282,
-    "cache_read": 11201216
+    "input": 973353,
+    "output": 96042,
+    "cache_read": 13470179
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -1681,5 +1690,5 @@
    }
   }
  },
- "updated_at": "2026-10-07T10:25:40+08:00"
+ "updated_at": "2026-10-07T16:26:22+08:00"
 }
