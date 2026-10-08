@@ -1614,9 +1614,9 @@
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 455042,
-      "output": 57098,
-      "cache_read": 5465856
+      "input": 2252525,
+      "output": 242595,
+      "cache_read": 40550656
      }
     }
    },
@@ -1626,6 +1626,15 @@
       "input": 960567,
       "output": 84399,
       "cache_read": 11389568
+     }
+    }
+   },
+   "codex": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 1798831,
+      "output": 180035,
+      "cache_read": 54660608
      }
     }
    }
@@ -1710,5 +1719,5 @@
    }
   }
  },
- "updated_at": "2026-10-08T17:00:13+08:00"
+ "updated_at": "2026-10-08T23:58:04+08:00"
 }
