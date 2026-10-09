@@ -1652,9 +1652,9 @@
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
-      "input": 69443,
-      "output": 22507,
-      "cache_read": 3820800
+      "input": 755092,
+      "output": 94884,
+      "cache_read": 37876736
      }
     }
    },
@@ -1748,5 +1748,5 @@
    }
   }
  },
- "updated_at": "2026-10-09T13:40:18+08:00"
+ "updated_at": "2026-10-09T19:40:51+08:00"
 }
