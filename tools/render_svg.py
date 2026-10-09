@@ -116,9 +116,11 @@ def render(data: dict) -> str:
     days = data.get("days") or {}
     totals = day_totals(days)
     today = date.today()
-    # grid: last WEEKS columns, weeks start on Sunday, rightmost col = current week
-    start = today - timedelta(days=(WEEKS * 7 - 1))
-    start -= timedelta(days=(start.weekday() + 1) % 7)  # back to Sunday
+    # grid: rightmost column = the current week (weeks start on Sunday);
+    # anchor on the END, otherwise Sunday-alignment drifts the right edge
+    # up to 6 days short of today.
+    end_sunday = today - timedelta(days=(today.weekday() + 1) % 7)
+    start = end_sunday - timedelta(days=(WEEKS - 1) * 7)
 
     cuts = level_thresholds(totals)
 
