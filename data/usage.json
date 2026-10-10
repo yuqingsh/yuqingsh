@@ -146,7 +146,7 @@
   "2026-07-07": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 430307,
       "output": 64974,
       "cache_read": 6200960
@@ -157,7 +157,7 @@
   "2026-07-08": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 4795296,
       "output": 259795,
       "cache_read": 41230848
@@ -168,7 +168,7 @@
   "2026-07-09": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 2037465,
       "output": 145271,
       "cache_read": 19631616
@@ -179,7 +179,7 @@
   "2026-07-10": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 3421774,
       "output": 256220,
       "cache_read": 56626432
@@ -190,7 +190,7 @@
   "2026-07-12": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 34381,
       "output": 1401,
       "cache_read": 63616
@@ -223,7 +223,7 @@
   "2026-07-15": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 230002,
       "output": 18920,
       "cache_read": 2339840
@@ -386,7 +386,7 @@
   "2026-08-02": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 453926,
       "output": 156505,
       "cache_read": 18854912
@@ -397,7 +397,7 @@
   "2026-08-03": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 1093660,
       "output": 128173,
       "cache_read": 12180224
@@ -417,7 +417,7 @@
   "2026-08-04": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 4391112,
       "output": 253619,
       "cache_read": 51050240
@@ -437,7 +437,7 @@
   "2026-08-05": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 7503924,
       "output": 510216,
       "cache_read": 78953216
@@ -457,7 +457,7 @@
   "2026-08-06": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 2418552,
       "output": 187549,
       "cache_read": 25089664
@@ -477,7 +477,7 @@
   "2026-08-07": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 12574389,
       "output": 662619,
       "cache_read": 205438080
@@ -497,7 +497,7 @@
   "2026-08-08": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 5024049,
       "output": 210506,
       "cache_read": 83388928
@@ -528,7 +528,7 @@
   "2026-08-10": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 199965,
       "output": 47970,
       "cache_read": 3045120
@@ -548,7 +548,7 @@
   "2026-08-11": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 520335,
       "output": 47362,
       "cache_read": 4945152
@@ -590,7 +590,7 @@
   "2026-08-14": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 1737743,
       "output": 141250,
       "cache_read": 32160000
@@ -738,7 +738,7 @@
   "2026-08-24": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 2180787,
       "output": 170548,
       "cache_read": 34688384
@@ -777,7 +777,7 @@
   "2026-08-25": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 158863,
       "output": 6413,
       "cache_read": 1070080
@@ -819,7 +819,7 @@
   "2026-08-28": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 810799,
       "output": 114169,
       "cache_read": 11742848
@@ -850,7 +850,7 @@
   "2026-08-30": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 96967,
       "output": 3286,
       "cache_read": 311808
@@ -881,7 +881,7 @@
   "2026-09-01": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 27412,
       "output": 8,
       "cache_read": 0
@@ -956,7 +956,7 @@
   "2026-09-08": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 292178,
       "output": 13816,
       "cache_read": 3001728
@@ -976,7 +976,7 @@
   "2026-09-09": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 220561,
       "output": 37218,
       "cache_read": 12505600
@@ -1117,7 +1117,7 @@
   "2026-09-22": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 2648714,
       "output": 287287,
       "cache_read": 54824320
@@ -1151,7 +1151,7 @@
   "2026-09-23": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 439535,
       "output": 31999,
       "cache_read": 3849088
@@ -1180,7 +1180,7 @@
   "2026-09-24": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 238181,
       "output": 13141,
       "cache_read": 5691008
@@ -1334,7 +1334,7 @@
   "2026-10-01": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 230952,
       "output": 37334,
       "cache_read": 4843008
@@ -1419,7 +1419,7 @@
    },
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 1306746,
       "output": 125044,
       "cache_read": 30547200
@@ -1430,7 +1430,7 @@
   "2026-10-03": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 267225,
       "output": 79266,
       "cache_read": 8587008
@@ -1487,7 +1487,7 @@
    },
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 55285,
       "output": 2189,
       "cache_read": 407936
@@ -1602,7 +1602,7 @@
    },
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 886620,
       "output": 108621,
       "cache_read": 20531456
@@ -1631,7 +1631,7 @@
    },
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 1798831,
       "output": 180035,
       "cache_read": 54660608
@@ -1642,7 +1642,7 @@
   "2026-10-09": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
+     "gpt-6.1-sol": {
       "input": 730565,
       "output": 7829,
       "cache_read": 1073664
@@ -1671,38 +1671,47 @@
   "2026-10-10": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
-      "input": 30469,
-      "output": 5,
-      "cache_read": 0
+     "gpt-6.1-sol": {
+      "input": 4265886,
+      "output": 303439,
+      "cache_read": 92005248
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 552996,
-      "output": 38979,
-      "cache_read": 9202176
+      "input": 1985693,
+      "output": 134186,
+      "cache_read": 42680832
      }
     }
    },
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 42625,
-      "output": 5742,
-      "cache_read": 161152
-     },
      "grok-4.7-xhigh": {
-      "input": 35630,
-      "output": 15738,
-      "cache_read": 144768
+      "input": 1237289,
+      "output": 237607,
+      "cache_read": 60389376
      },
      "grok-4.7-high-fast": {
-      "input": 216501,
-      "output": 3975,
-      "cache_read": 2193152
+      "input": 454499,
+      "output": 93929,
+      "cache_read": 17314432
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 401480,
+      "output": 6161,
+      "cache_read": 895360
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 259437,
+      "output": 94133,
+      "cache_read": 8472808
      }
     }
    }
@@ -1775,6 +1784,11 @@
     "output": 0,
     "cache_read": 0
    },
+   "session-cdd6bda7-abcb-4f22-892e-3af32f51c698": {
+    "input": 259437,
+    "output": 94133,
+    "cache_read": 8472808
+   },
    "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
     "input": 0,
     "output": 0,
@@ -1787,5 +1801,5 @@
    }
   }
  },
- "updated_at": "2026-10-10T17:16:00+08:00"
+ "updated_at": "2026-10-10T23:16:50+08:00"
 }
