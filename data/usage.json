@@ -1672,27 +1672,27 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4265886,
-      "output": 303439,
-      "cache_read": 92005248
+      "input": 4755883,
+      "output": 349037,
+      "cache_read": 114429184
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 1985693,
-      "output": 134186,
-      "cache_read": 42680832
+      "input": 2105965,
+      "output": 145302,
+      "cache_read": 46866816
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 1237289,
-      "output": 237607,
-      "cache_read": 60389376
+      "input": 2769835,
+      "output": 252509,
+      "cache_read": 64215424
      },
      "grok-4.7-high-fast": {
       "input": 454499,
@@ -1712,6 +1712,54 @@
       "input": 259437,
       "output": 94133,
       "cache_read": 8472808
+     }
+    }
+   }
+  },
+  "2026-10-11": {
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 2542340,
+      "output": 436376,
+      "cache_read": 86328448
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 124817,
+      "output": 9548,
+      "cache_read": 5963776
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh-fast": {
+      "input": 840208,
+      "output": 30862,
+      "cache_read": 21819776
+     },
+     "grok-4.7-xhigh": {
+      "input": 2722274,
+      "output": 295210,
+      "cache_read": 64762368
+     },
+     "grok-4.7-high-fast": {
+      "input": 608631,
+      "output": 127005,
+      "cache_read": 18619648
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 334672,
+      "output": 2705,
+      "cache_read": 501760
      }
     }
    }
@@ -1785,9 +1833,9 @@
     "cache_read": 0
    },
    "session-cdd6bda7-abcb-4f22-892e-3af32f51c698": {
-    "input": 259437,
-    "output": 94133,
-    "cache_read": 8472808
+    "input": 594109,
+    "output": 96838,
+    "cache_read": 8974568
    },
    "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
     "input": 0,
@@ -1801,5 +1849,5 @@
    }
   }
  },
- "updated_at": "2026-10-10T23:16:50+08:00"
+ "updated_at": "2026-10-11T05:38:40+08:00"
 }
