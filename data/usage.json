@@ -1643,9 +1643,9 @@
    "codex": {
     "models": {
      "gpt-6-astra": {
-      "input": 362093,
-      "output": 3035,
-      "cache_read": 709504
+      "input": 730565,
+      "output": 7829,
+      "cache_read": 1073664
      }
     }
    },
@@ -1664,6 +1664,35 @@
       "input": 172086,
       "output": 3659,
       "cache_read": 1515036
+     }
+    }
+   }
+  },
+  "2026-10-10": {
+   "codex": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 30469,
+      "output": 5,
+      "cache_read": 0
+     }
+    }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 552996,
+      "output": 38979,
+      "cache_read": 9202176
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-high-fast": {
+      "input": 216501,
+      "output": 3975,
+      "cache_read": 2193152
      }
     }
    }
@@ -1748,5 +1777,5 @@
    }
   }
  },
- "updated_at": "2026-10-09T19:40:51+08:00"
+ "updated_at": "2026-10-10T11:15:31+08:00"
 }
