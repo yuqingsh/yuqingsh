@@ -1720,32 +1720,32 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2542340,
-      "output": 436376,
-      "cache_read": 86328448
+      "input": 4846748,
+      "output": 734955,
+      "cache_read": 159125376
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 124817,
-      "output": 9548,
-      "cache_read": 5963776
+      "input": 1958742,
+      "output": 345328,
+      "cache_read": 87164160
      }
     }
    },
    "cursor": {
     "models": {
+     "grok-4.7-xhigh": {
+      "input": 3166001,
+      "output": 302434,
+      "cache_read": 73355648
+     },
      "grok-4.7-xhigh-fast": {
       "input": 840208,
       "output": 30862,
       "cache_read": 21819776
-     },
-     "grok-4.7-xhigh": {
-      "input": 2722274,
-      "output": 295210,
-      "cache_read": 64762368
      },
      "grok-4.7-high-fast": {
       "input": 608631,
@@ -1849,5 +1849,5 @@
    }
   }
  },
- "updated_at": "2026-10-11T05:38:40+08:00"
+ "updated_at": "2026-10-11T11:39:19+08:00"
 }
