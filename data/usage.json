@@ -1729,23 +1729,28 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 1958742,
-      "output": 345328,
-      "cache_read": 87164160
+      "input": 2660769,
+      "output": 386758,
+      "cache_read": 100182400
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 3166001,
-      "output": 302434,
-      "cache_read": 73355648
+      "input": 4157948,
+      "output": 336766,
+      "cache_read": 85854080
      },
      "grok-4.7-xhigh-fast": {
-      "input": 840208,
-      "output": 30862,
-      "cache_read": 21819776
+      "input": 1135945,
+      "output": 83757,
+      "cache_read": 33962880
+     },
+     "claude-opus-5-5-high": {
+      "input": 44,
+      "output": 10197,
+      "cache_read": 933074
      },
      "grok-4.7-high-fast": {
       "input": 608631,
@@ -1760,6 +1765,35 @@
       "input": 334672,
       "output": 2705,
       "cache_read": 501760
+     }
+    }
+   }
+  },
+  "2026-10-12": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 73456,
+      "output": 4118,
+      "cache_read": 2330496
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 180913,
+      "output": 19965,
+      "cache_read": 1951872
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 410391,
+      "output": 63921,
+      "cache_read": 14116134
      }
     }
    }
@@ -1832,10 +1866,15 @@
     "output": 0,
     "cache_read": 0
    },
+   "session-cac2f797-a3ce-4145-a905-7758b6e3d575": {
+    "input": 160330,
+    "output": 40493,
+    "cache_read": 6259436
+   },
    "session-cdd6bda7-abcb-4f22-892e-3af32f51c698": {
-    "input": 594109,
-    "output": 96838,
-    "cache_read": 8974568
+    "input": 844170,
+    "output": 120266,
+    "cache_read": 16831266
    },
    "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
     "input": 0,
@@ -1849,5 +1888,5 @@
    }
   }
  },
- "updated_at": "2026-10-11T11:39:19+08:00"
+ "updated_at": "2026-10-12T00:50:14+08:00"
 }
