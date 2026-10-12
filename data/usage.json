@@ -1773,27 +1773,27 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 73456,
-      "output": 4118,
-      "cache_read": 2330496
+      "input": 565079,
+      "output": 30691,
+      "cache_read": 9137920
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 180913,
-      "output": 19965,
-      "cache_read": 1951872
+      "input": 686680,
+      "output": 79653,
+      "cache_read": 10622976
      }
     }
    },
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 410391,
-      "output": 63921,
-      "cache_read": 14116134
+      "input": 2071329,
+      "output": 123854,
+      "cache_read": 35242935
      }
     }
    }
@@ -1801,6 +1801,16 @@
  },
  "state": {
   "dsh_sessions": {
+   "1ae4a4bd-6ba6-4e37-b2db-f6258772745e": {
+    "input": 217914,
+    "output": 23819,
+    "cache_read": 4886698
+   },
+   "a2e311b5-8137-46e4-a912-4d885b65ab86": {
+    "input": 744943,
+    "output": 14020,
+    "cache_read": 4351962
+   },
    "session-0ea5268d-ec99-484e-92a2-e380d514a04b": {
     "input": 121277,
     "output": 18173,
@@ -1867,9 +1877,9 @@
     "cache_read": 0
    },
    "session-cac2f797-a3ce-4145-a905-7758b6e3d575": {
-    "input": 160330,
-    "output": 40493,
-    "cache_read": 6259436
+    "input": 858411,
+    "output": 62587,
+    "cache_read": 18147577
    },
    "session-cdd6bda7-abcb-4f22-892e-3af32f51c698": {
     "input": 844170,
@@ -1888,5 +1898,5 @@
    }
   }
  },
- "updated_at": "2026-10-12T00:50:14+08:00"
+ "updated_at": "2026-10-12T12:36:02+08:00"
 }
