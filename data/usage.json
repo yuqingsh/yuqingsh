@@ -1773,18 +1773,23 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1869615,
-      "output": 124814,
-      "cache_read": 24832000
+      "input": 6939581,
+      "output": 545231,
+      "cache_read": 217242112
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 2300689,
-      "output": 348606,
-      "cache_read": 100527104
+      "input": 3507154,
+      "output": 468199,
+      "cache_read": 151910912
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 17422,
+      "output": 821,
+      "cache_read": 66688
      }
     }
    },
@@ -1799,6 +1804,55 @@
       "input": 1170878,
       "output": 200298,
       "cache_read": 65345857
+     }
+    }
+   }
+  },
+  "2026-10-13": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 1759087,
+      "output": 182108,
+      "cache_read": 35938816
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-high-fast": {
+      "input": 7779,
+      "output": 507,
+      "cache_read": 19200
+     },
+     "default": {
+      "input": 17458,
+      "output": 1158,
+      "cache_read": 0
+     },
+     "grok-4.7-xhigh": {
+      "input": 1233470,
+      "output": 211336,
+      "cache_read": 27673984
+     },
+     "grok-4.7-high": {
+      "input": 34798,
+      "output": 4862,
+      "cache_read": 98688
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 134766,
+      "output": 7112,
+      "cache_read": 352384
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "deepseek-flash": {
+      "input": 739,
+      "output": 1471,
+      "cache_read": 1168896
      }
     }
    }
@@ -1867,9 +1921,9 @@
     "cache_read": 0
    },
    "session-87bcb04c-140c-4837-be46-4b9d2f920978": {
-    "input": 1160162,
-    "output": 200284,
-    "cache_read": 65345857
+    "input": 1160901,
+    "output": 201755,
+    "cache_read": 66514753
    },
    "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
     "input": 6430,
@@ -1918,5 +1972,5 @@
    }
   }
  },
- "updated_at": "2026-10-12T18:36:50+08:00"
+ "updated_at": "2026-10-13T12:37:35+08:00"
 }
