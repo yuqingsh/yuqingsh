@@ -1812,18 +1812,18 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1759087,
-      "output": 182108,
-      "cache_read": 35938816
+      "input": 3313773,
+      "output": 445635,
+      "cache_read": 80114816
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-high-fast": {
-      "input": 7779,
-      "output": 507,
-      "cache_read": 19200
+      "input": 349904,
+      "output": 71661,
+      "cache_read": 2421120
      },
      "default": {
       "input": 17458,
@@ -1972,5 +1972,5 @@
    }
   }
  },
- "updated_at": "2026-10-13T12:37:35+08:00"
+ "updated_at": "2026-10-13T18:38:09+08:00"
 }
