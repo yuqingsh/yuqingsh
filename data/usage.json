@@ -1420,9 +1420,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1306746,
-      "output": 125044,
-      "cache_read": 30547200
+      "input": 385824,
+      "output": 84214,
+      "cache_read": 13731328
      }
     }
    }
@@ -1431,9 +1431,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 267225,
-      "output": 79266,
-      "cache_read": 8587008
+      "input": 189502,
+      "output": 68665,
+      "cache_read": 5100928
      }
     }
    },
@@ -1870,9 +1870,19 @@
    "cursor": {
     "models": {
      "grok-4.7-high-fast": {
-      "input": 258838,
-      "output": 10773,
-      "cache_read": 2797568
+      "input": 1590162,
+      "output": 287895,
+      "cache_read": 30525056
+     },
+     "grok-4.7-xhigh": {
+      "input": 614535,
+      "output": 166997,
+      "cache_read": 15884928
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 761787,
+      "output": 91013,
+      "cache_read": 33754240
      }
     }
    }
@@ -1992,5 +2002,5 @@
    }
   }
  },
- "updated_at": "2026-10-14T11:58:44+08:00"
+ "updated_at": "2026-10-14T22:11:22+08:00"
 }
