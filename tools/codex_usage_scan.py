@@ -108,20 +108,25 @@ def scan_codex(base: Path) -> dict:
 
     for path in sorted(files):
         # threads DB still references the uncompressed path
-        file_model = models_by_path.get(re.sub(r"\.zst$", "", str(path)), model)
+        current_model = models_by_path.get(re.sub(r"\.zst$", "", str(path)), model)
         try:
             for line in iter_lines(path):
-                if '"token_count"' not in line:
+                is_ctx = '"turn_context"' in line
+                if '"token_count"' not in line and not is_ctx:
                     continue
                 try:
                     d = json.loads(line)
                     payload = d.get("payload") or {}
-                    if payload.get("type") != "token_count":
-                        continue
-                    info = payload.get("info") or {}
-                    usage = info.get("last_token_usage") or {}
                 except (ValueError, AttributeError):
                     continue
+                if is_ctx:
+                    # per-turn model: users can switch models mid-thread
+                    if payload.get("model"):
+                        current_model = payload["model"]
+                    continue
+                if payload.get("type") != "token_count":
+                    continue
+                usage = (payload.get("info") or {}).get("last_token_usage") or {}
                 if not usage:
                     continue
                 day = local_day_from_iso(d["timestamp"])
@@ -129,7 +134,7 @@ def scan_codex(base: Path) -> dict:
                 cached = usage.get("cached_input_tokens", 0)
                 fresh = max(0, usage.get("input_tokens", 0) - cached)
                 out = usage.get("output_tokens", 0)
-                b = bucket(day, file_model)
+                b = bucket(day, current_model)
                 b["input"] += fresh
                 b["output"] += out
                 b["cache_read"] += cached
