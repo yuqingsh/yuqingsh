@@ -1623,18 +1623,18 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 921915,
-      "output": 83983,
-      "cache_read": 11288192
+      "input": 839099,
+      "output": 82959,
+      "cache_read": 11203456
      }
     }
    },
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1798831,
-      "output": 180035,
-      "cache_read": 54660608
+      "input": 597777,
+      "output": 150926,
+      "cache_read": 36911104
      }
     }
    }
@@ -1900,18 +1900,18 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2034257,
-      "output": 257644,
-      "cache_read": 37408384
+      "input": 4477703,
+      "output": 537432,
+      "cache_read": 99935104
      }
     }
    },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 21172,
-      "output": 3979,
-      "cache_read": 35328
+      "input": 343787,
+      "output": 64813,
+      "cache_read": 2567040
      },
      "grok-4.7-xhigh-fast": {
       "input": 90121,
@@ -1931,6 +1931,40 @@
       "input": 1202683,
       "output": 137509,
       "cache_read": 30239388
+     }
+    }
+   }
+  },
+  "2026-10-16": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 3649044,
+      "output": 242922,
+      "cache_read": 73276032
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-high-fast": {
+      "input": 794633,
+      "output": 192254,
+      "cache_read": 46721664
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 885014,
+      "output": 24665,
+      "cache_read": 9739648
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 44656,
+      "output": 8490,
+      "cache_read": 568320
      }
     }
    }
@@ -1969,9 +2003,9 @@
     "cache_read": 0
    },
    "session-37c0106f-a804-46b0-88fc-3ffbd0ab8a6a": {
-    "input": 0,
-    "output": 0,
-    "cache_read": 0
+    "input": 44656,
+    "output": 8490,
+    "cache_read": 568320
    },
    "session-381d62f1-b638-4f0c-a85e-61c1c9b03a11": {
     "input": 0,
@@ -2055,5 +2089,5 @@
    }
   }
  },
- "updated_at": "2026-10-15T20:09:43+08:00"
+ "updated_at": "2026-10-16T13:58:28+08:00"
 }
