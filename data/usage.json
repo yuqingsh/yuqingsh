@@ -1738,9 +1738,9 @@
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 4157948,
-      "output": 336766,
-      "cache_read": 85854080
+      "input": 4167643,
+      "output": 339861,
+      "cache_read": 87065856
      },
      "grok-4.7-xhigh-fast": {
       "input": 1135945,
@@ -1939,14 +1939,24 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 3649044,
-      "output": 242922,
-      "cache_read": 73276032
+      "input": 7596799,
+      "output": 764300,
+      "cache_read": 170234624
      }
     }
    },
    "cursor": {
     "models": {
+     "gpt-5.6-sol-high": {
+      "input": 105,
+      "output": 20659,
+      "cache_read": 848594
+     },
+     "grok-4.7-xhigh": {
+      "input": 375151,
+      "output": 26420,
+      "cache_read": 4505472
+     },
      "grok-4.7-high-fast": {
       "input": 794633,
       "output": 192254,
@@ -1962,9 +1972,14 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 44656,
-      "output": 8490,
-      "cache_read": 568320
+      "input": 145522,
+      "output": 86981,
+      "cache_read": 3169128
+     },
+     "deepseek-flash": {
+      "input": 65458,
+      "output": 192648,
+      "cache_read": 14778624
      }
     }
    }
@@ -1986,6 +2001,16 @@
     "input": 121277,
     "output": 18173,
     "cache_read": 3369984
+   },
+   "session-1da65e27-fbda-410d-b898-4bc29fc2f5c3": {
+    "input": 95338,
+    "output": 75143,
+    "cache_read": 2598504
+   },
+   "session-27c3efe7-c313-4d8e-aa32-7f0c41b7e3ae": {
+    "input": 9822,
+    "output": 3376,
+    "cache_read": 42624
    },
    "session-2e668929-2032-4d39-a922-2d935b928946": {
     "input": 0,
@@ -2027,6 +2052,11 @@
     "output": 3670,
     "cache_read": 43520
    },
+   "session-74ad7d8e-d952-434f-8a4f-0598d8159e26": {
+    "input": 55636,
+    "output": 189272,
+    "cache_read": 14736000
+   },
    "session-7d2517dd-2f24-4db6-a894-15d8cfe85d93": {
     "input": 164089,
     "output": 31206,
@@ -2045,6 +2075,11 @@
    "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
     "input": 6430,
     "output": 39,
+    "cache_read": 0
+   },
+   "session-a7796aae-11f2-46af-be5f-60c4832fd05b": {
+    "input": 0,
+    "output": 0,
     "cache_read": 0
    },
    "session-b36b4ac7-16fb-4598-8264-a35fd4300618": {
@@ -2077,10 +2112,20 @@
     "output": 14,
     "cache_read": 0
    },
+   "session-f30d39af-3f5e-4b5a-9045-728ea46b84cf": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
    "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
     "input": 0,
     "output": 0,
     "cache_read": 0
+   },
+   "session-fb382c51-887c-4daf-b326-75aea55bb3d8": {
+    "input": 5528,
+    "output": 3348,
+    "cache_read": 2304
    },
    "session-fb8f7a19-3ccc-4c69-a6b3-2604fc0d802e": {
     "input": 19773,
@@ -2089,5 +2134,5 @@
    }
   }
  },
- "updated_at": "2026-10-16T13:58:28+08:00"
+ "updated_at": "2026-10-16T19:59:02+08:00"
 }
