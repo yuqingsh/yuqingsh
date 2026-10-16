@@ -197,11 +197,11 @@ def render(data: dict) -> str:
         offset += frac * circ
         pct = f"{frac * 100:.1f}%" if frac >= 0.001 else "<0.1%"
         legend.append(
-            f'<rect x="{PAD + 170}" y="{ly - 9}" width="10" height="10" rx="2" fill="{color}"/>'
-            f'<text x="{PAD + 186}" y="{ly}" class="text small">{escape(label)}'
+            f'<rect x="{PAD + 170}" y="{ly - 10}" width="11" height="11" rx="2" fill="{color}"/>'
+            f'<text x="{PAD + 187}" y="{ly}" class="text">{escape(label)}'
             f' · {escape(pct)}</text>'
         )
-        ly += 18
+        ly += 20
     donut.append(
         f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" class="strong mid">{fmt(mt_total)}</text>'
         f'<text x="{cx}" y="{cy + 14}" text-anchor="middle" class="muted small">all time</text>'

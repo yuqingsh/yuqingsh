@@ -264,14 +264,43 @@ def main():
     days = data.setdefault("days", {})
     state = data.setdefault("state", {})
 
+    def usage_sum(models):
+        return sum(
+            u["input"] + u["output"] + u["cache_read"] for u in models.values()
+        )
+
+    def shrink_guard(source: str, scanned: dict) -> bool:
+        """Refuse to overwrite when a rescan lost >20% of previously recorded
+        tokens on overlapping days (e.g. a client update changed its storage
+        format and the scanner silently sees fewer files)."""
+        old_total = new_total = 0
+        for day, entry in days.items():
+            old = (entry.get(source) or {}).get("models")
+            if not old:
+                continue
+            old_total += usage_sum(old)
+            new = scanned.get(day)
+            if new:
+                new_total += usage_sum(new)
+        if old_total > 0 and new_total < 0.8 * old_total:
+            log(
+                f"WARNING {source}: rescan covers only {new_total:,} of "
+                f"{old_total:,} previously recorded tokens — keeping old data. "
+                f"Check the scanner against a possible client storage change."
+            )
+            return False
+        return True
+
     # Codex: full re-scans are authoritative; overwrite each source's entries.
-    # On remote failure the previous entries for that source are preserved.
+    # On remote failure or shrink-guard trip the previous entries are preserved.
     codex_sources = {"codex": collect_codex_local()}
     for host in CODEX_REMOTE_HOSTS:
         remote = collect_codex_remote(host)
         if remote is not None:
             codex_sources[f"codex-{host}"] = remote
     for source, source_days in codex_sources.items():
+        if not shrink_guard(source, source_days):
+            continue
         for day, models in source_days.items():
             days.setdefault(day, {})[source] = {"models": models}
 
