@@ -2578,9 +2578,9 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 7357913,
-      "output": 821075,
-      "cache_read": 166713472
+      "input": 7362861,
+      "output": 821397,
+      "cache_read": 166872448
      },
      "gpt-6.1-sol": {
       "input": 959878,
@@ -2621,9 +2621,9 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 694228,
-      "output": 99991,
-      "cache_read": 7558020
+      "input": 723777,
+      "output": 102364,
+      "cache_read": 9256378
      },
      "deepseek-flash": {
       "input": 65458,
@@ -2737,9 +2737,9 @@
     "cache_read": 34076420
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 1522059,
-    "output": 109052,
-    "cache_read": 17859071
+    "input": 1551608,
+    "output": 111425,
+    "cache_read": 19557429
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -2788,5 +2788,5 @@
    }
   }
  },
- "updated_at": "2026-10-16T21:14:06+08:00"
+ "updated_at": "2026-10-16T21:17:18+08:00"
 }
