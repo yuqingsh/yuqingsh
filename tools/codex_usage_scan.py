@@ -14,6 +14,8 @@ Day boundaries use a fixed UTC+8 so local and remote scans agree.
 
 import json
 import re
+import sqlite3
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -37,6 +39,48 @@ def model_name(base: Path) -> str:
     return "codex"
 
 
+def thread_models(base: Path) -> dict:
+    """rollout_path -> actual model, from the Codex threads DB (state_*.sqlite).
+
+    sqlite3 is stdlib, so this also works when streamed to a remote host.
+    """
+    mapping = {}
+    for db in sorted(base.glob("state_*.sqlite"), reverse=True):  # newest first
+        try:
+            con = sqlite3.connect(f"file:{db}?mode=ro&immutable=1", uri=True, timeout=5)
+            try:
+                for path, model in con.execute(
+                    "SELECT rollout_path, model FROM threads WHERE model IS NOT NULL"
+                ):
+                    mapping.setdefault(path, model)
+            finally:
+                con.close()
+        except sqlite3.Error:
+            continue
+    return mapping
+
+
+def iter_lines(path):
+    """Yield lines from a .jsonl or .jsonl.zst (zstd CLI) rollout file."""
+    if str(path).endswith(".zst"):
+        proc = subprocess.Popen(
+            ["zstd", "-dc", str(path)],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+            errors="replace",
+        )
+        try:
+            for line in proc.stdout:
+                yield line
+        finally:
+            proc.stdout.close()
+            proc.wait()
+    else:
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            yield from fh
+
+
 def scan_codex(base: Path) -> dict:
     """Scan base/{sessions,archived_sessions}; return {day: {model: usage}}.
 
@@ -50,42 +94,46 @@ def scan_codex(base: Path) -> dict:
     for sub in ("sessions", "archived_sessions"):
         d = base / sub
         if d.is_dir():
+            # newer Codex compresses old rollouts to .jsonl.zst
             files.extend(d.rglob("*.jsonl"))
-    model = model_name(base)
+            files.extend(d.rglob("*.jsonl.zst"))
+    model = model_name(base)  # fallback for files missing from the threads DB
+    models_by_path = thread_models(base)
     n_events = 0
 
-    def bucket(day):
+    def bucket(day, m):
         return days.setdefault(day, {}).setdefault(
-            model, {"input": 0, "output": 0, "cache_read": 0}
+            m, {"input": 0, "output": 0, "cache_read": 0}
         )
 
     for path in sorted(files):
+        # threads DB still references the uncompressed path
+        file_model = models_by_path.get(re.sub(r"\.zst$", "", str(path)), model)
         try:
-            with open(path, "r", encoding="utf-8", errors="replace") as fh:
-                for line in fh:
-                    if '"token_count"' not in line:
+            for line in iter_lines(path):
+                if '"token_count"' not in line:
+                    continue
+                try:
+                    d = json.loads(line)
+                    payload = d.get("payload") or {}
+                    if payload.get("type") != "token_count":
                         continue
-                    try:
-                        d = json.loads(line)
-                        payload = d.get("payload") or {}
-                        if payload.get("type") != "token_count":
-                            continue
-                        info = payload.get("info") or {}
-                        usage = info.get("last_token_usage") or {}
-                    except (ValueError, AttributeError):
-                        continue
-                    if not usage:
-                        continue
-                    day = local_day_from_iso(d["timestamp"])
-                    # OpenAI semantics: input_tokens INCLUDES cached_input_tokens
-                    cached = usage.get("cached_input_tokens", 0)
-                    fresh = max(0, usage.get("input_tokens", 0) - cached)
-                    out = usage.get("output_tokens", 0)
-                    b = bucket(day)
-                    b["input"] += fresh
-                    b["output"] += out
-                    b["cache_read"] += cached
-                    n_events += 1
+                    info = payload.get("info") or {}
+                    usage = info.get("last_token_usage") or {}
+                except (ValueError, AttributeError):
+                    continue
+                if not usage:
+                    continue
+                day = local_day_from_iso(d["timestamp"])
+                # OpenAI semantics: input_tokens INCLUDES cached_input_tokens
+                cached = usage.get("cached_input_tokens", 0)
+                fresh = max(0, usage.get("input_tokens", 0) - cached)
+                out = usage.get("output_tokens", 0)
+                b = bucket(day, file_model)
+                b["input"] += fresh
+                b["output"] += out
+                b["cache_read"] += cached
+                n_events += 1
         except OSError:
             continue
     return {"days": days, "events": n_events, "files": len(files), "model": model}

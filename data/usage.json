@@ -3,7 +3,7 @@
   "2026-05-14": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 768737,
       "output": 67853,
       "cache_read": 6964224
@@ -14,7 +14,7 @@
   "2026-05-15": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 717650,
       "output": 107408,
       "cache_read": 6417408
@@ -25,7 +25,7 @@
   "2026-05-21": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.2": {
       "input": 21880,
       "output": 10550,
       "cache_read": 41216
@@ -36,7 +36,7 @@
   "2026-06-01": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 50231,
       "output": 6232,
       "cache_read": 64896
@@ -47,10 +47,20 @@
   "2026-06-03": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 668731,
-      "output": 38899,
-      "cache_read": 3703168
+     "claude-opus-4-7": {
+      "input": 42844,
+      "output": 528,
+      "cache_read": 12800
+     },
+     "gpt-5.5": {
+      "input": 611051,
+      "output": 37195,
+      "cache_read": 3685504
+     },
+     "gpt-5.2": {
+      "input": 14836,
+      "output": 1176,
+      "cache_read": 4864
      }
     }
    }
@@ -58,10 +68,15 @@
   "2026-06-05": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1099660,
-      "output": 67312,
-      "cache_read": 5171584
+     "gpt-5.2": {
+      "input": 15026,
+      "output": 2532,
+      "cache_read": 5888
+     },
+     "gpt-5.5": {
+      "input": 1084634,
+      "output": 64780,
+      "cache_read": 5165696
      }
     }
    }
@@ -69,10 +84,15 @@
   "2026-06-08": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 694266,
-      "output": 51758,
-      "cache_read": 1644928
+     "gpt-5.2": {
+      "input": 264609,
+      "output": 31069,
+      "cache_read": 189952
+     },
+     "gpt-5.5": {
+      "input": 429657,
+      "output": 20689,
+      "cache_read": 1454976
      }
     }
    }
@@ -80,7 +100,7 @@
   "2026-06-22": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 1788906,
       "output": 66887,
       "cache_read": 20205952
@@ -91,7 +111,7 @@
   "2026-06-23": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 3262679,
       "output": 124447,
       "cache_read": 34817152
@@ -102,7 +122,7 @@
   "2026-06-24": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 1649917,
       "output": 78269,
       "cache_read": 11653632
@@ -113,7 +133,7 @@
   "2026-06-25": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 1347570,
       "output": 63556,
       "cache_read": 8305536
@@ -124,7 +144,7 @@
   "2026-06-29": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 1698793,
       "output": 115648,
       "cache_read": 20597632
@@ -135,7 +155,7 @@
   "2026-06-30": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 373925,
       "output": 28983,
       "cache_read": 9664000
@@ -146,10 +166,15 @@
   "2026-07-07": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 430307,
-      "output": 64974,
-      "cache_read": 6200960
+     "gpt-5.5": {
+      "input": 394566,
+      "output": 64096,
+      "cache_read": 6051968
+     },
+     "codex-auto-review": {
+      "input": 35741,
+      "output": 878,
+      "cache_read": 148992
      }
     }
    }
@@ -157,10 +182,20 @@
   "2026-07-08": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4795296,
-      "output": 259795,
-      "cache_read": 41230848
+     "gpt-5.5": {
+      "input": 3311933,
+      "output": 202372,
+      "cache_read": 30635392
+     },
+     "gpt-5.6-sol": {
+      "input": 506133,
+      "output": 50603,
+      "cache_read": 7147648
+     },
+     "codex-auto-review": {
+      "input": 977230,
+      "output": 6820,
+      "cache_read": 3447808
      }
     }
    }
@@ -168,10 +203,20 @@
   "2026-07-09": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2037465,
-      "output": 145271,
-      "cache_read": 19631616
+     "gpt-5.6-sol": {
+      "input": 1482632,
+      "output": 119749,
+      "cache_read": 17444480
+     },
+     "gpt-5.5": {
+      "input": 244690,
+      "output": 21759,
+      "cache_read": 1491584
+     },
+     "codex-auto-review": {
+      "input": 310143,
+      "output": 3763,
+      "cache_read": 695552
      }
     }
    }
@@ -179,10 +224,20 @@
   "2026-07-10": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3421774,
-      "output": 256220,
-      "cache_read": 56626432
+     "gpt-5.6-sol": {
+      "input": 2729967,
+      "output": 239266,
+      "cache_read": 51131776
+     },
+     "gpt-5.5": {
+      "input": 98455,
+      "output": 10202,
+      "cache_read": 376192
+     },
+     "codex-auto-review": {
+      "input": 593352,
+      "output": 6752,
+      "cache_read": 5118464
      }
     }
    }
@@ -190,7 +245,7 @@
   "2026-07-12": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.5": {
       "input": 34381,
       "output": 1401,
       "cache_read": 63616
@@ -201,10 +256,25 @@
   "2026-07-13": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1389651,
-      "output": 118467,
-      "cache_read": 32752256
+     "gpt-5.5": {
+      "input": 130152,
+      "output": 6208,
+      "cache_read": 280576
+     },
+     "gpt-5.6-sol": {
+      "input": 1192963,
+      "output": 111718,
+      "cache_read": 32336896
+     },
+     "gpt-5.6-terra": {
+      "input": 16664,
+      "output": 157,
+      "cache_read": 14592
+     },
+     "codex-auto-review": {
+      "input": 49872,
+      "output": 384,
+      "cache_read": 120192
      }
     }
    }
@@ -212,10 +282,15 @@
   "2026-07-14": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1100292,
-      "output": 84945,
-      "cache_read": 12711936
+     "gpt-5.6-sol": {
+      "input": 961281,
+      "output": 82392,
+      "cache_read": 12305920
+     },
+     "codex-auto-review": {
+      "input": 139011,
+      "output": 2553,
+      "cache_read": 406016
      }
     }
    }
@@ -223,19 +298,34 @@
   "2026-07-15": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 230002,
-      "output": 18920,
-      "cache_read": 2339840
+     "gpt-5.6-sol": {
+      "input": 192340,
+      "output": 18310,
+      "cache_read": 2283008
+     },
+     "codex-auto-review": {
+      "input": 37662,
+      "output": 610,
+      "cache_read": 56832
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4749494,
-      "output": 467192,
-      "cache_read": 149776896
+     "gpt-5.6-sol": {
+      "input": 3096765,
+      "output": 346890,
+      "cache_read": 102770688
+     },
+     "gpt-5.6-terra": {
+      "input": 1144053,
+      "output": 112686,
+      "cache_read": 42483712
+     },
+     "codex-auto-review": {
+      "input": 508676,
+      "output": 7616,
+      "cache_read": 4522496
      }
     }
    }
@@ -243,10 +333,20 @@
   "2026-07-16": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3088049,
-      "output": 330942,
-      "cache_read": 56949376
+     "gpt-5.6-sol": {
+      "input": 170946,
+      "output": 2478,
+      "cache_read": 1569280
+     },
+     "gpt-5.6-terra": {
+      "input": 2282002,
+      "output": 323995,
+      "cache_read": 52040960
+     },
+     "codex-auto-review": {
+      "input": 635101,
+      "output": 4469,
+      "cache_read": 3339136
      }
     }
    }
@@ -254,10 +354,20 @@
   "2026-07-17": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2371365,
-      "output": 133092,
-      "cache_read": 64770048
+     "gpt-5.6-sol": {
+      "input": 618805,
+      "output": 35423,
+      "cache_read": 7077376
+     },
+     "gpt-5.6-terra": {
+      "input": 1427411,
+      "output": 89355,
+      "cache_read": 54777600
+     },
+     "codex-auto-review": {
+      "input": 325149,
+      "output": 8314,
+      "cache_read": 2915072
      }
     }
    }
@@ -265,10 +375,15 @@
   "2026-07-19": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 180734,
-      "output": 1452,
-      "cache_read": 353920
+     "gpt-5.6-terra": {
+      "input": 170163,
+      "output": 1322,
+      "cache_read": 346368
+     },
+     "codex-auto-review": {
+      "input": 10571,
+      "output": 130,
+      "cache_read": 7552
      }
     }
    }
@@ -276,10 +391,20 @@
   "2026-07-20": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4195196,
-      "output": 158166,
-      "cache_read": 64916992
+     "gpt-5.6-sol": {
+      "input": 1137315,
+      "output": 8281,
+      "cache_read": 1260544
+     },
+     "gpt-5.6-terra": {
+      "input": 2060678,
+      "output": 142463,
+      "cache_read": 57154048
+     },
+     "codex-auto-review": {
+      "input": 997203,
+      "output": 7422,
+      "cache_read": 6502400
      }
     }
    }
@@ -287,10 +412,20 @@
   "2026-07-21": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 736498,
-      "output": 18834,
-      "cache_read": 2174976
+     "gpt-5.6-sol": {
+      "input": 520903,
+      "output": 11833,
+      "cache_read": 1975552
+     },
+     "gpt-5.6-terra": {
+      "input": 130509,
+      "output": 6410,
+      "cache_read": 92928
+     },
+     "codex-auto-review": {
+      "input": 85086,
+      "output": 591,
+      "cache_read": 106496
      }
     }
    }
@@ -298,10 +433,15 @@
   "2026-07-22": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2751040,
-      "output": 238144,
-      "cache_read": 42369152
+     "gpt-5.6-sol": {
+      "input": 2528656,
+      "output": 234155,
+      "cache_read": 41122048
+     },
+     "codex-auto-review": {
+      "input": 222384,
+      "output": 3989,
+      "cache_read": 1247104
      }
     }
    }
@@ -309,10 +449,20 @@
   "2026-07-23": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2890412,
-      "output": 258760,
-      "cache_read": 59739648
+     "gpt-5.6-sol": {
+      "input": 1966245,
+      "output": 150192,
+      "cache_read": 29021696
+     },
+     "gpt-5.6-luna": {
+      "input": 806355,
+      "output": 106671,
+      "cache_read": 29995264
+     },
+     "codex-auto-review": {
+      "input": 117812,
+      "output": 1897,
+      "cache_read": 722688
      }
     }
    }
@@ -320,10 +470,15 @@
   "2026-07-24": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3010557,
-      "output": 239834,
-      "cache_read": 39759616
+     "gpt-5.6-sol": {
+      "input": 2817041,
+      "output": 238469,
+      "cache_read": 39557120
+     },
+     "codex-auto-review": {
+      "input": 193516,
+      "output": 1365,
+      "cache_read": 202496
      }
     }
    }
@@ -331,10 +486,15 @@
   "2026-07-27": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4824982,
-      "output": 448796,
-      "cache_read": 84494208
+     "gpt-5.6-sol": {
+      "input": 4665939,
+      "output": 446958,
+      "cache_read": 84006656
+     },
+     "codex-auto-review": {
+      "input": 159043,
+      "output": 1838,
+      "cache_read": 487552
      }
     }
    }
@@ -342,10 +502,15 @@
   "2026-07-28": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2661916,
-      "output": 201283,
-      "cache_read": 46579072
+     "gpt-5.6-sol": {
+      "input": 2510105,
+      "output": 199855,
+      "cache_read": 45915904
+     },
+     "codex-auto-review": {
+      "input": 151811,
+      "output": 1428,
+      "cache_read": 663168
      }
     }
    }
@@ -353,10 +518,15 @@
   "2026-07-29": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4547200,
-      "output": 309631,
-      "cache_read": 113634944
+     "gpt-5.6-sol": {
+      "input": 4396644,
+      "output": 307956,
+      "cache_read": 113260288
+     },
+     "codex-auto-review": {
+      "input": 150556,
+      "output": 1675,
+      "cache_read": 374656
      }
     }
    }
@@ -364,10 +534,20 @@
   "2026-07-30": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4640192,
-      "output": 567703,
-      "cache_read": 145730816
+     "gpt-5.6-sol": {
+      "input": 1755994,
+      "output": 154009,
+      "cache_read": 34788096
+     },
+     "gpt-5.6-luna": {
+      "input": 2523212,
+      "output": 406409,
+      "cache_read": 108071424
+     },
+     "codex-auto-review": {
+      "input": 360986,
+      "output": 7285,
+      "cache_read": 2871296
      }
     }
    }
@@ -375,10 +555,20 @@
   "2026-07-31": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3420018,
-      "output": 267961,
-      "cache_read": 64567680
+     "gpt-5.6-luna": {
+      "input": 2155573,
+      "output": 247439,
+      "cache_read": 59596544
+     },
+     "gpt-5.6-sol": {
+      "input": 333562,
+      "output": 18258,
+      "cache_read": 3624704
+     },
+     "codex-auto-review": {
+      "input": 930883,
+      "output": 2264,
+      "cache_read": 1346432
      }
     }
    }
@@ -386,10 +576,15 @@
   "2026-08-02": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 453926,
-      "output": 156505,
-      "cache_read": 18854912
+     "gpt-5.6-luna": {
+      "input": 436025,
+      "output": 156275,
+      "cache_read": 18833920
+     },
+     "codex-auto-review": {
+      "input": 17901,
+      "output": 230,
+      "cache_read": 20992
      }
     }
    }
@@ -397,19 +592,34 @@
   "2026-08-03": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1093660,
-      "output": 128173,
-      "cache_read": 12180224
+     "gpt-5.6-luna": {
+      "input": 1015126,
+      "output": 126400,
+      "cache_read": 11744512
+     },
+     "codex-auto-review": {
+      "input": 78534,
+      "output": 1773,
+      "cache_read": 435712
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3807163,
-      "output": 370819,
-      "cache_read": 116568320
+     "gpt-5.6-luna": {
+      "input": 1734692,
+      "output": 255310,
+      "cache_read": 95609856
+     },
+     "gpt-5.6-sol": {
+      "input": 1351365,
+      "output": 106282,
+      "cache_read": 14825472
+     },
+     "codex-auto-review": {
+      "input": 721106,
+      "output": 9227,
+      "cache_read": 6132992
      }
     }
    }
@@ -417,19 +627,34 @@
   "2026-08-04": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4391112,
-      "output": 253619,
-      "cache_read": 51050240
+     "gpt-5.6-luna": {
+      "input": 3968592,
+      "output": 243092,
+      "cache_read": 44037120
+     },
+     "codex-auto-review": {
+      "input": 422520,
+      "output": 10527,
+      "cache_read": 7013120
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 970080,
-      "output": 75146,
-      "cache_read": 11799296
+     "gpt-5.6-sol": {
+      "input": 370539,
+      "output": 18650,
+      "cache_read": 3580160
+     },
+     "gpt-5.6-luna": {
+      "input": 503254,
+      "output": 54421,
+      "cache_read": 7205888
+     },
+     "codex-auto-review": {
+      "input": 96287,
+      "output": 2075,
+      "cache_read": 1013248
      }
     }
    }
@@ -437,19 +662,34 @@
   "2026-08-05": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 7503924,
-      "output": 510216,
-      "cache_read": 78953216
+     "gpt-5.6-luna": {
+      "input": 7194950,
+      "output": 505073,
+      "cache_read": 77289216
+     },
+     "codex-auto-review": {
+      "input": 308974,
+      "output": 5143,
+      "cache_read": 1664000
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2645922,
-      "output": 256461,
-      "cache_read": 37421824
+     "gpt-5.6-sol": {
+      "input": 698263,
+      "output": 76215,
+      "cache_read": 9447168
+     },
+     "gpt-5.6-luna": {
+      "input": 1643339,
+      "output": 176891,
+      "cache_read": 27250432
+     },
+     "codex-auto-review": {
+      "input": 304320,
+      "output": 3355,
+      "cache_read": 724224
      }
     }
    }
@@ -457,16 +697,21 @@
   "2026-08-06": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2418552,
-      "output": 187549,
-      "cache_read": 25089664
+     "gpt-5.6-luna": {
+      "input": 2373994,
+      "output": 186810,
+      "cache_read": 25013376
+     },
+     "codex-auto-review": {
+      "input": 44558,
+      "output": 739,
+      "cache_read": 76288
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-luna": {
       "input": 857536,
       "output": 8196,
       "cache_read": 989184
@@ -477,16 +722,21 @@
   "2026-08-07": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 12574389,
-      "output": 662619,
-      "cache_read": 205438080
+     "gpt-5.6-luna": {
+      "input": 10958198,
+      "output": 654588,
+      "cache_read": 195957376
+     },
+     "codex-auto-review": {
+      "input": 1616191,
+      "output": 8031,
+      "cache_read": 9480704
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 82252,
       "output": 6894,
       "cache_read": 2015488
@@ -497,19 +747,29 @@
   "2026-08-08": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 5024049,
-      "output": 210506,
-      "cache_read": 83388928
+     "gpt-5.6-luna": {
+      "input": 3784389,
+      "output": 200491,
+      "cache_read": 70724096
+     },
+     "codex-auto-review": {
+      "input": 1239660,
+      "output": 10015,
+      "cache_read": 12664832
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 425070,
-      "output": 17117,
-      "cache_read": 3042304
+     "gpt-5.6-sol": {
+      "input": 401577,
+      "output": 16740,
+      "cache_read": 2953216
+     },
+     "codex-auto-review": {
+      "input": 23493,
+      "output": 377,
+      "cache_read": 89088
      }
     }
    }
@@ -517,10 +777,15 @@
   "2026-08-09": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 472139,
-      "output": 38824,
-      "cache_read": 4871424
+     "gpt-5.6-sol": {
+      "input": 454372,
+      "output": 38665,
+      "cache_read": 4863488
+     },
+     "codex-auto-review": {
+      "input": 17767,
+      "output": 159,
+      "cache_read": 7936
      }
     }
    }
@@ -528,16 +793,26 @@
   "2026-08-10": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 199965,
-      "output": 47970,
-      "cache_read": 3045120
+     "gpt-5.6-luna": {
+      "input": 10217,
+      "output": 32,
+      "cache_read": 9984
+     },
+     "gpt-5.6-sol": {
+      "input": 123250,
+      "output": 45984,
+      "cache_read": 2673664
+     },
+     "codex-auto-review": {
+      "input": 66498,
+      "output": 1954,
+      "cache_read": 361472
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 678426,
       "output": 88542,
       "cache_read": 21293824
@@ -548,19 +823,29 @@
   "2026-08-11": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 520335,
-      "output": 47362,
-      "cache_read": 4945152
+     "gpt-5.6-terra": {
+      "input": 463630,
+      "output": 46325,
+      "cache_read": 4766976
+     },
+     "codex-auto-review": {
+      "input": 56705,
+      "output": 1037,
+      "cache_read": 178176
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3415442,
-      "output": 437241,
-      "cache_read": 100982272
+     "gpt-5.6-sol": {
+      "input": 2708834,
+      "output": 433412,
+      "cache_read": 99478016
+     },
+     "codex-auto-review": {
+      "input": 706608,
+      "output": 3829,
+      "cache_read": 1504256
      }
     }
    }
@@ -568,10 +853,15 @@
   "2026-08-12": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1125815,
-      "output": 64993,
-      "cache_read": 10930176
+     "gpt-5.6-sol": {
+      "input": 1065807,
+      "output": 64301,
+      "cache_read": 10776576
+     },
+     "codex-auto-review": {
+      "input": 60008,
+      "output": 692,
+      "cache_read": 153600
      }
     }
    }
@@ -579,10 +869,15 @@
   "2026-08-13": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1174895,
-      "output": 101955,
-      "cache_read": 17916288
+     "gpt-5.6-sol": {
+      "input": 991511,
+      "output": 100605,
+      "cache_read": 17720192
+     },
+     "codex-auto-review": {
+      "input": 183384,
+      "output": 1350,
+      "cache_read": 196096
      }
     }
    }
@@ -590,10 +885,15 @@
   "2026-08-14": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1737743,
-      "output": 141250,
-      "cache_read": 32160000
+     "gpt-5.6-terra": {
+      "input": 1169059,
+      "output": 137853,
+      "cache_read": 30407168
+     },
+     "codex-auto-review": {
+      "input": 568684,
+      "output": 3397,
+      "cache_read": 1752832
      }
     }
    }
@@ -601,10 +901,15 @@
   "2026-08-15": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 682265,
-      "output": 74388,
-      "cache_read": 25224704
+     "gpt-5.6-sol": {
+      "input": 538235,
+      "output": 71459,
+      "cache_read": 23192576
+     },
+     "codex-auto-review": {
+      "input": 144030,
+      "output": 2929,
+      "cache_read": 2032128
      }
     }
    }
@@ -612,10 +917,20 @@
   "2026-08-16": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2820793,
-      "output": 323303,
-      "cache_read": 79264384
+     "gpt-5.6-sol": {
+      "input": 1052154,
+      "output": 115575,
+      "cache_read": 18344576
+     },
+     "gpt-5.6-luna": {
+      "input": 1446420,
+      "output": 203078,
+      "cache_read": 59318784
+     },
+     "codex-auto-review": {
+      "input": 322219,
+      "output": 4650,
+      "cache_read": 1601024
      }
     }
    }
@@ -623,10 +938,20 @@
   "2026-08-17": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 17563382,
-      "output": 1070561,
-      "cache_read": 309887872
+     "gpt-5.6-sol": {
+      "input": 366030,
+      "output": 17642,
+      "cache_read": 1709056
+     },
+     "gpt-5.6-luna": {
+      "input": 14825212,
+      "output": 1045477,
+      "cache_read": 304192640
+     },
+     "codex-auto-review": {
+      "input": 2372140,
+      "output": 7442,
+      "cache_read": 3986176
      }
     }
    }
@@ -634,10 +959,20 @@
   "2026-08-18": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 21893366,
-      "output": 1728508,
-      "cache_read": 390116480
+     "gpt-5.6-luna": {
+      "input": 2181022,
+      "output": 91528,
+      "cache_read": 18786048
+     },
+     "gpt-5.6-sol": {
+      "input": 18026916,
+      "output": 1625690,
+      "cache_read": 367570560
+     },
+     "codex-auto-review": {
+      "input": 1685428,
+      "output": 11290,
+      "cache_read": 3759872
      }
     }
    }
@@ -645,10 +980,15 @@
   "2026-08-19": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 58061665,
-      "output": 8038267,
-      "cache_read": 1775279104
+     "gpt-5.6-sol": {
+      "input": 55756759,
+      "output": 8023348,
+      "cache_read": 1768849920
+     },
+     "codex-auto-review": {
+      "input": 2304906,
+      "output": 14919,
+      "cache_read": 6429184
      }
     }
    }
@@ -656,10 +996,15 @@
   "2026-08-20": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 17297079,
-      "output": 2098528,
-      "cache_read": 463401088
+     "gpt-5.6-sol": {
+      "input": 16113224,
+      "output": 2090117,
+      "cache_read": 458010752
+     },
+     "codex-auto-review": {
+      "input": 1183855,
+      "output": 8411,
+      "cache_read": 5390336
      }
     }
    }
@@ -696,10 +1041,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 47235939,
-      "output": 6192836,
-      "cache_read": 1827821824
+     "gpt-5.6-sol": {
+      "input": 46461668,
+      "output": 6187942,
+      "cache_read": 1826323712
+     },
+     "codex-auto-review": {
+      "input": 774271,
+      "output": 4894,
+      "cache_read": 1498112
      }
     }
    }
@@ -707,10 +1057,15 @@
   "2026-08-22": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 11107846,
-      "output": 1316030,
-      "cache_read": 318775296
+     "gpt-5.6-sol": {
+      "input": 9375019,
+      "output": 1309259,
+      "cache_read": 316446208
+     },
+     "codex-auto-review": {
+      "input": 1732827,
+      "output": 6771,
+      "cache_read": 2329088
      }
     }
    }
@@ -727,10 +1082,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 26259758,
-      "output": 3438983,
-      "cache_read": 876042880
+     "gpt-5.6-sol": {
+      "input": 25379257,
+      "output": 3434813,
+      "cache_read": 874915200
+     },
+     "codex-auto-review": {
+      "input": 880501,
+      "output": 4170,
+      "cache_read": 1127680
      }
     }
    }
@@ -738,10 +1098,25 @@
   "2026-08-24": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2180787,
-      "output": 170548,
-      "cache_read": 34688384
+     "gpt-5.6-luna": {
+      "input": 391176,
+      "output": 91121,
+      "cache_read": 31441408
+     },
+     "gpt-5.4-mini": {
+      "input": 859138,
+      "output": 55624,
+      "cache_read": 2324864
+     },
+     "gpt-5.4": {
+      "input": 257441,
+      "output": 22023,
+      "cache_read": 674304
+     },
+     "codex-auto-review": {
+      "input": 673032,
+      "output": 1780,
+      "cache_read": 247808
      }
     }
    },
@@ -766,10 +1141,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 6456950,
-      "output": 750528,
-      "cache_read": 176968832
+     "gpt-5.6-sol": {
+      "input": 5091133,
+      "output": 743032,
+      "cache_read": 166120576
+     },
+     "codex-auto-review": {
+      "input": 1365817,
+      "output": 7496,
+      "cache_read": 10848256
      }
     }
    }
@@ -777,7 +1157,7 @@
   "2026-08-25": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 158863,
       "output": 6413,
       "cache_read": 1070080
@@ -786,10 +1166,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 5543685,
-      "output": 556237,
-      "cache_read": 136348160
+     "gpt-5.6-sol": {
+      "input": 5505346,
+      "output": 555898,
+      "cache_read": 136332288
+     },
+     "codex-auto-review": {
+      "input": 38339,
+      "output": 339,
+      "cache_read": 15872
      }
     }
    }
@@ -797,10 +1182,15 @@
   "2026-08-26": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 7796432,
-      "output": 889117,
-      "cache_read": 162419840
+     "gpt-5.6-sol": {
+      "input": 7463406,
+      "output": 885306,
+      "cache_read": 159731328
+     },
+     "codex-auto-review": {
+      "input": 333026,
+      "output": 3811,
+      "cache_read": 2688512
      }
     }
    }
@@ -808,10 +1198,15 @@
   "2026-08-27": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 5400526,
-      "output": 659338,
-      "cache_read": 83241088
+     "gpt-5.6-sol": {
+      "input": 5364077,
+      "output": 659017,
+      "cache_read": 83202688
+     },
+     "codex-auto-review": {
+      "input": 36449,
+      "output": 321,
+      "cache_read": 38400
      }
     }
    }
@@ -819,16 +1214,21 @@
   "2026-08-28": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 810799,
-      "output": 114169,
-      "cache_read": 11742848
+     "gpt-5.6-sol": {
+      "input": 715111,
+      "output": 112016,
+      "cache_read": 11421824
+     },
+     "codex-auto-review": {
+      "input": 95688,
+      "output": 2153,
+      "cache_read": 321024
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 14014627,
       "output": 1984006,
       "cache_read": 440970240
@@ -839,7 +1239,7 @@
   "2026-08-29": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 10690562,
       "output": 1478799,
       "cache_read": 310298624
@@ -850,7 +1250,7 @@
   "2026-08-30": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 96967,
       "output": 3286,
       "cache_read": 311808
@@ -859,7 +1259,7 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 28511807,
       "output": 3594495,
       "cache_read": 968954496
@@ -870,7 +1270,7 @@
   "2026-08-31": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 19431547,
       "output": 2338540,
       "cache_read": 571516544
@@ -881,7 +1281,7 @@
   "2026-09-01": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 27412,
       "output": 8,
       "cache_read": 0
@@ -890,10 +1290,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 3617325,
-      "output": 311942,
-      "cache_read": 73981696
+     "gpt-5.6-sol": {
+      "input": 3442307,
+      "output": 308840,
+      "cache_read": 72951040
+     },
+     "codex-auto-review": {
+      "input": 175018,
+      "output": 3102,
+      "cache_read": 1030656
      }
     }
    }
@@ -901,7 +1306,7 @@
   "2026-09-02": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 9186232,
       "output": 961957,
       "cache_read": 220626944
@@ -912,7 +1317,7 @@
   "2026-09-03": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 8395878,
       "output": 1205454,
       "cache_read": 254134400
@@ -923,7 +1328,7 @@
   "2026-09-04": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 1649653,
       "output": 196197,
       "cache_read": 132846464
@@ -934,7 +1339,7 @@
   "2026-09-06": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 1823447,
       "output": 245865,
       "cache_read": 49255552
@@ -945,7 +1350,7 @@
   "2026-09-07": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 12086821,
       "output": 1481392,
       "cache_read": 470007808
@@ -956,19 +1361,29 @@
   "2026-09-08": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 292178,
-      "output": 13816,
-      "cache_read": 3001728
+     "gpt-6-astra": {
+      "input": 239160,
+      "output": 12180,
+      "cache_read": 2724480
+     },
+     "codex-auto-review": {
+      "input": 53018,
+      "output": 1636,
+      "cache_read": 277248
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4886505,
-      "output": 894444,
-      "cache_read": 181012096
+     "gpt-5.6-sol": {
+      "input": 1343216,
+      "output": 213166,
+      "cache_read": 48044416
+     },
+     "gpt-6-astra": {
+      "input": 3543289,
+      "output": 681278,
+      "cache_read": 132967680
      }
     }
    }
@@ -976,7 +1391,7 @@
   "2026-09-09": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 220561,
       "output": 37218,
       "cache_read": 12505600
@@ -985,7 +1400,7 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 655237,
       "output": 68890,
       "cache_read": 16766464
@@ -996,7 +1411,7 @@
   "2026-09-11": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 521035,
       "output": 43463,
       "cache_read": 11073664
@@ -1007,10 +1422,15 @@
   "2026-09-12": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2245486,
-      "output": 275449,
-      "cache_read": 58338560
+     "gpt-5.6-sol": {
+      "input": 1667107,
+      "output": 221713,
+      "cache_read": 44184192
+     },
+     "gpt-6-astra": {
+      "input": 578379,
+      "output": 53736,
+      "cache_read": 14154368
      }
     }
    }
@@ -1018,10 +1438,15 @@
   "2026-09-13": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 679780,
-      "output": 23794,
-      "cache_read": 4773504
+     "gpt-5.6-sol": {
+      "input": 546242,
+      "output": 21654,
+      "cache_read": 3532416
+     },
+     "gpt-6-astra": {
+      "input": 133538,
+      "output": 2140,
+      "cache_read": 1241088
      }
     }
    }
@@ -1029,10 +1454,15 @@
   "2026-09-14": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 1801080,
-      "output": 136418,
-      "cache_read": 18096512
+     "gpt-5.6-sol": {
+      "input": 1653315,
+      "output": 114685,
+      "cache_read": 16758400
+     },
+     "gpt-6-astra": {
+      "input": 147765,
+      "output": 21733,
+      "cache_read": 1338112
      }
     }
    }
@@ -1040,7 +1470,7 @@
   "2026-09-15": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 758719,
       "output": 104107,
       "cache_read": 16535552
@@ -1051,10 +1481,15 @@
   "2026-09-16": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 4087370,
-      "output": 595312,
-      "cache_read": 144391168
+     "gpt-5.6-sol": {
+      "input": 3160000,
+      "output": 478966,
+      "cache_read": 123394688
+     },
+     "gpt-6-astra": {
+      "input": 927370,
+      "output": 116346,
+      "cache_read": 20996480
      }
     }
    }
@@ -1062,10 +1497,15 @@
   "2026-09-17": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 2225421,
-      "output": 333527,
-      "cache_read": 75202560
+     "gpt-5.6-sol": {
+      "input": 1811570,
+      "output": 221933,
+      "cache_read": 63502080
+     },
+     "gpt-6-astra": {
+      "input": 413851,
+      "output": 111594,
+      "cache_read": 11700480
      }
     }
    }
@@ -1073,7 +1513,7 @@
   "2026-09-18": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 327474,
       "output": 20937,
       "cache_read": 2345344
@@ -1084,7 +1524,7 @@
   "2026-09-19": {
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-5.6-sol": {
       "input": 954945,
       "output": 62592,
       "cache_read": 14583296
@@ -1095,10 +1535,15 @@
   "2026-09-20": {
    "codex-wuyou-dev": {
     "models": {
+     "gpt-5.6-sol": {
+      "input": 1698492,
+      "output": 127425,
+      "cache_read": 35024768
+     },
      "gpt-6.1-sol": {
-      "input": 3015736,
-      "output": 364919,
-      "cache_read": 86039808
+      "input": 1317244,
+      "output": 237494,
+      "cache_read": 51015040
      }
     }
    }
@@ -1107,9 +1552,24 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2347154,
-      "output": 279390,
-      "cache_read": 61106816
+      "input": 1054960,
+      "output": 66473,
+      "cache_read": 9345280
+     },
+     "gpt-5.6-sol": {
+      "input": 870696,
+      "output": 140518,
+      "cache_read": 39317760
+     },
+     "gpt-5.6-terra": {
+      "input": 83672,
+      "output": 5090,
+      "cache_read": 739328
+     },
+     "gpt-6-astra": {
+      "input": 337826,
+      "output": 67309,
+      "cache_read": 11704448
      }
     }
    }
@@ -1118,9 +1578,19 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2648714,
-      "output": 287287,
-      "cache_read": 54824320
+      "input": 352246,
+      "output": 61944,
+      "cache_read": 15817472
+     },
+     "gpt-6-astra": {
+      "input": 1506648,
+      "output": 211302,
+      "cache_read": 32650624
+     },
+     "codex-auto-review": {
+      "input": 789820,
+      "output": 14041,
+      "cache_read": 6356224
      }
     }
    },
@@ -1141,9 +1611,14 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1107193,
-      "output": 116975,
-      "cache_read": 18016896
+      "input": 909715,
+      "output": 88327,
+      "cache_read": 12917760
+     },
+     "gpt-5.6-sol": {
+      "input": 197478,
+      "output": 28648,
+      "cache_read": 5099136
      }
     }
    }
@@ -1151,10 +1626,15 @@
   "2026-09-23": {
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 439535,
-      "output": 31999,
-      "cache_read": 3849088
+     "gpt-6-sol": {
+      "input": 362682,
+      "output": 29607,
+      "cache_read": 3338368
+     },
+     "codex-auto-review": {
+      "input": 76853,
+      "output": 2392,
+      "cache_read": 510720
      }
     }
    },
@@ -1170,9 +1650,14 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1185583,
-      "output": 77350,
-      "cache_read": 8624000
+      "input": 538924,
+      "output": 47392,
+      "cache_read": 4117760
+     },
+     "gpt-5.6-sol": {
+      "input": 646659,
+      "output": 29958,
+      "cache_read": 4506240
      }
     }
    }
@@ -1181,18 +1666,33 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 238181,
-      "output": 13141,
-      "cache_read": 5691008
+      "input": 186275,
+      "output": 11949,
+      "cache_read": 5434240
+     },
+     "codex-auto-review": {
+      "input": 51906,
+      "output": 1192,
+      "cache_read": 256768
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2154335,
-      "output": 208122,
-      "cache_read": 32527488
+      "input": 673592,
+      "output": 44529,
+      "cache_read": 4404864
+     },
+     "gpt-6-astra": {
+      "input": 1275548,
+      "output": 145011,
+      "cache_read": 26852224
+     },
+     "gpt-5.6-sol": {
+      "input": 205195,
+      "output": 18582,
+      "cache_read": 1270400
      }
     }
    }
@@ -1209,10 +1709,20 @@
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-5.6-sol": {
+      "input": 195230,
+      "output": 12362,
+      "cache_read": 2216960
+     },
      "gpt-6.1-sol": {
-      "input": 2298448,
-      "output": 171552,
-      "cache_read": 27231872
+      "input": 838943,
+      "output": 44814,
+      "cache_read": 6272512
+     },
+     "gpt-6-astra": {
+      "input": 1264275,
+      "output": 114376,
+      "cache_read": 18742400
      }
     }
    }
@@ -1235,9 +1745,14 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2895196,
-      "output": 225711,
-      "cache_read": 53438976
+      "input": 1361656,
+      "output": 101252,
+      "cache_read": 15600128
+     },
+     "gpt-6-astra": {
+      "input": 1533540,
+      "output": 124459,
+      "cache_read": 37838848
      }
     }
    }
@@ -1255,9 +1770,14 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2671204,
-      "output": 229629,
-      "cache_read": 43721344
+      "input": 2146,
+      "output": 640,
+      "cache_read": 230144
+     },
+     "gpt-6-astra": {
+      "input": 2669058,
+      "output": 228989,
+      "cache_read": 43491200
      }
     }
    }
@@ -1274,7 +1794,7 @@
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-6-astra": {
       "input": 2146283,
       "output": 340493,
       "cache_read": 55729664
@@ -1294,10 +1814,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 2365790,
+      "output": 332717,
+      "cache_read": 42253824
+     },
      "gpt-6.1-sol": {
-      "input": 2578080,
-      "output": 385412,
-      "cache_read": 52867456
+      "input": 212290,
+      "output": 52695,
+      "cache_read": 10613632
      }
     }
    }
@@ -1323,10 +1848,25 @@
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 1882967,
+      "output": 99580,
+      "cache_read": 19713664
+     },
+     "gpt-5.6-sol": {
+      "input": 628615,
+      "output": 55185,
+      "cache_read": 8483840
+     },
      "gpt-6.1-sol": {
-      "input": 2582605,
-      "output": 156235,
-      "cache_read": 28366720
+      "input": 53751,
+      "output": 1298,
+      "cache_read": 164352
+     },
+     "codex-auto-review": {
+      "input": 17272,
+      "output": 172,
+      "cache_read": 4864
      }
     }
    }
@@ -1335,9 +1875,14 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 230952,
-      "output": 37334,
-      "cache_read": 4843008
+      "input": 155937,
+      "output": 34964,
+      "cache_read": 4122368
+     },
+     "codex-auto-review": {
+      "input": 75015,
+      "output": 2370,
+      "cache_read": 720640
      }
     }
    },
@@ -1371,10 +1916,20 @@
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 769962,
+      "output": 27362,
+      "cache_read": 5983360
+     },
      "gpt-6.1-sol": {
-      "input": 1306312,
-      "output": 84860,
-      "cache_read": 12616576
+      "input": 471593,
+      "output": 56395,
+      "cache_read": 6412032
+     },
+     "codex-auto-review": {
+      "input": 64757,
+      "output": 1103,
+      "cache_read": 221184
      }
     }
    }
@@ -1411,18 +1966,33 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 6856569,
-      "output": 832703,
-      "cache_read": 164108032
+      "input": 6202878,
+      "output": 789485,
+      "cache_read": 158647168
+     },
+     "gpt-6-astra": {
+      "input": 229679,
+      "output": 37036,
+      "cache_read": 3682944
+     },
+     "codex-auto-review": {
+      "input": 424012,
+      "output": 6182,
+      "cache_read": 1777920
      }
     }
    },
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 385824,
-      "output": 84214,
-      "cache_read": 13731328
+      "input": 1061562,
+      "output": 122081,
+      "cache_read": 30149888
+     },
+     "codex-auto-review": {
+      "input": 245184,
+      "output": 2963,
+      "cache_read": 397312
      }
     }
    }
@@ -1431,18 +2001,23 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 189502,
-      "output": 68665,
-      "cache_read": 5100928
+      "input": 267225,
+      "output": 79266,
+      "cache_read": 8587008
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 8525649,
-      "output": 842353,
-      "cache_read": 217688448
+      "input": 8213554,
+      "output": 839878,
+      "cache_read": 217389952
+     },
+     "codex-auto-review": {
+      "input": 312095,
+      "output": 2475,
+      "cache_read": 298496
      }
     }
    },
@@ -1488,9 +2063,14 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 55285,
-      "output": 2189,
-      "cache_read": 407936
+      "input": 46514,
+      "output": 1637,
+      "cache_read": 375168
+     },
+     "codex-auto-review": {
+      "input": 8771,
+      "output": 552,
+      "cache_read": 32768
      }
     }
    },
@@ -1506,9 +2086,14 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 392850,
-      "output": 83066,
-      "cache_read": 8890240
+      "input": 1907924,
+      "output": 182837,
+      "cache_read": 30136832
+     },
+     "codex-auto-review": {
+      "input": 239513,
+      "output": 5489,
+      "cache_read": 1407744
      }
     }
    }
@@ -1520,6 +2105,11 @@
       "input": 115606,
       "output": 22262,
       "cache_read": 1532672
+     },
+     "codex-auto-review": {
+      "input": 43320,
+      "output": 689,
+      "cache_read": 164352
      }
     }
    },
@@ -1577,6 +2167,11 @@
       "input": 189227,
       "output": 33674,
       "cache_read": 2023552
+     },
+     "codex-auto-review": {
+      "input": 38595,
+      "output": 546,
+      "cache_read": 98304
      }
     }
    }
@@ -1602,10 +2197,15 @@
    },
    "codex": {
     "models": {
-     "gpt-6.1-sol": {
-      "input": 391701,
-      "output": 65093,
-      "cache_read": 13135488
+     "gpt-6-astra": {
+      "input": 825739,
+      "output": 107551,
+      "cache_read": 20226304
+     },
+     "codex-auto-review": {
+      "input": 60881,
+      "output": 1070,
+      "cache_read": 305152
      }
     }
    }
@@ -1623,18 +2223,38 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 839099,
-      "output": 82959,
-      "cache_read": 11203456
+      "input": 446756,
+      "output": 27007,
+      "cache_read": 2298368
+     },
+     "codex-auto-review": {
+      "input": 121468,
+      "output": 1440,
+      "cache_read": 186112
+     },
+     "gpt-6-astra": {
+      "input": 392343,
+      "output": 55952,
+      "cache_read": 8905088
      }
     }
    },
    "codex": {
     "models": {
+     "gpt-6-astra": {
+      "input": 354373,
+      "output": 19529,
+      "cache_read": 2157056
+     },
      "gpt-6.1-sol": {
       "input": 597777,
       "output": 150926,
       "cache_read": 36911104
+     },
+     "codex-auto-review": {
+      "input": 846681,
+      "output": 9580,
+      "cache_read": 15592448
      }
     }
    }
@@ -1657,33 +2277,44 @@
       "cache_read": 37876736
      }
     }
-   },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 172086,
-      "output": 3659,
-      "cache_read": 1515036
-     }
-    }
    }
   },
   "2026-10-10": {
    "codex": {
     "models": {
+     "gpt-6-astra": {
+      "input": 30469,
+      "output": 5,
+      "cache_read": 0
+     },
      "gpt-6.1-sol": {
-      "input": 4755883,
-      "output": 349037,
-      "cache_read": 114429184
+      "input": 3800809,
+      "output": 329811,
+      "cache_read": 88352512
+     },
+     "codex-auto-review": {
+      "input": 924605,
+      "output": 19221,
+      "cache_read": 26076672
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 1846964,
+      "output": 123898,
+      "cache_read": 40007424
+     },
+     "codex-auto-review": {
+      "input": 88041,
+      "output": 901,
+      "cache_read": 64000
+     },
      "gpt-6.1-sol": {
-      "input": 2105965,
-      "output": 145302,
-      "cache_read": 46866816
+      "input": 170960,
+      "output": 20503,
+      "cache_read": 6795392
      }
     }
    },
@@ -1705,30 +2336,26 @@
       "cache_read": 895360
      }
     }
-   },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 259437,
-      "output": 94133,
-      "cache_read": 8472808
-     }
-    }
    }
   },
   "2026-10-11": {
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4846748,
-      "output": 734955,
-      "cache_read": 159125376
+      "input": 4551755,
+      "output": 731393,
+      "cache_read": 156238464
+     },
+     "codex-auto-review": {
+      "input": 294993,
+      "output": 3562,
+      "cache_read": 2886912
      }
     }
    },
    "codex-wuyou-dev": {
     "models": {
-     "gpt-6.1-sol": {
+     "gpt-6-astra": {
       "input": 2660769,
       "output": 386758,
       "cache_read": 100182400
@@ -1738,9 +2365,9 @@
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
-      "input": 4167643,
-      "output": 339861,
-      "cache_read": 87065856
+      "input": 4157948,
+      "output": 336766,
+      "cache_read": 85854080
      },
      "grok-4.7-xhigh-fast": {
       "input": 1135945,
@@ -1758,24 +2385,25 @@
       "cache_read": 18619648
      }
     }
-   },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 334672,
-      "output": 2705,
-      "cache_read": 501760
-     }
-    }
    }
   },
   "2026-10-12": {
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 6939581,
-      "output": 545231,
-      "cache_read": 217242112
+      "input": 4567565,
+      "output": 399233,
+      "cache_read": 187761152
+     },
+     "gpt-6-astra": {
+      "input": 1850030,
+      "output": 141010,
+      "cache_read": 28386816
+     },
+     "codex-auto-review": {
+      "input": 521986,
+      "output": 4988,
+      "cache_read": 1094144
      }
     }
    },
@@ -1796,14 +2424,14 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 2908151,
-      "output": 203280,
-      "cache_read": 42645535
+      "input": 3200715,
+      "output": 232660,
+      "cache_read": 47783071
      },
      "deepseek-flash": {
-      "input": 1170878,
-      "output": 200298,
-      "cache_read": 65345857
+      "input": 1171617,
+      "output": 201769,
+      "cache_read": 66514753
      }
     }
    }
@@ -1812,9 +2440,19 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 6092045,
-      "output": 758973,
-      "cache_read": 157760640
+      "input": 3365460,
+      "output": 516813,
+      "cache_read": 103634304
+     },
+     "gpt-6-astra": {
+      "input": 2369681,
+      "output": 237767,
+      "cache_read": 53208832
+     },
+     "codex-auto-review": {
+      "input": 356904,
+      "output": 4393,
+      "cache_read": 917504
      }
     }
    },
@@ -1846,24 +2484,20 @@
       "cache_read": 98688
      }
     }
-   },
-   "dsh-kimi": {
-    "models": {
-     "deepseek-flash": {
-      "input": 739,
-      "output": 1471,
-      "cache_read": 1168896
-     }
-    }
    }
   },
   "2026-10-14": {
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 2827693,
-      "output": 349072,
-      "cache_read": 59303424
+      "input": 1815788,
+      "output": 226235,
+      "cache_read": 38168448
+     },
+     "gpt-6-astra": {
+      "input": 1011905,
+      "output": 122837,
+      "cache_read": 21134976
      }
     }
    },
@@ -1899,10 +2533,15 @@
    },
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 3253823,
+      "output": 429663,
+      "cache_read": 74372864
+     },
      "gpt-6.1-sol": {
-      "input": 4477703,
-      "output": 537432,
-      "cache_read": 99935104
+      "input": 1223880,
+      "output": 107769,
+      "cache_read": 25562240
      }
     }
    },
@@ -1928,9 +2567,9 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 1202683,
-      "output": 137509,
-      "cache_read": 30239388
+      "input": 1504228,
+      "output": 204967,
+      "cache_read": 34076420
      }
     }
    }
@@ -1938,24 +2577,34 @@
   "2026-10-16": {
    "codex-wuyou-dev": {
     "models": {
+     "gpt-6-astra": {
+      "input": 7357913,
+      "output": 821075,
+      "cache_read": 166713472
+     },
      "gpt-6.1-sol": {
-      "input": 7596799,
-      "output": 764300,
-      "cache_read": 170234624
+      "input": 959878,
+      "output": 36289,
+      "cache_read": 22150016
      }
     }
    },
    "cursor": {
     "models": {
-     "gpt-5.6-sol-high": {
-      "input": 105,
-      "output": 20659,
-      "cache_read": 848594
-     },
      "grok-4.7-xhigh": {
-      "input": 375151,
-      "output": 26420,
-      "cache_read": 4505472
+      "input": 697180,
+      "output": 42280,
+      "cache_read": 5832064
+     },
+     "gpt-5.6-sol-xhigh": {
+      "input": 78,
+      "output": 21853,
+      "cache_read": 1093603
+     },
+     "gpt-5.6-sol-high": {
+      "input": 111,
+      "output": 21264,
+      "cache_read": 919491
      },
      "grok-4.7-high-fast": {
       "input": 794633,
@@ -1972,9 +2621,9 @@
    "dsh-kimi": {
     "models": {
      "k3": {
-      "input": 145522,
-      "output": 86981,
-      "cache_read": 3169128
+      "input": 694228,
+      "output": 99991,
+      "cache_read": 7558020
      },
      "deepseek-flash": {
       "input": 65458,
@@ -2088,9 +2737,9 @@
     "cache_read": 34076420
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 1145439,
-    "output": 99701,
-    "cache_read": 14985215
+    "input": 1522059,
+    "output": 109052,
+    "cache_read": 17859071
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -2110,6 +2759,11 @@
    "session-e0276719-539c-4c79-b536-25b1d750c41b": {
     "input": 10716,
     "output": 14,
+    "cache_read": 0
+   },
+   "session-ecd1c054-7423-4cd3-8c39-dd9411b39115": {
+    "input": 0,
+    "output": 0,
     "cache_read": 0
    },
    "session-f30d39af-3f5e-4b5a-9045-728ea46b84cf": {
@@ -2134,5 +2788,5 @@
    }
   }
  },
- "updated_at": "2026-10-16T19:59:02+08:00"
+ "updated_at": "2026-10-16T21:14:06+08:00"
 }

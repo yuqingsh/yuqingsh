@@ -167,10 +167,14 @@ def render(data: dict) -> str:
     mt, cache_all = model_totals(days, date.min)  # all-time cumulative
     mt = dict(sorted(mt.items(), key=lambda kv: -kv[1]))
     mt_total = sum(mt.values())
-    # fold tiny slices (<1%) into "Other" to keep the legend readable
+    # keep the legend readable: fold <1% slices into "Other", cap at 7+1 rows
     big = {k: v for k, v in mt.items() if mt_total and v / mt_total >= 0.01}
     small_sum = sum(v for k, v in mt.items() if k not in big)
     mt = big
+    if len(mt) > 8:
+        extra = sum(list(mt.values())[7:])
+        mt = dict(list(mt.items())[:7])
+        small_sum += extra
     if small_sum:
         mt["Other"] = small_sum
 
@@ -226,7 +230,8 @@ def render(data: dict) -> str:
     )
 
     width = max(PAD * 2 + LEFT_LABELS + grid_w, sx + 200)
-    height = heat_bottom + 86 + 70 + PAD
+    # height adapts to the tallest column: donut / legend / stats block
+    height = max(heat_bottom + 86 + 70, ly, heat_bottom + 30 + 6 * 22 + 8) + PAD
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Daily token usage">
 <style>
