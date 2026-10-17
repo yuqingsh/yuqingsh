@@ -1960,14 +1960,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 1061562,
-      "output": 122081,
-      "cache_read": 30149888
-     },
-     "codex-auto-review": {
-      "input": 245184,
-      "output": 2963,
-      "cache_read": 397312
+      "input": 385824,
+      "output": 84214,
+      "cache_read": 13731328
      }
     }
    }
@@ -1976,9 +1971,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 267225,
-      "output": 79266,
-      "cache_read": 8587008
+      "input": 189502,
+      "output": 68665,
+      "cache_read": 5100928
      }
     }
    },
@@ -2216,20 +2211,10 @@
    },
    "codex": {
     "models": {
-     "gpt-6-astra": {
-      "input": 529622,
-      "output": 35692,
-      "cache_read": 3292672
-     },
      "gpt-6.1-sol": {
-      "input": 422528,
-      "output": 134763,
-      "cache_read": 35775488
-     },
-     "codex-auto-review": {
-      "input": 846681,
-      "output": 9580,
-      "cache_read": 15592448
+      "input": 597777,
+      "output": 150926,
+      "cache_read": 36911104
      }
     }
    }
@@ -2257,20 +2242,10 @@
   "2026-10-10": {
    "codex": {
     "models": {
-     "gpt-6-astra": {
-      "input": 30469,
-      "output": 5,
-      "cache_read": 0
-     },
      "gpt-6.1-sol": {
-      "input": 3800809,
-      "output": 329811,
-      "cache_read": 88352512
-     },
-     "codex-auto-review": {
-      "input": 924605,
-      "output": 19221,
-      "cache_read": 26076672
+      "input": 4725414,
+      "output": 349032,
+      "cache_read": 114429184
      }
     }
    },
@@ -2317,14 +2292,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4551755,
-      "output": 731393,
-      "cache_read": 156238464
-     },
-     "codex-auto-review": {
-      "input": 294993,
-      "output": 3562,
-      "cache_read": 2886912
+      "input": 4846748,
+      "output": 734955,
+      "cache_read": 159125376
      }
     }
    },
@@ -2602,6 +2572,17 @@
      }
     }
    }
+  },
+  "2026-10-17": {
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 227829,
+      "output": 5077,
+      "cache_read": 1262592
+     }
+    }
+   }
   }
  },
  "state": {
@@ -2707,9 +2688,9 @@
     "cache_read": 34076420
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 1786055,
-    "output": 120870,
-    "cache_read": 23356542
+    "input": 2006443,
+    "output": 125313,
+    "cache_read": 24619134
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -2737,8 +2718,8 @@
     "cache_read": 0
    },
    "session-f30d39af-3f5e-4b5a-9045-728ea46b84cf": {
-    "input": 0,
-    "output": 0,
+    "input": 7441,
+    "output": 634,
     "cache_read": 0
    },
    "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
@@ -2758,5 +2739,5 @@
    }
   }
  },
- "updated_at": "2026-10-16T22:10:28+08:00"
+ "updated_at": "2026-10-17T23:02:28+08:00"
 }
