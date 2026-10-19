@@ -2518,9 +2518,9 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 7738095,
-      "output": 931271,
-      "cache_read": 184889984
+      "input": 7938446,
+      "output": 987185,
+      "cache_read": 193242240
      },
      "gpt-6.1-sol": {
       "input": 959878,
@@ -2582,20 +2582,148 @@
       "cache_read": 1262592
      }
     }
+   },
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 23582,
+      "output": 6,
+      "cache_read": 0
+     },
+     "gpt-6-astra": {
+      "input": 1717828,
+      "output": 140366,
+      "cache_read": 27037568
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "claude-fable-5-1-thinking-xhigh": {
+      "input": 612,
+      "output": 436507,
+      "cache_read": 36060806
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 453963,
+      "output": 78235,
+      "cache_read": 8223872
+     },
+     "grok-4.7-high-fast": {
+      "input": 1235082,
+      "output": 94665,
+      "cache_read": 14118528
+     },
+     "grok-4.7-xhigh": {
+      "input": 135930,
+      "output": 18818,
+      "cache_read": 936832
+     }
+    }
+   }
+  },
+  "2026-10-18": {
+   "cursor": {
+    "models": {
+     "gpt-5.6-sol-xhigh": {
+      "input": 63,
+      "output": 15694,
+      "cache_read": 688542
+     },
+     "claude-fable-5-1-thinking-xhigh": {
+      "input": 26,
+      "output": 10807,
+      "cache_read": 936043
+     },
+     "grok-4.7-xhigh-fast": {
+      "input": 1155892,
+      "output": 51396,
+      "cache_read": 6073600
+     },
+     "default": {
+      "input": 17994,
+      "output": 423,
+      "cache_read": 32896
+     },
+     "grok-4.7-xhigh": {
+      "input": 436265,
+      "output": 3717,
+      "cache_read": 6076800
+     }
+    }
+   }
+  },
+  "2026-10-19": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 2600506,
+      "output": 272538,
+      "cache_read": 72984960
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "claude-opus-5-5-xhigh": {
+      "input": 1288,
+      "output": 968927,
+      "cache_read": 89703880
+     },
+     "grok-4.7-high-fast": {
+      "input": 55907,
+      "output": 4794,
+      "cache_read": 88320
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "deepseek-flash": {
+      "input": 477894,
+      "output": 818782,
+      "cache_read": 83807232
+     }
+    }
    }
   }
  },
  "state": {
   "dsh_sessions": {
+   "011254a9-dbb0-4829-a692-fecb2fa880c2": {
+    "input": 12872,
+    "output": 13201,
+    "cache_read": 356608
+   },
+   "145d00cf-3880-48af-b0f8-a370ab0469fb": {
+    "input": 32601,
+    "output": 61226,
+    "cache_read": 2343936
+   },
    "1ae4a4bd-6ba6-4e37-b2db-f6258772745e": {
     "input": 217914,
     "output": 23819,
     "cache_read": 4886698
    },
+   "5d086765-be26-479a-a31f-38c0fc812362": {
+    "input": 21480,
+    "output": 70544,
+    "cache_read": 705920
+   },
    "a2e311b5-8137-46e4-a912-4d885b65ab86": {
     "input": 744943,
     "output": 14020,
     "cache_read": 4351962
+   },
+   "d0fc448b-29c0-43f4-8e49-de51f8897c2c": {
+    "input": 58961,
+    "output": 102013,
+    "cache_read": 4190080
+   },
+   "eb2e2343-50e3-4901-b6b2-147dde01fcc2": {
+    "input": 21099,
+    "output": 50564,
+    "cache_read": 258432
    },
    "session-0ea5268d-ec99-484e-92a2-e380d514a04b": {
     "input": 121277,
@@ -2647,6 +2775,11 @@
     "output": 14,
     "cache_read": 0
    },
+   "session-4644a964-1776-413d-af3a-08cbabef8a97": {
+    "input": 204689,
+    "output": 332675,
+    "cache_read": 61386624
+   },
    "session-6f0c9aef-18c8-4e3c-a3b4-adf89bced01f": {
     "input": 30229,
     "output": 3670,
@@ -2686,6 +2819,11 @@
     "input": 1504228,
     "output": 204967,
     "cache_read": 34076420
+   },
+   "session-ba20d8c8-28ce-4122-bd07-1e3a13ad4e6f": {
+    "input": 126192,
+    "output": 188559,
+    "cache_read": 14565632
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
     "input": 2006443,
@@ -2739,5 +2877,5 @@
    }
   }
  },
- "updated_at": "2026-10-17T23:02:28+08:00"
+ "updated_at": "2026-10-19T16:11:48+08:00"
 }
