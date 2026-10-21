@@ -3792,9 +3792,9 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 2421011,
-      "output": 167715,
-      "cache_read": 36866432
+      "input": 4218229,
+      "output": 456919,
+      "cache_read": 97653760
      },
      "codex-auto-review": {
       "input": 225309,
@@ -4063,5 +4063,5 @@
    }
   }
  },
- "updated_at": "2026-10-21T11:47:16+08:00"
+ "updated_at": "2026-10-21T17:48:49+08:00"
 }
