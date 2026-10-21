@@ -1,5 +1,965 @@
 {
  "days": {
+  "2025-06-03": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2025-06-04": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2025-06-05": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2025-12-22": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 21245,
+      "output": 144219,
+      "cache_read": 16261888
+     }
+    }
+   }
+  },
+  "2025-12-23": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 28445,
+      "cache_read": 882944
+     }
+    }
+   }
+  },
+  "2025-12-24": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 4300,
+      "output": 27738,
+      "cache_read": 1458176
+     }
+    }
+   }
+  },
+  "2025-12-25": {
+   "cursor": {
+    "models": {
+     "claude-4.5-sonnet-thinking": {
+      "input": 14904,
+      "output": 22934,
+      "cache_read": 1143972
+     },
+     "default": {
+      "input": 2124,
+      "output": 50240,
+      "cache_read": 2899200
+     }
+    }
+   }
+  },
+  "2025-12-30": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2417,
+      "output": 81124,
+      "cache_read": 9270784
+     }
+    }
+   }
+  },
+  "2025-12-31": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 19165,
+      "cache_read": 4744704
+     }
+    }
+   }
+  },
+  "2026-01-12": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 9813,
+      "output": 17831,
+      "cache_read": 920448
+     }
+    }
+   }
+  },
+  "2026-01-14": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 592160,
+      "output": 59774,
+      "cache_read": 8506496
+     }
+    }
+   }
+  },
+  "2026-01-16": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 1567,
+      "cache_read": 29696
+     }
+    }
+   }
+  },
+  "2026-01-17": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 107324,
+      "output": 67719,
+      "cache_read": 13289472
+     }
+    }
+   }
+  },
+  "2026-01-18": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 17184,
+      "output": 30899,
+      "cache_read": 2528768
+     }
+    }
+   }
+  },
+  "2026-01-21": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 740557,
+      "output": 56224,
+      "cache_read": 4241408
+     }
+    }
+   }
+  },
+  "2026-01-22": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 409543,
+      "output": 67000,
+      "cache_read": 6786048
+     }
+    }
+   }
+  },
+  "2026-01-23": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 89207,
+      "output": 52991,
+      "cache_read": 6588544
+     }
+    }
+   }
+  },
+  "2026-01-25": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 5423,
+      "cache_read": 446464
+     }
+    }
+   }
+  },
+  "2026-01-27": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 317844,
+      "output": 30160,
+      "cache_read": 2571520
+     }
+    }
+   }
+  },
+  "2026-01-28": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 164385,
+      "output": 36527,
+      "cache_read": 5596160
+     }
+    }
+   }
+  },
+  "2026-01-30": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 164483,
+      "output": 24761,
+      "cache_read": 1337600
+     }
+    }
+   }
+  },
+  "2026-02-09": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 91439,
+      "output": 4914,
+      "cache_read": 429568
+     }
+    }
+   }
+  },
+  "2026-02-10": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 10988,
+      "output": 1924,
+      "cache_read": 8832
+     }
+    }
+   }
+  },
+  "2026-02-12": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 499218,
+      "output": 22143,
+      "cache_read": 1679872
+     }
+    }
+   }
+  },
+  "2026-02-13": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 398650,
+      "output": 26916,
+      "cache_read": 1553024
+     }
+    }
+   }
+  },
+  "2026-02-19": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2026-02-21": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 124705,
+      "output": 13080,
+      "cache_read": 1722880
+     }
+    }
+   }
+  },
+  "2026-02-22": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 408264,
+      "output": 49391,
+      "cache_read": 5463552
+     }
+    }
+   }
+  },
+  "2026-02-24": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 293409,
+      "output": 1086,
+      "cache_read": 442624
+     }
+    }
+   }
+  },
+  "2026-02-26": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 207563,
+      "output": 5854,
+      "cache_read": 1168896
+     }
+    }
+   }
+  },
+  "2026-03-01": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 249000,
+      "output": 57545,
+      "cache_read": 3718144
+     }
+    }
+   }
+  },
+  "2026-03-02": {
+   "cursor": {
+    "models": {
+     "claude-4.6-opus-high-thinking": {
+      "input": 189916,
+      "output": 82294,
+      "cache_read": 5528785
+     },
+     "default": {
+      "input": 593468,
+      "output": 13696,
+      "cache_read": 2037632
+     }
+    }
+   }
+  },
+  "2026-03-03": {
+   "cursor": {
+    "models": {
+     "claude-4.6-opus-high-thinking": {
+      "input": 319258,
+      "output": 105205,
+      "cache_read": 9573939
+     },
+     "composer-1.5": {
+      "input": 71377,
+      "output": 3320,
+      "cache_read": 203040
+     }
+    }
+   }
+  },
+  "2026-03-04": {
+   "cursor": {
+    "models": {
+     "claude-4.6-opus-high-thinking": {
+      "input": 54857,
+      "output": 55525,
+      "cache_read": 7751828
+     }
+    }
+   }
+  },
+  "2026-03-05": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 50147,
+      "output": 6744,
+      "cache_read": 864768
+     },
+     "claude-4.6-opus-high-thinking": {
+      "input": 37911,
+      "output": 74961,
+      "cache_read": 13318106
+     }
+    }
+   }
+  },
+  "2026-03-06": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 621939,
+      "output": 37717,
+      "cache_read": 4208256
+     }
+    }
+   }
+  },
+  "2026-03-09": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1001398,
+      "output": 54728,
+      "cache_read": 2641152
+     }
+    }
+   }
+  },
+  "2026-03-10": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     },
+     "claude-4.6-opus-high-thinking": {
+      "input": 5778,
+      "output": 42736,
+      "cache_read": 3555507
+     },
+     "composer-1": {
+      "input": 81145,
+      "output": 8141,
+      "cache_read": 137632
+     },
+     "gpt-5.4-medium": {
+      "input": 115367,
+      "output": 4681,
+      "cache_read": 131072
+     }
+    }
+   }
+  },
+  "2026-03-12": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2761,
+      "output": 969,
+      "cache_read": 47488
+     }
+    }
+   }
+  },
+  "2026-03-13": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 50528,
+      "output": 10247,
+      "cache_read": 264320
+     }
+    }
+   }
+  },
+  "2026-03-16": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 486942,
+      "output": 7735,
+      "cache_read": 1848576
+     },
+     "claude-4.6-opus-high-thinking": {
+      "input": 130623,
+      "output": 145717,
+      "cache_read": 9087623
+     }
+    }
+   }
+  },
+  "2026-03-17": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 163736,
+      "output": 8275,
+      "cache_read": 469632
+     }
+    }
+   }
+  },
+  "2026-03-18": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2545338,
+      "output": 82434,
+      "cache_read": 21592064
+     }
+    }
+   }
+  },
+  "2026-03-19": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 751680,
+      "output": 98793,
+      "cache_read": 16718848
+     }
+    }
+   }
+  },
+  "2026-03-20": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1763397,
+      "output": 86899,
+      "cache_read": 17666976
+     }
+    }
+   }
+  },
+  "2026-03-22": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1064809,
+      "output": 75966,
+      "cache_read": 8070240
+     }
+    }
+   }
+  },
+  "2026-03-23": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1307588,
+      "output": 140987,
+      "cache_read": 12612576
+     }
+    }
+   }
+  },
+  "2026-03-24": {
+   "cursor": {
+    "models": {
+     "composer-2": {
+      "input": 1004404,
+      "output": 105609,
+      "cache_read": 11126112
+     },
+     "default": {
+      "input": 816608,
+      "output": 47257,
+      "cache_read": 15528960
+     }
+    }
+   }
+  },
+  "2026-03-25": {
+   "cursor": {
+    "models": {
+     "composer-2": {
+      "input": 818471,
+      "output": 44265,
+      "cache_read": 10937632
+     }
+    }
+   }
+  },
+  "2026-03-26": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2204077,
+      "output": 153428,
+      "cache_read": 23067328
+     }
+    }
+   }
+  },
+  "2026-03-30": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1236084,
+      "output": 159121,
+      "cache_read": 19190560
+     },
+     "claude-4.6-opus-high-thinking": {
+      "input": 207169,
+      "output": 107040,
+      "cache_read": 4073852
+     }
+    }
+   }
+  },
+  "2026-03-31": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 74753,
+      "output": 6954,
+      "cache_read": 773248
+     }
+    }
+   }
+  },
+  "2026-04-09": {
+   "cursor": {
+    "models": {
+     "claude-4.6-opus-high-thinking": {
+      "input": 157227,
+      "output": 50232,
+      "cache_read": 3659797
+     },
+     "default": {
+      "input": 102662,
+      "output": 83651,
+      "cache_read": 8150560
+     }
+    }
+   }
+  },
+  "2026-04-14": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 21648,
+      "output": 8730,
+      "cache_read": 131744
+     }
+    }
+   }
+  },
+  "2026-04-15": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1129851,
+      "output": 282160,
+      "cache_read": 32027872
+     },
+     "Premium (Codex 5.3)": {
+      "input": 267970,
+      "output": 4804,
+      "cache_read": 2113152
+     }
+    }
+   }
+  },
+  "2026-04-16": {
+   "cursor": {
+    "models": {
+     "claude-4.6-opus-high-thinking": {
+      "input": 159464,
+      "output": 56746,
+      "cache_read": 2907559
+     },
+     "composer-2-fast": {
+      "input": 18099,
+      "output": 4291,
+      "cache_read": 79008
+     },
+     "default": {
+      "input": 1170982,
+      "output": 253977,
+      "cache_read": 30776352
+     },
+     "Premium (Codex 5.3)": {
+      "input": 154981,
+      "output": 16364,
+      "cache_read": 1751552
+     }
+    }
+   }
+  },
+  "2026-04-17": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 596250,
+      "output": 95523,
+      "cache_read": 14452064
+     },
+     "claude-opus-4-7-thinking-high": {
+      "input": 16,
+      "output": 16689,
+      "cache_read": 1127000
+     }
+    }
+   }
+  },
+  "2026-04-18": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 146566,
+      "output": 17966,
+      "cache_read": 1463712
+     }
+    }
+   }
+  },
+  "2026-04-20": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 624100,
+      "output": 96846,
+      "cache_read": 10798080
+     }
+    }
+   }
+  },
+  "2026-04-21": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 502082,
+      "output": 14626,
+      "cache_read": 185344
+     }
+    }
+   }
+  },
+  "2026-04-22": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1594377,
+      "output": 350842,
+      "cache_read": 50442752
+     },
+     "claude-opus-4-7-thinking-high": {
+      "input": 110069,
+      "output": 57288,
+      "cache_read": 3884305
+     }
+    }
+   }
+  },
+  "2026-04-23": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2049119,
+      "output": 236339,
+      "cache_read": 31295488
+     },
+     "claude-opus-4-7-thinking-high": {
+      "input": 164273,
+      "output": 63664,
+      "cache_read": 7590715
+     }
+    }
+   }
+  },
+  "2026-04-24": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1638426,
+      "output": 255363,
+      "cache_read": 51799488
+     },
+     "claude-opus-4-7-thinking-xhigh": {
+      "input": 138441,
+      "output": 126112,
+      "cache_read": 14343964
+     },
+     "composer-2-fast": {
+      "input": 50010,
+      "output": 7260,
+      "cache_read": 423008
+     }
+    }
+   }
+  },
+  "2026-04-25": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 661407,
+      "output": 95068,
+      "cache_read": 15596768
+     }
+    }
+   }
+  },
+  "2026-04-27": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1804416,
+      "output": 192435,
+      "cache_read": 29455584
+     },
+     "claude-opus-4-7-thinking-xhigh": {
+      "input": 99761,
+      "output": 70464,
+      "cache_read": 10497911
+     },
+     "claude-4.6-sonnet-medium-thinking": {
+      "input": 9,
+      "output": 22548,
+      "cache_read": 448962
+     }
+    }
+   }
+  },
+  "2026-04-28": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 465665,
+      "output": 7917,
+      "cache_read": 3672320
+     }
+    }
+   }
+  },
+  "2026-04-29": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1821634,
+      "output": 64332,
+      "cache_read": 13073408
+     }
+    }
+   }
+  },
+  "2026-04-30": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 175582,
+      "output": 6264,
+      "cache_read": 922240
+     }
+    }
+   }
+  },
+  "2026-05-01": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 58340,
+      "output": 854,
+      "cache_read": 72448
+     }
+    }
+   }
+  },
+  "2026-05-06": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1714403,
+      "output": 69717,
+      "cache_read": 14486304
+     },
+     "gpt-5.5-medium": {
+      "input": 897550,
+      "output": 48461,
+      "cache_read": 13962240
+     }
+    }
+   }
+  },
+  "2026-05-07": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1652274,
+      "output": 19897,
+      "cache_read": 6171264
+     },
+     "gpt-5.5-medium": {
+      "input": 380861,
+      "output": 23295,
+      "cache_read": 7445504
+     }
+    }
+   }
+  },
+  "2026-05-08": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2710572,
+      "output": 223536,
+      "cache_read": 31357184
+     },
+     "gpt-5.5-medium": {
+      "input": 215811,
+      "output": 1448,
+      "cache_read": 7680
+     }
+    }
+   }
+  },
+  "2026-05-09": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 2673101,
+      "output": 174864,
+      "cache_read": 30130944
+     },
+     "gpt-5.5-medium": {
+      "input": 145640,
+      "output": 11599,
+      "cache_read": 2734080
+     }
+    }
+   }
+  },
+  "2026-05-11": {
+   "cursor": {
+    "models": {
+     "claude-opus-4-7-thinking-xhigh": {
+      "input": 18,
+      "output": 15094,
+      "cache_read": 318243
+     },
+     "default": {
+      "input": 2067011,
+      "output": 104522,
+      "cache_read": 10652320
+     }
+    }
+   }
+  },
+  "2026-05-12": {
+   "cursor": {
+    "models": {
+     "claude-opus-4-7-thinking-xhigh": {
+      "input": 264782,
+      "output": 207170,
+      "cache_read": 31505589
+     }
+    }
+   }
+  },
   "2026-05-14": {
    "codex-wuyou-dev": {
     "models": {
@@ -18,6 +978,53 @@
       "input": 717650,
       "output": 107408,
       "cache_read": 6417408
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 413451,
+      "output": 19204,
+      "cache_read": 2645729
+     }
+    }
+   }
+  },
+  "2026-05-18": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 71293,
+      "output": 2985,
+      "cache_read": 261120
+     }
+    }
+   }
+  },
+  "2026-05-19": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 759733,
+      "output": 164928,
+      "cache_read": 12578304
+     },
+     "composer-2.5-fast": {
+      "input": 62348,
+      "output": 5336,
+      "cache_read": 275232
+     }
+    }
+   }
+  },
+  "2026-05-20": {
+   "cursor": {
+    "models": {
+     "default": {
+      "input": 1449601,
+      "output": 145220,
+      "cache_read": 17209344
      }
     }
    }
@@ -1596,15 +2603,40 @@
    },
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 2334165,
-      "output": 138137,
-      "cache_read": 36470272
+     "grok-4.7-xhigh": {
+      "input": 4807592,
+      "output": 379833,
+      "cache_read": 57827968
      },
-     "claude-fable-5-1-thinking-high": {
-      "input": 618,
-      "output": 411153,
-      "cache_read": 87982612
+     "gpt-5.6-sol-medium": {
+      "input": 6,
+      "output": 10,
+      "cache_read": 16045
+     },
+     "cursor-grok-4.6-high": {
+      "input": 841178,
+      "output": 29344,
+      "cache_read": 1133696
+     },
+     "grok-4.7-high": {
+      "input": 3498312,
+      "output": 197557,
+      "cache_read": 36174720
+     },
+     "agent_review": {
+      "input": 70612,
+      "output": 7422,
+      "cache_read": 624207
+     },
+     "cursor-grok-4.6-xhigh": {
+      "input": 196667,
+      "output": 13853,
+      "cache_read": 1323520
+     },
+     "composer-2.5-fast": {
+      "input": 112646,
+      "output": 11835,
+      "cache_read": 531872
      }
     }
    },
@@ -1640,10 +2672,25 @@
    },
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 322957,
-      "output": 1300,
-      "cache_read": 1962752
+     "grok-4.7-xhigh": {
+      "input": 3017012,
+      "output": 318023,
+      "cache_read": 40986880
+     },
+     "gpt-5.6-sol-xhigh": {
+      "input": 174,
+      "output": 24922,
+      "cache_read": 8401211
+     },
+     "composer-2.5-fast": {
+      "input": 152916,
+      "output": 22131,
+      "cache_read": 2344864
+     },
+     "grok-4.7-high": {
+      "input": 82653,
+      "output": 8043,
+      "cache_read": 160640
      }
     }
    },
@@ -1690,15 +2737,44 @@
       "cache_read": 1270400
      }
     }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 5095805,
+      "output": 506942,
+      "cache_read": 129092352
+     },
+     "composer-2.5-fast": {
+      "input": 103630,
+      "output": 14742,
+      "cache_read": 621312
+     },
+     "gpt-5.6-sol-high": {
+      "input": 129,
+      "output": 15425,
+      "cache_read": 3950114
+     },
+     "gemini-3.8-flash-high": {
+      "input": 156935,
+      "output": 21088,
+      "cache_read": 1445462
+     }
+    }
    }
   },
   "2026-09-25": {
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 931368,
-      "output": 126263,
-      "cache_read": 35023360
+     "grok-4.7-xhigh": {
+      "input": 4264932,
+      "output": 348281,
+      "cache_read": 136852608
+     },
+     "cursor-grok-4.5-high": {
+      "input": 300470,
+      "output": 20639,
+      "cache_read": 805888
      }
     }
    },
@@ -2665,25 +3741,10 @@
    },
    "cursor": {
     "models": {
-     "claude-opus-5-5-max": {
-      "input": 634,
-      "output": 602748,
-      "cache_read": 154880639
-     },
-     "grok-4.7-high-fast": {
-      "input": 594050,
-      "output": 90414,
-      "cache_read": 7201920
-     },
-     "claude-opus-5-5-xhigh": {
-      "input": 2346,
-      "output": 1725942,
-      "cache_read": 165880311
-     },
-     "grok-4.7-xhigh-fast": {
-      "input": 817668,
-      "output": 106004,
-      "cache_read": 7916544
+     "grok-4.7-xhigh": {
+      "input": 709,
+      "output": 2445,
+      "cache_read": 0
      }
     }
    },
@@ -2711,48 +3772,43 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 1711506,
-      "output": 145860,
-      "cache_read": 28858624
+      "input": 2897711,
+      "output": 240859,
+      "cache_read": 49944064
      }
     }
    },
    "cursor": {
     "models": {
-     "grok-4.7-xhigh-fast": {
-      "input": 587442,
-      "output": 176842,
-      "cache_read": 16468608
+     "kimi-k3-max": {
+      "input": 42273,
+      "output": 32323,
+      "cache_read": 627200
+     }
+    }
+   }
+  },
+  "2026-10-21": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 2421011,
+      "output": 167715,
+      "cache_read": 36866432
      },
-     "claude-fable-5-1-thinking-high": {
-      "input": 10,
-      "output": 2109,
-      "cache_read": 656746
-     },
-     "claude-fable-5-1-thinking-xhigh": {
-      "input": 282,
-      "output": 117726,
-      "cache_read": 18417123
-     },
-     "grok-4.7-high": {
-      "input": 0,
-      "output": 0,
-      "cache_read": 0
-     },
-     "claude-opus-5-5-max": {
-      "input": 862,
-      "output": 695239,
-      "cache_read": 144631434
-     },
-     "grok-4.7-high-fast": {
-      "input": 503290,
-      "output": 123960,
-      "cache_read": 7315072
-     },
-     "claude-opus-5-5-xhigh": {
-      "input": 652,
-      "output": 468270,
-      "cache_read": 49404013
+     "codex-auto-review": {
+      "input": 225309,
+      "output": 3075,
+      "cache_read": 554496
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "composer-2.5-fast": {
+      "input": 73920,
+      "output": 21962,
+      "cache_read": 1214496
      }
     }
    }
@@ -2985,6 +4041,11 @@
     "output": 0,
     "cache_read": 0
    },
+   "session-f5347b67-ab0b-4503-90e5-6028582bd580": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
    "session-fb382c51-887c-4daf-b326-75aea55bb3d8": {
     "input": 5528,
     "output": 3348,
@@ -3002,5 +4063,5 @@
    }
   }
  },
- "updated_at": "2026-10-20T18:13:12+08:00"
+ "updated_at": "2026-10-21T11:47:16+08:00"
 }
