@@ -1694,6 +1694,15 @@
       "cache_read": 724224
      }
     }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-flash": {
+      "input": 7862,
+      "output": 105,
+      "cache_read": 7808
+     }
+    }
    }
   },
   "2026-08-06": {
@@ -1722,6 +1731,45 @@
       "input": 857536,
       "output": 8196,
       "cache_read": 989184
+     }
+    }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-flash": {
+      "input": 63105,
+      "output": 10875,
+      "cache_read": 766848
+     },
+     "gpt-5.5": {
+      "input": 77684,
+      "output": 6210,
+      "cache_read": 144896
+     },
+     "MiniMax-M3": {
+      "input": 402227,
+      "output": 111259,
+      "cache_read": 13038224
+     },
+     "k3": {
+      "input": 333445,
+      "output": 61300,
+      "cache_read": 2659840
+     },
+     "deepseek-v4-pro": {
+      "input": 74713,
+      "output": 7940,
+      "cache_read": 484608
+     },
+     "gpt-5.6-luna": {
+      "input": 47326,
+      "output": 3617,
+      "cache_read": 66048
+     },
+     "gpt-5.6-terra": {
+      "input": 15592,
+      "output": 480,
+      "cache_read": 0
      }
     }
    }
@@ -1754,6 +1802,25 @@
       "cache_read": 2015488
      }
     }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-pro": {
+      "input": 10778,
+      "output": 1759,
+      "cache_read": 97408
+     },
+     "k3": {
+      "input": 201493,
+      "output": 51429,
+      "cache_read": 1754112
+     },
+     "gpt-5.6-luna": {
+      "input": 24383,
+      "output": 816,
+      "cache_read": 40448
+     }
+    }
    }
   },
   "2026-08-08": {
@@ -1782,6 +1849,20 @@
       "input": 23493,
       "output": 377,
       "cache_read": 89088
+     }
+    }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-pro": {
+      "input": 79760,
+      "output": 15587,
+      "cache_read": 1204608
+     },
+     "k3": {
+      "input": 105550,
+      "output": 12490,
+      "cache_read": 1162752
      }
     }
    }
@@ -1823,6 +1904,35 @@
       "input": 678426,
       "output": 88542,
       "cache_read": 21293824
+     }
+    }
+   },
+   "opencode": {
+    "models": {
+     "gpt-5.6-terra": {
+      "input": 116256,
+      "output": 18876,
+      "cache_read": 1200640
+     },
+     "gpt-5.6-luna": {
+      "input": 590896,
+      "output": 13444,
+      "cache_read": 640512
+     },
+     "MiniMax-M3": {
+      "input": 258445,
+      "output": 28084,
+      "cache_read": 989617
+     },
+     "deepseek-v4-flash": {
+      "input": 67894,
+      "output": 9569,
+      "cache_read": 721408
+     },
+     "deepseek-v4-pro": {
+      "input": 6488,
+      "output": 6115,
+      "cache_read": 13440
      }
     }
    }
@@ -1903,6 +2013,30 @@
       "cache_read": 1752832
      }
     }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-pro": {
+      "input": 141572,
+      "output": 35016,
+      "cache_read": 1046400
+     },
+     "deepseek-v4-flash": {
+      "input": 168503,
+      "output": 34178,
+      "cache_read": 1400064
+     },
+     "gpt-5.6-luna": {
+      "input": 52992,
+      "output": 19240,
+      "cache_read": 406016
+     },
+     "MiniMax-M2.7": {
+      "input": 87720,
+      "output": 5352,
+      "cache_read": 415294
+     }
+    }
    }
   },
   "2026-08-15": {
@@ -1917,6 +2051,25 @@
       "input": 144030,
       "output": 2929,
       "cache_read": 2032128
+     }
+    }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-pro": {
+      "input": 331451,
+      "output": 117979,
+      "cache_read": 6256000
+     },
+     "kimi-for-coding-highspeed": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
+     },
+     "k3-256k": {
+      "input": 30737,
+      "output": 4630,
+      "cache_read": 39604
      }
     }
    }
@@ -1938,6 +2091,20 @@
       "input": 322219,
       "output": 4650,
       "cache_read": 1601024
+     }
+    }
+   },
+   "opencode": {
+    "models": {
+     "deepseek-v4-pro": {
+      "input": 177882,
+      "output": 11278,
+      "cache_read": 2224384
+     },
+     "kimi-for-coding-highspeed": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0
      }
     }
    }
@@ -2888,15 +3055,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 139392,
-      "output": 24203,
-      "cache_read": 3550976
-     }
-    }
-   },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
@@ -2913,6 +3071,15 @@
       "input": 17272,
       "output": 172,
       "cache_read": 4864
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 139392,
+      "output": 24203,
+      "cache_read": 3550976
      }
     }
    }
@@ -2941,25 +3108,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "nvidia/nemotron-3-ultra-550b-a55b:free": {
-      "input": 19190,
-      "output": 718,
-      "cache_read": 0
-     },
-     "nvidia/nemotron-3.5-lightning:free": {
-      "input": 30229,
-      "output": 3670,
-      "cache_read": 43520
-     },
-     "openrouter/free": {
-      "input": 42020,
-      "output": 4350,
-      "cache_read": 0
-     }
-    }
-   },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
@@ -2983,18 +3131,28 @@
       "cache_read": 221184
      }
     }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "input": 19190,
+      "output": 718,
+      "cache_read": 0
+     },
+     "nvidia/nemotron-3.5-lightning:free": {
+      "input": 30229,
+      "output": 3670,
+      "cache_read": 43520
+     },
+     "openrouter/free": {
+      "input": 42020,
+      "output": 4350,
+      "cache_read": 0
+     }
+    }
    }
   },
   "2026-10-02": {
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 484262,
-      "output": 85869,
-      "cache_read": 8830343
-     }
-    }
-   },
    "cursor": {
     "models": {
      "grok-4.7-xhigh-fast": {
@@ -3036,9 +3194,23 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 385824,
-      "output": 84214,
-      "cache_read": 13731328
+      "input": 1061562,
+      "output": 122081,
+      "cache_read": 30149888
+     },
+     "codex-auto-review": {
+      "input": 245184,
+      "output": 2963,
+      "cache_read": 397312
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 484262,
+      "output": 85869,
+      "cache_read": 8830343
      }
     }
    }
@@ -3047,9 +3219,9 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 189502,
-      "output": 68665,
-      "cache_read": 5100928
+      "input": 267225,
+      "output": 79266,
+      "cache_read": 8587008
      }
     }
    },
@@ -3081,7 +3253,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "k3": {
       "input": 26922,
@@ -3120,15 +3292,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 151152,
-      "output": 243,
-      "cache_read": 161536
-     }
-    }
-   },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
@@ -3140,6 +3303,15 @@
       "input": 239513,
       "output": 5489,
       "cache_read": 1407744
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 151152,
+      "output": 243,
+      "cache_read": 161536
      }
     }
    }
@@ -3159,15 +3331,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 23569,
-      "output": 4892,
-      "cache_read": 37120
-     }
-    }
-   },
    "cursor": {
     "models": {
      "grok-4.7-xhigh": {
@@ -3179,6 +3342,15 @@
       "input": 466901,
       "output": 227671,
       "cache_read": 61934848
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 23569,
+      "output": 4892,
+      "cache_read": 37120
      }
     }
    }
@@ -3198,15 +3370,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 223136,
-      "output": 25681,
-      "cache_read": 3135686
-     }
-    }
-   },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6.1-sol": {
@@ -3218,6 +3381,15 @@
       "input": 38595,
       "output": 546,
       "cache_read": 98304
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 223136,
+      "output": 25681,
+      "cache_read": 3135686
      }
     }
    }
@@ -3232,15 +3404,6 @@
      }
     }
    },
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 248174,
-      "output": 13492,
-      "cache_read": 2669603
-     }
-    }
-   },
    "codex": {
     "models": {
      "gpt-6-astra": {
@@ -3252,6 +3415,15 @@
       "input": 60881,
       "output": 1070,
       "cache_read": 305152
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 248174,
+      "output": 13492,
+      "cache_read": 2669603
      }
     }
    }
@@ -3287,10 +3459,20 @@
    },
    "codex": {
     "models": {
+     "gpt-6-astra": {
+      "input": 529622,
+      "output": 35692,
+      "cache_read": 3292672
+     },
      "gpt-6.1-sol": {
-      "input": 597777,
-      "output": 150926,
-      "cache_read": 36911104
+      "input": 422528,
+      "output": 134763,
+      "cache_read": 35775488
+     },
+     "codex-auto-review": {
+      "input": 846681,
+      "output": 9580,
+      "cache_read": 15592448
      }
     }
    }
@@ -3318,10 +3500,20 @@
   "2026-10-10": {
    "codex": {
     "models": {
+     "gpt-6-astra": {
+      "input": 30469,
+      "output": 5,
+      "cache_read": 0
+     },
      "gpt-6.1-sol": {
-      "input": 4725414,
-      "output": 349032,
-      "cache_read": 114429184
+      "input": 3800809,
+      "output": 329811,
+      "cache_read": 88352512
+     },
+     "codex-auto-review": {
+      "input": 924605,
+      "output": 19221,
+      "cache_read": 26076672
      }
     }
    },
@@ -3368,9 +3560,14 @@
    "codex": {
     "models": {
      "gpt-6.1-sol": {
-      "input": 4846748,
-      "output": 734955,
-      "cache_read": 159125376
+      "input": 4551755,
+      "output": 731393,
+      "cache_read": 156238464
+     },
+     "codex-auto-review": {
+      "input": 294993,
+      "output": 3562,
+      "cache_read": 2886912
      }
     }
    },
@@ -3442,7 +3639,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "k3": {
       "input": 3200715,
@@ -3580,7 +3777,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "k3": {
       "input": 1504228,
@@ -3634,7 +3831,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "k3": {
       "input": 958224,
@@ -3650,15 +3847,6 @@
    }
   },
   "2026-10-17": {
-   "dsh-kimi": {
-    "models": {
-     "k3": {
-      "input": 227829,
-      "output": 5077,
-      "cache_read": 1262592
-     }
-    }
-   },
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
@@ -3694,6 +3882,15 @@
       "input": 135930,
       "output": 18818,
       "cache_read": 936832
+     }
+    }
+   },
+   "dsh-kimi-coding": {
+    "models": {
+     "k3": {
+      "input": 227829,
+      "output": 5077,
+      "cache_read": 1262592
      }
     }
    }
@@ -3748,7 +3945,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "deepseek-flash": {
       "input": 751585,
@@ -3786,6 +3983,15 @@
       "cache_read": 627200
      }
     }
+   },
+   "codex": {
+    "models": {
+     "gpt-6.1-sol": {
+      "input": 32197,
+      "output": 13,
+      "cache_read": 31872
+     }
+    }
    }
   },
   "2026-10-21": {
@@ -3812,7 +4018,7 @@
      }
     }
    },
-   "dsh-kimi": {
+   "dsh-kimi-coding": {
     "models": {
      "kimi-k3": {
       "input": 10972,
@@ -3857,7 +4063,16 @@
      }
     }
    },
-   "dsh-kimi": {
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 1139745,
+      "output": 129254,
+      "cache_read": 29312256
+     }
+    }
+   },
+   "dsh-kimi-coding": {
     "models": {
      "kimi-k3": {
       "input": 214574,
@@ -3865,18 +4080,9 @@
       "cache_read": 2639232
      },
      "k3": {
-      "input": 329926,
-      "output": 15712,
-      "cache_read": 1446656
-     }
-    }
-   },
-   "cursor": {
-    "models": {
-     "grok-4.7-xhigh": {
-      "input": 436223,
-      "output": 11638,
-      "cache_read": 5092864
+      "input": 657567,
+      "output": 37961,
+      "cache_read": 3312640
      }
     }
    }
@@ -4055,14 +4261,14 @@
     "cache_read": 66514753
    },
    "session-938acf52-e835-4164-8a41-7f1f66d37279": {
-    "input": 160653,
-    "output": 19323,
-    "cache_read": 863232
+    "input": 320886,
+    "output": 38960,
+    "cache_read": 2637824
    },
    "session-97513c3a-6ca9-45c6-88b3-5436f1486faf": {
-    "input": 151291,
-    "output": 44738,
-    "cache_read": 2725760
+    "input": 318699,
+    "output": 47350,
+    "cache_read": 2817152
    },
    "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
     "input": 6430,
@@ -4161,5 +4367,5 @@
    }
   }
  },
- "updated_at": "2026-10-23T11:41:27+08:00"
+ "updated_at": "2026-10-23T13:33:50+08:00"
 }

@@ -9,7 +9,10 @@ Sources (all raw data stays on its host; only aggregated JSON is pushed):
                              streaming tools/codex_usage_scan.py over ssh
                              (nothing installed remotely)
   - Cursor:          local accessToken -> api2.cursor.sh GetFilteredUsageEvents
-  - DeepSeek Harness: ~/.dsh session JSONs (cumulative per session, diffed per run)
+  - DeepSeek Harness: ~/.dsh session JSONs (cumulative per session, diffed per run;
+                      source namespaced by LLM provider, e.g. dsh-opencode-go)
+  - opencode:        ~/.local/share/opencode/opencode.db (full re-scan of
+                     assistant-message token rows, incl. opencode-go models)
 
 The aggregated result is committed & pushed so a GitHub Action can render the SVG.
 
@@ -55,6 +58,7 @@ CURSOR_DB = (
     / "state.vscdb"
 )
 CURSOR_API = "https://api2.cursor.sh/aiserver.v1.DashboardService/GetFilteredUsageEvents"
+OPENCODE_DB = Path.home() / ".local" / "share" / "opencode" / "opencode.db"
 
 VERBOSE = "--verbose" in sys.argv
 
@@ -192,13 +196,66 @@ def collect_cursor() -> dict:
     return days
 
 
+# --------------------------------------------------------------- opencode
+
+def collect_opencode() -> dict | None:
+    """Full re-scan of the local opencode DB; None on failure (keep old data).
+
+    Assistant messages carry per-call token rows with modelID/providerID and a
+    millisecond timestamp, so usage aggregates cleanly per day and model —
+    including any opencode-go models. Reasoning tokens are folded into output
+    (matching OpenAI output_tokens semantics used by the other sources);
+    cache.write is not tracked, consistent with the other sources.
+    """
+    if not OPENCODE_DB.is_file():
+        log("opencode: db not found, skipped")
+        return None
+    days = {}
+    n = 0
+    try:
+        con = sqlite3.connect(
+            f"file:{OPENCODE_DB}?mode=ro&immutable=1", uri=True, timeout=5
+        )
+        try:
+            rows = con.execute(
+                "SELECT data FROM message WHERE json_extract(data,'$.role')='assistant'"
+            )
+            for (data,) in rows:
+                try:
+                    d = json.loads(data)
+                except ValueError:
+                    continue
+                tokens = d.get("tokens") or {}
+                created = (d.get("time") or {}).get("created")
+                if not tokens or not created:
+                    continue
+                day = local_day_from_ms(created)
+                b = days.setdefault(day, {}).setdefault(
+                    d.get("modelID") or "unknown",
+                    {"input": 0, "output": 0, "cache_read": 0},
+                )
+                b["input"] += tokens.get("input", 0)
+                b["output"] += tokens.get("output", 0) + tokens.get("reasoning", 0)
+                b["cache_read"] += (tokens.get("cache") or {}).get("read", 0)
+                n += 1
+        finally:
+            con.close()
+    except (sqlite3.Error, OSError) as e:
+        log(f"opencode: db error ({e}), keeping previous data")
+        return None
+    log(f"opencode: {n} assistant messages with usage")
+    return days
+
+
 # ------------------------------------------------------- DeepSeek Harness
 
 def collect_dsh(prev_state: dict) -> tuple[dict, dict]:
     """Diff cumulative per-session totals.
 
-    Returns ({day: {model: {...}}}, new_state). New sessions are backfilled to
-    their last-activity day; known sessions attribute the delta to today.
+    Returns ({day: {provider: {model: {...}}}}, new_state). New sessions are
+    backfilled to their last-activity day; known sessions attribute the delta
+    to today. Provider/model come from the session's last-used selection, so
+    e.g. kimi-coding and opencode-go usage lands in separate dsh-* sources.
     """
     days, new_state = {}, {}
     if not DSH_SESSIONS_DIR.is_dir():
@@ -221,6 +278,10 @@ def collect_dsh(prev_state: dict) -> tuple[dict, dict]:
                 (((rows.get("modelSelection") or {}).get("val") or {}).get("lastUsed") or {})
                 .get("model")
             ) or "unknown"
+            provider = (
+                (((rows.get("modelSelection") or {}).get("val") or {}).get("lastUsed") or {})
+                .get("provider")
+            ) or "unknown"
             last_prompt_at = ((rows.get("sessionListMetadata") or {}).get("val") or {}).get(
                 "lastPromptAt"
             )
@@ -241,7 +302,7 @@ def collect_dsh(prev_state: dict) -> tuple[dict, dict]:
             day = today
             delta = {k: max(0, cur[k] - prev.get(k, 0)) for k in cur}
         if any(delta.values()):
-            b = days.setdefault(day, {}).setdefault(
+            b = days.setdefault(day, {}).setdefault(provider, {}).setdefault(
                 model, {"input": 0, "output": 0, "cache_read": 0}
             )
             b["input"] += delta["input"]
@@ -272,6 +333,11 @@ def main():
     data = load_data()
     days = data.setdefault("days", {})
     state = data.setdefault("state", {})
+
+    # one-time migration: dsh sources are now namespaced by provider id
+    for entry in days.values():
+        if "dsh-kimi" in entry:
+            entry["dsh-kimi-coding"] = entry.pop("dsh-kimi")
 
     def usage_sum(models):
         return sum(
@@ -317,17 +383,24 @@ def main():
     for day, models in collect_cursor().items():
         days.setdefault(day, {})["cursor"] = {"models": models}
 
-    # DSH: deltas merged on top of stored values.
+    # opencode: authoritative full re-scan of the local DB, like codex.
+    opencode_days = collect_opencode()
+    if opencode_days is not None and shrink_guard("opencode", opencode_days):
+        for day, models in opencode_days.items():
+            days.setdefault(day, {})["opencode"] = {"models": models}
+
+    # DSH: deltas merged on top of stored values, namespaced by provider.
     dsh_days, state["dsh_sessions"] = collect_dsh(state.get("dsh_sessions") or {})
-    for day, models in dsh_days.items():
-        bucket = days.setdefault(day, {}).setdefault("dsh-kimi", {})
-        for model, u in models.items():
-            m = bucket.setdefault("models", {}).setdefault(
-                model, {"input": 0, "output": 0, "cache_read": 0}
-            )
-            m["input"] += u["input"]
-            m["output"] += u["output"]
-            m["cache_read"] += u["cache_read"]
+    for day, providers in dsh_days.items():
+        for provider, models in providers.items():
+            bucket = days.setdefault(day, {}).setdefault(f"dsh-{provider}", {})
+            for model, u in models.items():
+                m = bucket.setdefault("models", {}).setdefault(
+                    model, {"input": 0, "output": 0, "cache_read": 0}
+                )
+                m["input"] += u["input"]
+                m["output"] += u["output"]
+                m["cache_read"] += u["cache_read"]
 
     def without_ts(d):
         return {k: v for k, v in d.items() if k != "updated_at"}
