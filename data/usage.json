@@ -3332,15 +3332,15 @@
       "output": 123898,
       "cache_read": 40007424
      },
-     "codex-auto-review": {
-      "input": 88041,
-      "output": 901,
-      "cache_read": 64000
-     },
      "gpt-6.1-sol": {
       "input": 170960,
       "output": 20503,
       "cache_read": 6795392
+     },
+     "codex-auto-review": {
+      "input": 88041,
+      "output": 901,
+      "cache_read": 64000
      }
     }
    },
@@ -3416,15 +3416,15 @@
       "output": 287724,
       "cache_read": 54711168
      },
-     "codex-auto-review": {
-      "input": 521986,
-      "output": 4988,
-      "cache_read": 1094144
-     },
      "gpt-6.1-sol": {
       "input": 3774304,
       "output": 252519,
       "cache_read": 161436800
+     },
+     "codex-auto-review": {
+      "input": 521986,
+      "output": 4988,
+      "cache_read": 1094144
      }
     }
    },
@@ -3792,9 +3792,9 @@
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 4218229,
-      "output": 456919,
-      "cache_read": 97653760
+      "input": 5616272,
+      "output": 653997,
+      "cache_read": 144082944
      },
      "codex-auto-review": {
       "input": 225309,
@@ -3809,6 +3809,65 @@
       "input": 73920,
       "output": 21962,
       "cache_read": 1214496
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "kimi-k3": {
+      "input": 10972,
+      "output": 840,
+      "cache_read": 0
+     }
+    }
+   }
+  },
+  "2026-10-22": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 1086637,
+      "output": 122106,
+      "cache_read": 28189952
+     }
+    }
+   },
+   "cursor": {
+    "models": {
+     "grok-4.7-xhigh": {
+      "input": 402768,
+      "output": 100402,
+      "cache_read": 51421696
+     }
+    }
+   }
+  },
+  "2026-10-23": {
+   "codex-wuyou-dev": {
+    "models": {
+     "gpt-6-astra": {
+      "input": 489047,
+      "output": 52950,
+      "cache_read": 7208960
+     },
+     "gpt-6.1-sol": {
+      "input": 176070,
+      "output": 19236,
+      "cache_read": 4925440
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "kimi-k3": {
+      "input": 214574,
+      "output": 56478,
+      "cache_read": 2639232
+     },
+     "k3": {
+      "input": 211776,
+      "output": 1233,
+      "cache_read": 440832
      }
     }
    }
@@ -3871,6 +3930,11 @@
     "output": 18173,
     "cache_read": 3369984
    },
+   "session-15be1f5c-cac8-4968-adc9-ab9c7e9292f9": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
    "session-1da65e27-fbda-410d-b898-4bc29fc2f5c3": {
     "input": 95338,
     "output": 75143,
@@ -3931,10 +3995,20 @@
     "output": 0,
     "cache_read": 0
    },
+   "session-5ce5368a-ccb5-40bb-b544-d100dcd26d52": {
+    "input": 10972,
+    "output": 840,
+    "cache_read": 0
+   },
    "session-671b9d15-0e8d-4942-aec0-4bad3649c3bd": {
     "input": 0,
     "output": 0,
     "cache_read": 0
+   },
+   "session-6cdce26c-78cb-40bf-a0b2-2e8267f1f3d5": {
+    "input": 20780,
+    "output": 6896,
+    "cache_read": 56064
    },
    "session-6f0c9aef-18c8-4e3c-a3b4-adf89bced01f": {
     "input": 30229,
@@ -3971,6 +4045,16 @@
     "output": 201755,
     "cache_read": 66514753
    },
+   "session-938acf52-e835-4164-8a41-7f1f66d37279": {
+    "input": 113086,
+    "output": 13197,
+    "cache_read": 333568
+   },
+   "session-97513c3a-6ca9-45c6-88b3-5436f1486faf": {
+    "input": 80708,
+    "output": 36385,
+    "cache_read": 2249600
+   },
    "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
     "input": 6430,
     "output": 39,
@@ -3992,9 +4076,9 @@
     "cache_read": 14565632
    },
    "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
-    "input": 2006443,
-    "output": 125313,
-    "cache_read": 24619134
+    "input": 2218219,
+    "output": 126546,
+    "cache_read": 25059966
    },
    "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
     "input": 0,
@@ -4015,6 +4099,11 @@
     "input": 1083686,
     "output": 123681,
     "cache_read": 16838178
+   },
+   "session-d5ce7eb4-00eb-4e15-ab47-d155bb91c232": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
    },
    "session-e0276719-539c-4c79-b536-25b1d750c41b": {
     "input": 10716,
@@ -4063,5 +4152,5 @@
    }
   }
  },
- "updated_at": "2026-10-21T17:48:49+08:00"
+ "updated_at": "2026-10-23T11:29:55+08:00"
 }
