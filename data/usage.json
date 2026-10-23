@@ -3082,6 +3082,15 @@
       "cache_read": 3550976
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 139392,
+      "output": 24203,
+      "cache_read": 3550976
+     }
+    }
    }
   },
   "2026-10-01": {
@@ -3133,6 +3142,25 @@
     }
    },
    "dsh-openrouter": {
+    "models": {
+     "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "input": 19190,
+      "output": 718,
+      "cache_read": 0
+     },
+     "nvidia/nemotron-3.5-lightning:free": {
+      "input": 30229,
+      "output": 3670,
+      "cache_read": 43520
+     },
+     "openrouter/free": {
+      "input": 42020,
+      "output": 4350,
+      "cache_read": 0
+     }
+    }
+   },
+   "dsh-kimi": {
     "models": {
      "nvidia/nemotron-3-ultra-550b-a55b:free": {
       "input": 19190,
@@ -3408,6 +3436,15 @@
       "cache_read": 2669603
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 183862,
+      "output": 39576,
+      "cache_read": 3253190
+     }
+    }
    }
   },
   "2026-10-08": {
@@ -3665,6 +3702,20 @@
       "cache_read": 17080064
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 3200715,
+      "output": 232660,
+      "cache_read": 47783071
+     },
+     "deepseek-flash": {
+      "input": 1171617,
+      "output": 201769,
+      "cache_read": 66514753
+     }
+    }
    }
   },
   "2026-10-13": {
@@ -3798,6 +3849,15 @@
       "cache_read": 30239388
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 1504228,
+      "output": 204967,
+      "cache_read": 34076420
+     }
+    }
    }
   },
   "2026-10-16": {
@@ -3861,6 +3921,20 @@
       "cache_read": 14778624
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 145522,
+      "output": 86981,
+      "cache_read": 3169128
+     },
+     "deepseek-flash": {
+      "input": 65458,
+      "output": 192648,
+      "cache_read": 14778624
+     }
+    }
    }
   },
   "2026-10-17": {
@@ -3908,6 +3982,15 @@
       "input": 215304,
       "output": 4231,
       "cache_read": 854784
+     }
+    }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 7441,
+      "output": 634,
+      "cache_read": 0
      }
     }
    }
@@ -3984,6 +4067,25 @@
       "cache_read": 4969856
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "deepseek-flash": {
+      "input": 751585,
+      "output": 1044853,
+      "cache_read": 93618944
+     },
+     "space-bunny": {
+      "input": 10139,
+      "output": 16,
+      "cache_read": 128
+     },
+     "grok-4.7": {
+      "input": 193679,
+      "output": 36756,
+      "cache_read": 4969856
+     }
+    }
    }
   },
   "2026-10-20": {
@@ -4047,6 +4149,15 @@
       "cache_read": 0
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "kimi-k3": {
+      "input": 10972,
+      "output": 840,
+      "cache_read": 0
+     }
+    }
    }
   },
   "2026-10-22": {
@@ -4076,20 +4187,29 @@
       "cache_read": 440832
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 2218219,
+      "output": 126546,
+      "cache_read": 25059966
+     }
+    }
    }
   },
   "2026-10-23": {
    "codex-wuyou-dev": {
     "models": {
      "gpt-6-astra": {
-      "input": 893925,
-      "output": 72396,
-      "cache_read": 13685376
+      "input": 1648327,
+      "output": 220657,
+      "cache_read": 38096896
      },
      "gpt-6.1-sol": {
-      "input": 176070,
-      "output": 19236,
-      "cache_read": 4925440
+      "input": 426729,
+      "output": 44785,
+      "cache_read": 13673856
      }
     }
    },
@@ -4124,9 +4244,316 @@
       "cache_read": 4124928
      }
     }
+   },
+   "dsh-kimi": {
+    "models": {
+     "k3": {
+      "input": 772786,
+      "output": 115318,
+      "cache_read": 8248448
+     },
+     "kimi-k3": {
+      "input": 20780,
+      "output": 6896,
+      "cache_read": 56064
+     }
+    }
    }
   }
  },
- "state": {},
- "updated_at": "2026-10-23T14:47:28+08:00"
+ "state": {
+  "dsh_sessions": {
+   "011254a9-dbb0-4829-a692-fecb2fa880c2": {
+    "input": 12872,
+    "output": 13201,
+    "cache_read": 356608
+   },
+   "145d00cf-3880-48af-b0f8-a370ab0469fb": {
+    "input": 32601,
+    "output": 61226,
+    "cache_read": 2343936
+   },
+   "1ae4a4bd-6ba6-4e37-b2db-f6258772745e": {
+    "input": 217914,
+    "output": 23819,
+    "cache_read": 4886698
+   },
+   "3ec063c3-1a99-4a43-834e-52951351ab3e": {
+    "input": 64317,
+    "output": 89821,
+    "cache_read": 3296896
+   },
+   "5d086765-be26-479a-a31f-38c0fc812362": {
+    "input": 21480,
+    "output": 70544,
+    "cache_read": 705920
+   },
+   "5e7d0ed1-05fc-4d14-a76b-223e98251396": {
+    "input": 79715,
+    "output": 19071,
+    "cache_read": 1475712
+   },
+   "a2e311b5-8137-46e4-a912-4d885b65ab86": {
+    "input": 744943,
+    "output": 14020,
+    "cache_read": 4351962
+   },
+   "b822ce0f-fadf-4874-aed1-5b3d5a9e65da": {
+    "input": 40013,
+    "output": 20622,
+    "cache_read": 1592960
+   },
+   "d0fc448b-29c0-43f4-8e49-de51f8897c2c": {
+    "input": 58961,
+    "output": 102013,
+    "cache_read": 4190080
+   },
+   "eb2e2343-50e3-4901-b6b2-147dde01fcc2": {
+    "input": 21099,
+    "output": 50564,
+    "cache_read": 258432
+   },
+   "session-0ea5268d-ec99-484e-92a2-e380d514a04b": {
+    "input": 121277,
+    "output": 18173,
+    "cache_read": 3369984
+   },
+   "session-15be1f5c-cac8-4968-adc9-ab9c7e9292f9": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-1da65e27-fbda-410d-b898-4bc29fc2f5c3": {
+    "input": 95338,
+    "output": 75143,
+    "cache_read": 2598504
+   },
+   "session-1f9cc5c7-dc7e-4847-a5d8-ce2c664ec4c8": {
+    "input": 10139,
+    "output": 16,
+    "cache_read": 128
+   },
+   "session-27c3efe7-c313-4d8e-aa32-7f0c41b7e3ae": {
+    "input": 9822,
+    "output": 3376,
+    "cache_read": 42624
+   },
+   "session-2e668929-2032-4d39-a922-2d935b928946": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-30aef444-5bd2-46e5-9289-7b7319c42b5d": {
+    "input": 11685,
+    "output": 5991,
+    "cache_read": 180992
+   },
+   "session-31c55fd7-a185-4e14-9a16-2742547abbb8": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-321486e7-79ed-4ba4-82cb-d9a69d835fad": {
+    "input": 24977,
+    "output": 6053,
+    "cache_read": 308992
+   },
+   "session-37c0106f-a804-46b0-88fc-3ffbd0ab8a6a": {
+    "input": 44656,
+    "output": 8490,
+    "cache_read": 568320
+   },
+   "session-381d62f1-b638-4f0c-a85e-61c1c9b03a11": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-407121c7-0676-4c3e-a95f-d737a698c43a": {
+    "input": 9598,
+    "output": 704,
+    "cache_read": 0
+   },
+   "session-40f17df7-c8a1-4018-8b2d-2d0722ff9097": {
+    "input": 9592,
+    "output": 14,
+    "cache_read": 0
+   },
+   "session-4644a964-1776-413d-af3a-08cbabef8a97": {
+    "input": 204689,
+    "output": 332675,
+    "cache_read": 61386624
+   },
+   "session-4e7cf898-5e2f-4bc3-9cb5-6bfe8632f67a": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-4e86718a-5a5a-4f9a-ae82-20cb01dbbcc0": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-5ce5368a-ccb5-40bb-b544-d100dcd26d52": {
+    "input": 10972,
+    "output": 840,
+    "cache_read": 0
+   },
+   "session-671b9d15-0e8d-4942-aec0-4bad3649c3bd": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-6cd019dc-5c0d-4452-9330-26d0812cc48c": {
+    "input": 10206,
+    "output": 1743,
+    "cache_read": 27648
+   },
+   "session-6cdce26c-78cb-40bf-a0b2-2e8267f1f3d5": {
+    "input": 20780,
+    "output": 6896,
+    "cache_read": 56064
+   },
+   "session-6f0c9aef-18c8-4e3c-a3b4-adf89bced01f": {
+    "input": 30229,
+    "output": 3670,
+    "cache_read": 43520
+   },
+   "session-74ad7d8e-d952-434f-8a4f-0598d8159e26": {
+    "input": 55636,
+    "output": 189272,
+    "cache_read": 14736000
+   },
+   "session-7d2517dd-2f24-4db6-a894-15d8cfe85d93": {
+    "input": 164089,
+    "output": 31206,
+    "cache_read": 3155398
+   },
+   "session-7e26446e-cdd8-4e61-86f0-2477b385ff80": {
+    "input": 42020,
+    "output": 4350,
+    "cache_read": 0
+   },
+   "session-7e563725-18f2-4b57-a912-a8a24e1e4009": {
+    "input": 10448,
+    "output": 28520,
+    "cache_read": 504960
+   },
+   "session-873f4fec-526d-4f9a-947d-6cb75ad46821": {
+    "input": 183667,
+    "output": 36722,
+    "cache_read": 4968704
+   },
+   "session-87bcb04c-140c-4837-be46-4b9d2f920978": {
+    "input": 1160901,
+    "output": 201755,
+    "cache_read": 66514753
+   },
+   "session-938acf52-e835-4164-8a41-7f1f66d37279": {
+    "input": 418904,
+    "output": 60172,
+    "cache_read": 5094656
+   },
+   "session-97513c3a-6ca9-45c6-88b3-5436f1486faf": {
+    "input": 318699,
+    "output": 47350,
+    "cache_read": 2817152
+   },
+   "session-9a8cca98-35dc-46ee-a640-6154d2515a23": {
+    "input": 6430,
+    "output": 39,
+    "cache_read": 0
+   },
+   "session-a7796aae-11f2-46af-be5f-60c4832fd05b": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-b36b4ac7-16fb-4598-8264-a35fd4300618": {
+    "input": 1504228,
+    "output": 204967,
+    "cache_read": 34076420
+   },
+   "session-ba20d8c8-28ce-4122-bd07-1e3a13ad4e6f": {
+    "input": 126192,
+    "output": 188559,
+    "cache_read": 14565632
+   },
+   "session-be55b85d-cc7b-48e4-906e-9a0500c06e0b": {
+    "input": 2218219,
+    "output": 126546,
+    "cache_read": 25059966
+   },
+   "session-bfc40158-b6b6-472f-8e34-3ab4d2b2e61b": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-c8d9ecce-0287-444c-a5cb-cdbfa50b50c4": {
+    "input": 10012,
+    "output": 34,
+    "cache_read": 1152
+   },
+   "session-cac2f797-a3ce-4145-a905-7758b6e3d575": {
+    "input": 1154172,
+    "output": 71140,
+    "cache_read": 21706233
+   },
+   "session-cdd6bda7-abcb-4f22-892e-3af32f51c698": {
+    "input": 1083686,
+    "output": 123681,
+    "cache_read": 16838178
+   },
+   "session-d5ce7eb4-00eb-4e15-ab47-d155bb91c232": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-e0276719-539c-4c79-b536-25b1d750c41b": {
+    "input": 10716,
+    "output": 14,
+    "cache_read": 0
+   },
+   "session-ecd1c054-7423-4cd3-8c39-dd9411b39115": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-eebb8048-822c-4adc-9b84-67a49975bc3d": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-f30d39af-3f5e-4b5a-9045-728ea46b84cf": {
+    "input": 7441,
+    "output": 634,
+    "cache_read": 0
+   },
+   "session-f508153b-b492-4b9f-9fd5-a0255b4b66cb": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-f5347b67-ab0b-4503-90e5-6028582bd580": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+   },
+   "session-fb382c51-887c-4daf-b326-75aea55bb3d8": {
+    "input": 5528,
+    "output": 3348,
+    "cache_read": 2304
+   },
+   "session-fb8f7a19-3ccc-4c69-a6b3-2604fc0d802e": {
+    "input": 19773,
+    "output": 8370,
+    "cache_read": 97792
+   },
+   "session-fe001e37-c308-4744-90a7-1d6a1fba8101": {
+    "input": 79198,
+    "output": 68037,
+    "cache_read": 2941184
+   }
+  }
+ },
+ "updated_at": "2026-10-23T17:42:21+08:00"
 }
