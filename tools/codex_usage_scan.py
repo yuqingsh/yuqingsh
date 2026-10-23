@@ -61,8 +61,8 @@ def thread_models(base: Path) -> dict:
 
 
 def iter_lines(path):
-    """Yield lines from a .jsonl or .jsonl.zst (zstd CLI) rollout file."""
-    if str(path).endswith(".zst"):
+    """Yield lines from a .jsonl or .jsonl.zst/.zstd (zstd CLI) rollout file."""
+    if str(path).endswith((".zst", ".zstd")):
         proc = subprocess.Popen(
             ["zstd", "-dc", str(path)],
             stdout=subprocess.PIPE,

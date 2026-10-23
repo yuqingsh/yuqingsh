@@ -9,8 +9,9 @@ Sources (all raw data stays on its host; only aggregated JSON is pushed):
                              streaming tools/codex_usage_scan.py over ssh
                              (nothing installed remotely)
   - Cursor:          local accessToken -> api2.cursor.sh GetFilteredUsageEvents
-  - DeepSeek Harness: ~/.dsh session JSONs (cumulative per session, diffed per run;
-                      source namespaced by LLM provider, e.g. dsh-opencode-go)
+  - DeepSeek Harness: ~/.dsh/sessions transcripts (full re-scan of per-request
+                      usage events; sources namespaced by LLM provider,
+                      e.g. dsh-opencode-go)
   - opencode:        ~/.local/share/opencode/opencode.db (full re-scan of
                      assistant-message token rows, incl. opencode-go models)
 
@@ -32,7 +33,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from codex_usage_scan import scan_codex  # noqa: E402
+from codex_usage_scan import iter_lines, scan_codex  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = REPO_ROOT / "data" / "usage.json"
@@ -81,10 +82,6 @@ def local_day_from_iso(ts: str) -> str:
 def local_day_from_ms(ms) -> str:
     dt = datetime.fromtimestamp(int(ms) / 1000, tz=timezone.utc)
     return dt.astimezone().strftime("%Y-%m-%d")
-
-
-def today_local() -> str:
-    return datetime.now().astimezone().strftime("%Y-%m-%d")
 
 
 # ---------------------------------------------------------------- Codex
@@ -249,69 +246,68 @@ def collect_opencode() -> dict | None:
 
 # ------------------------------------------------------- DeepSeek Harness
 
-def collect_dsh(prev_state: dict) -> tuple[dict, dict]:
-    """Diff cumulative per-session totals.
+DSH_SESSIONS_DIR = Path.home() / ".dsh" / "sessions"
 
-    Returns ({day: {provider: {model: {...}}}}, new_state). New sessions are
-    backfilled to their last-activity day; known sessions attribute the delta
-    to today. Provider/model come from the session's last-used selection, so
-    e.g. kimi-coding and opencode-go usage lands in separate dsh-* sources.
+
+def collect_dsh() -> dict | None:
+    """Full re-scan of ~/.dsh session transcripts; None if unavailable.
+
+    Every assistant/message event carries the per-request usage at data.usage
+    and the serving provider/model at data.message.source, so attribution is
+    exact per day, provider, and model ({day: {provider: {model: {...}}}}).
+    This replaces the old projcache cumulative-diff approach, which attributed
+    a mixed-provider session's entire delta to its last-used provider.
     """
-    days, new_state = {}, {}
     if not DSH_SESSIONS_DIR.is_dir():
         log("dsh: sessions dir not found, skipped")
-        return days, new_state
-    today = today_local()
-    n_sessions = 0
-    for path in sorted(DSH_SESSIONS_DIR.glob("*.json")):
-        sid = path.stem
+        return None
+    days = {}
+    n_files = n_events = 0
+    for path in sorted(DSH_SESSIONS_DIR.glob("*/*/session.v4.jsonl.zstd")):
+        n_files += 1
+        seen_ids = set()
         try:
-            d = json.loads(path.read_text(encoding="utf-8", errors="replace"))
-            rows = (d.get("record") or {}).get("rows") or {}
-            totals = ((rows.get("tokenUsage") or {}).get("val") or {}).get("totals") or {}
-            cur = {
-                "input": int(totals.get("uncachedInputTokens", 0) or 0),
-                "output": int(totals.get("outputTokens", 0) or 0),
-                "cache_read": int(totals.get("cacheReadTokens", 0) or 0),
-            }
-            model = (
-                (((rows.get("modelSelection") or {}).get("val") or {}).get("lastUsed") or {})
-                .get("model")
-            ) or "unknown"
-            provider = (
-                (((rows.get("modelSelection") or {}).get("val") or {}).get("lastUsed") or {})
-                .get("provider")
-            ) or "unknown"
-            last_prompt_at = ((rows.get("sessionListMetadata") or {}).get("val") or {}).get(
-                "lastPromptAt"
-            )
-        except (ValueError, OSError) as e:
-            vlog(f"dsh: cannot parse {path.name}: {e}")
-            if sid in prev_state:
-                new_state[sid] = prev_state[sid]
+            for line in iter_lines(path):
+                if '"assistant/message"' not in line or '"usage"' not in line:
+                    continue
+                try:
+                    d = json.loads(line)
+                    data = d.get("data") or {}
+                except ValueError:
+                    continue
+                usage = data.get("usage") or {}
+                if not usage:
+                    continue
+                msg = data.get("message") or {}
+                source = msg.get("source") or {}
+                if source.get("kind") != "model":
+                    continue
+                mid = msg.get("id")
+                if mid:
+                    if mid in seen_ids:
+                        continue
+                    seen_ids.add(mid)
+                inp = int(usage.get("inputTokens", 0) or 0)
+                out = int(usage.get("outputTokens", 0) or 0)
+                crd = int(usage.get("cacheReadTokens", 0) or 0)
+                ts = d.get("time")
+                if not (inp or out or crd) or not ts:
+                    continue
+                day = local_day_from_ms(ts)
+                b = days.setdefault(day, {}).setdefault(
+                    source.get("provider") or "unknown", {}
+                ).setdefault(
+                    source.get("model") or "unknown",
+                    {"input": 0, "output": 0, "cache_read": 0},
+                )
+                b["input"] += inp
+                b["output"] += out
+                b["cache_read"] += crd
+                n_events += 1
+        except OSError:
             continue
-        prev = prev_state.get(sid)
-        if prev is None and cur == {"input": 0, "output": 0, "cache_read": 0}:
-            new_state[sid] = cur
-            continue
-        if prev is None:
-            # first time we see this session: backfill to its last-active day
-            day = local_day_from_ms(last_prompt_at) if last_prompt_at else today
-            delta = cur
-        else:
-            day = today
-            delta = {k: max(0, cur[k] - prev.get(k, 0)) for k in cur}
-        if any(delta.values()):
-            b = days.setdefault(day, {}).setdefault(provider, {}).setdefault(
-                model, {"input": 0, "output": 0, "cache_read": 0}
-            )
-            b["input"] += delta["input"]
-            b["output"] += delta["output"]
-            b["cache_read"] += delta["cache_read"]
-            n_sessions += 1
-        new_state[sid] = cur
-    log(f"dsh: {n_sessions} sessions with new usage (tracked: {len(new_state)})")
-    return days, new_state
+    log(f"dsh: {n_events} usage events across {n_files} session transcripts")
+    return days
 
 
 # ------------------------------------------------------------------ merge
@@ -333,11 +329,7 @@ def main():
     data = load_data()
     days = data.setdefault("days", {})
     state = data.setdefault("state", {})
-
-    # one-time migration: dsh sources are now namespaced by provider id
-    for entry in days.values():
-        if "dsh-kimi" in entry:
-            entry["dsh-kimi-coding"] = entry.pop("dsh-kimi")
+    state.pop("dsh_sessions", None)  # superseded by the transcript rescan
 
     def usage_sum(models):
         return sum(
@@ -360,6 +352,27 @@ def main():
         if old_total > 0 and new_total < 0.8 * old_total:
             log(
                 f"WARNING {source}: rescan covers only {new_total:,} of "
+                f"{old_total:,} previously recorded tokens — keeping old data. "
+                f"Check the scanner against a possible client storage change."
+            )
+            return False
+        return True
+
+    def shrink_guard_prefix(prefix: str, scanned: dict) -> bool:
+        """shrink_guard variant for a source family: old data is the union of
+        all stored sources starting with `prefix` (e.g. dsh-kimi-coding,
+        dsh-opencode-go), scanned is {day: {model: {...}}} unioned likewise."""
+        old_total = new_total = 0
+        for day, entry in days.items():
+            for src, val in entry.items():
+                if src.startswith(prefix):
+                    old_total += usage_sum(val.get("models") or {})
+            new = scanned.get(day)
+            if new:
+                new_total += usage_sum(new)
+        if old_total > 0 and new_total < 0.8 * old_total:
+            log(
+                f"WARNING {prefix}*: rescan covers only {new_total:,} of "
                 f"{old_total:,} previously recorded tokens — keeping old data. "
                 f"Check the scanner against a possible client storage change."
             )
@@ -389,18 +402,30 @@ def main():
         for day, models in opencode_days.items():
             days.setdefault(day, {})["opencode"] = {"models": models}
 
-    # DSH: deltas merged on top of stored values, namespaced by provider.
-    dsh_days, state["dsh_sessions"] = collect_dsh(state.get("dsh_sessions") or {})
-    for day, providers in dsh_days.items():
-        for provider, models in providers.items():
-            bucket = days.setdefault(day, {}).setdefault(f"dsh-{provider}", {})
-            for model, u in models.items():
-                m = bucket.setdefault("models", {}).setdefault(
-                    model, {"input": 0, "output": 0, "cache_read": 0}
-                )
-                m["input"] += u["input"]
-                m["output"] += u["output"]
-                m["cache_read"] += u["cache_read"]
+    # DSH: authoritative full re-scan of transcripts; rebuilds all dsh-*
+    # sources from scratch (guarded over their union).
+    dsh_scanned = collect_dsh()
+    if dsh_scanned is not None:
+        union = {}
+        for day, providers in dsh_scanned.items():
+            u = union.setdefault(day, {})
+            for models in providers.values():
+                for model, v in models.items():
+                    b = u.setdefault(
+                        model, {"input": 0, "output": 0, "cache_read": 0}
+                    )
+                    b["input"] += v["input"]
+                    b["output"] += v["output"]
+                    b["cache_read"] += v["cache_read"]
+        if shrink_guard_prefix("dsh-", union):
+            for entry in days.values():
+                for src in [s for s in entry if s.startswith("dsh-")]:
+                    del entry[src]
+            for day, providers in dsh_scanned.items():
+                for provider, models in providers.items():
+                    days.setdefault(day, {})[f"dsh-{provider}"] = {
+                        "models": models
+                    }
 
     def without_ts(d):
         return {k: v for k, v in d.items() if k != "updated_at"}
