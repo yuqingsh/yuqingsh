@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Install (run once):
-    git clone https://github.com/yuqingsh/yuqingsh.git ~/.local/share/token-usage-repo
-    cp tools/com.github.yuqingsh.tokenusage.plist ~/Library/LaunchAgents/
-    launchctl load ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
+  TEMPLATE — do not copy this file directly. Install with:
 
-  Uninstall:
+    CODEX_REMOTE_HOSTS="host1,host2" sh tools/install_launchd.sh
+
+  which renders the placeholders below (__REPO_DIR__, __CODEX_REMOTE_HOSTS__)
+  and loads the result into ~/Library/LaunchAgents. Uninstall:
+
     launchctl unload ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
     rm ~/Library/LaunchAgents/com.github.yuqingsh.tokenusage.plist
 
@@ -29,14 +30,19 @@
         <string>tools/collect_usage.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/kane/.local/share/token-usage-repo</string>
+    <string>__REPO_DIR__</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>CODEX_REMOTE_HOSTS</key>
+        <string>__CODEX_REMOTE_HOSTS__</string>
+    </dict>
     <key>StartInterval</key>
     <integer>21600</integer>
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>
-    <string>/Users/kane/.local/share/token-usage-repo/tools/collect.log</string>
+    <string>__REPO_DIR__/tools/collect.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/kane/.local/share/token-usage-repo/tools/collect.log</string>
+    <string>__REPO_DIR__/tools/collect.log</string>
 </dict>
 </plist>

@@ -3,9 +3,11 @@
 
 Sources (all raw data stays on its host; only aggregated JSON is pushed):
   - Codex (ChatGPT), local:  ~/.codex/{sessions,archived_sessions}
-  - Codex (ChatGPT), remote: same paths on hosts in CODEX_REMOTE_HOSTS,
-                             scanned by streaming tools/codex_usage_scan.py
-                             over ssh (nothing installed remotely)
+  - Codex (ChatGPT), remote: same paths on hosts in the CODEX_REMOTE_HOSTS
+                             env var (comma-separated, configured in the local
+                             launchd install — kept out of git), scanned by
+                             streaming tools/codex_usage_scan.py over ssh
+                             (nothing installed remotely)
   - Cursor:          local accessToken -> api2.cursor.sh GetFilteredUsageEvents
   - DeepSeek Harness: ~/.dsh session JSONs (cumulative per session, diffed per run)
 
@@ -34,7 +36,14 @@ DATA_FILE = REPO_ROOT / "data" / "usage.json"
 SCANNER_FILE = REPO_ROOT / "tools" / "codex_usage_scan.py"
 
 CODEX_BASE_DIR = Path.home() / ".codex"
-CODEX_REMOTE_HOSTS = ["wuyou-dev"]
+# Comma-separated ssh host names, set via the launchd plist (install with
+# tools/install_launchd.sh). Deliberately not hardcoded: host names are
+# private infrastructure details and this repo is public.
+CODEX_REMOTE_HOSTS = [
+    h.strip()
+    for h in os.environ.get("CODEX_REMOTE_HOSTS", "").split(",")
+    if h.strip()
+]
 DSH_SESSIONS_DIR = Path.home() / ".dsh" / "storages" / "session_projcache" / "sessions"
 CURSOR_DB = (
     Path.home()
