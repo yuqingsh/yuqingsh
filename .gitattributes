@@ -1,2 +1,5 @@
 # generated card: never block a merge/rebase on it; it is always re-rendered
+# NOTE: "ours" is not a built-in driver — a clone must run
+#   git config merge.ours.driver true
+# for this to take effect (tools/install_launchd.sh does it for the shadow clone).
 assets/token-usage.svg merge=ours
